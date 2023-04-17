@@ -15,10 +15,10 @@ O principal objetivo é aumentar as vendas de material de cultura Nerd/Geek dent
 ## 2. Descrição do problema 
 | | |
 |:-|:-|
-| **_O problema_**    | Dificuldade de encontrar produtos relacionados a cultura nerd/geek |
+| **_O problema_**    | Dificuldade de encontrar produtos relacionados a cultura nerd/geek. |
 | **_afetando_**      | Pessoas interessadas em produtos relacionados a produtos de cunho ficcional como mangas, animes, HQ's... |
-| **_cujo impacto é_**| expansão ou até capacidade de existência da loja                                    |
-| **_uma boa solução seria_** | Realizar vendas via internet e gerenciar o processo de entrega dos produtos |
+| **_cujo impacto é_**| As pessoas normalmente recorrem a compra em sites estrangeiros, que por serem vendas internacionais podem ser taxadas, além do tempo de entrega ser maior, e com mais custo de frete. |
+| **_uma boa solução seria_** | Realizar vendas via internet e gerenciar o processo de entrega dos produtos em territorio nascional. |
 | | |
 
 ## 3. Descrição dos usuários
