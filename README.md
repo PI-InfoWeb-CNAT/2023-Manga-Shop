@@ -1,6 +1,6 @@
 # Projeto Integrador InfoWeb - IFRN
 
-## Comércio Eletrônico (e-commerce) - 1.0
+## Manga Shop - 1.0
 Este projeto tem como objetivo ser uma aplicação  modelo (_blueprint_) para a disicplina de Análise e Projeto Orientado a Objeto.
 
 Atualmente o projeto não possui uma implementação como modelo de projeto do Microsoft Visual Studio que está aberto a receber contribuições de código que representem as especificação aqui presente.
