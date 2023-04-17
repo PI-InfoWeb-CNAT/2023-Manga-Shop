@@ -1,20 +1,22 @@
 # Documento de visão
 
-## Comércio Eletrônico
+## Manga Shop 🥭
 
 ### Histórico da Revisão 
 |  Data  | Versão | Descrição | Autor |
 |:-------|:-------|:----------|:------|
-| 01/06/2021 | **1.00** | Versão Inicial  | George Azevedo |
+| 03/04/2023 | **1.00** | Versão Inicial.  | João Vitor Rafael Gomes Rafaella  Duarte Vinicius Barbosa |
+| 10/04/2023 | **1.00** | Apresentando o projeto aos coordenadores.  | João Vitor Rafael Gomes Rafaella  Duarte Vinicius Barbosa |
+| 14/04/2023 | **1.00** | Iniciando o documento de visão do projeto.  | João Vitor Rafael Gomes Rafaella  Duarte Vinicius Barbosa |
 
 ## 1. Objetivo do Projeto 
-`A ser desenvolvido pelo aluno.` Este projeto tem objetivo de desenvolver um site que implemente as funcionalidades de uma loja on-line.
+O principal objetivo é aumentar as vendas de material de cultura Nerd/Geek dentro do territorio nascional.
  
 ## 2. Descrição do problema 
 | | |
 |:-|:-|
-| **_O problema_**    | O lojista que atua no comércio convencional deseja resolver o problema de volume reduzido de vendas de seus produtos agravado pela situação de Pandemia  |
-| **_afetando_**      | a capacidade de venda da loja                      |
+| **_O problema_**    | Dificuldade de encontrar produtos relacionados a cultura nerd/geek |
+| **_afetando_**      | Pessoas interessadas em produtos relacionados a produtos de cunho ficcional como mangas, animes, HQ's... |
 | **_cujo impacto é_**| expansão ou até capacidade de existência da loja                                    |
 | **_uma boa solução seria_** | Realizar vendas via internet e gerenciar o processo de entrega dos produtos |
 | | |
