@@ -5,9 +5,10 @@
 ### Histórico da Revisão 
 |  Data  | Versão | Descrição | Autor |
 |:-------|:-------|:----------|:------|
-| 03/04/2023 | **1.00** | Versão Inicial.  | João Vitor Rafael Gomes Rafaella  Duarte Vinicius Barbosa |
-| 10/04/2023 | **1.00** | Apresentando o projeto aos coordenadores.  | João Vitor Rafael Gomes Rafaella  Duarte Vinicius Barbosa |
-| 14/04/2023 | **1.00** | Iniciando o documento de visão do projeto.  | João Vitor Rafael Gomes Rafaella  Duarte Vinicius Barbosa |
+| 03/04/2023 | **1.00** | Versão Inicial.  | João Vitor, Rafael Gomes, Rafaella  Duarte, Vinicius Barbosa |
+| 10/04/2023 | **1.01** | Apresentando o projeto aos coordenadores.  | João Vitor, Rafael Gomes, Rafaella Duarte, Vinicius Barbosa |
+| 14/04/2023 | **1.02** | Iniciando o documento de visão do projeto.  | João Vitor, Rafael Gomes, Rafaella Duarte, Vinicius Barbosa |
+| 17/04/2023	| **1.03** | Finalizando o documento de visão | João Vitor, Rafael Gomes, Rafaella Duarte, Vinicius Barbosa, Gadriel Ferreira |
 
 ## 1. Objetivo do Projeto 
 O principal objetivo é aumentar as vendas de material de cultura Nerd/Geek dentro do territorio nascional.
@@ -31,48 +32,32 @@ O principal objetivo é aumentar as vendas de material de cultura Nerd/Geek dent
 ## 4. Descrição do ambiente dos usuários 
 O comércio eletrônico tem dois tipos de usuários. O tipo administrador representa o gestor da loja e seus colaboradores e o tipo Cliente que representa o cliente, seja ele anônimo ou já cadastrado. 
 
-O administrador acessará o site a partir do ambiente físico da loja e fará a configuração dos produtos a serem vendidos e realizará a logística de atendimento dos pedidos coletados pelo site, registrando a informação de situação de envio dos pedidos. Nesse processo, os produtos que forem identificados fisicamente sem estoque deverão ter sua disponibilidade para venda bloqueada.
+O administrador acessará o site a partir da iterface de gerenciamento da loja(computador/celular) e fará a configuração dos produtos a serem vendidos e realizará a logística de atendimento dos pedidos coletados pelo site, registrando a informação de situação de envio dos pedidos. Nesse processo, os produtos que forem identificados fisicamente sem estoque deverão ter sua disponibilidade para venda bloqueada.
 
 O usuário cliente irá acessar o site utilizando  um computador ou celular e realizará a visualização dos produtos vendidos na loja e realizará a compra, caso deseje. Neste caso não há muitas restrições quanto ao ambiente pois ele poderá fazer os pedidos de qualquer local que tenha conexão com internet.
 
 
 ## 5. Principais necessidades dos usuários
-Considerando o pronto de vista do lojista, administrador do site, sua principal necessidade é aumentar o volume de vendas de sua loja incorporando em seu negócio a possibilidade de realização de vendas via internet. 
+Considerando o pronto de vista do lojista, administrador do site, sua principal necessidade é aumentar o volume de vendas de sua loja, e entregar bons produtos e qualidade aos seus cliente. 
 
 Considerando o pronto de vista do cliente, ele deseja ter acesso a um site com interface amigável que permita obter informações sobre os produtos comercializados e, caso identifique que estes atendam às suas necessidades, ele possa montar sua relação de compra confirmando a aquisição. Após essa etapa ele desejará visualizar o processo de entrega dos produtos adquiridos.
 
 ## 6. Alternativas concorrentes
-Uma alternativa ao comércio eletrônico desenvolvido é a lojas Americanas, que apresenta pesquisa por meio de nome ou categoria do produto, tem o sistema de carrinho de compras, que permite adicionar os produtos selecionados, deixando o pagamento somente para o final quando o cliente tiver selecionado todos os produtos desejados. Também tem o sistema de login, o qual o usuário se cadastra, o que facilita as próximas compras. Além disso em cada produto tem sua descrição, produto similares ao selecionado e uma seção destinada à avaliação dos consumidores. 
+Uma alternativa ao comércio eletrônico desenvolvido é a lojas Amazon, que apresenta pesquisa por meio de nome ou categoria do produto, tem o sistema de carrinho de compras, que permite adicionar os produtos selecionados, deixando o pagamento somente para o final quando o cliente tiver selecionado todos os produtos desejados. Também tem o sistema de login, o qual o usuário se cadastra, o que facilita as próximas compras. Além disso em cada produto tem sua descrição, produto similares ao selecionado e uma seção destinada à avaliação dos consumidores. 
+
+Outra opção de comercio é a Piticas, também possui um sistema de pesquisa por nome ou filtros, sitema de carrinho de compras além de possuir o sistema de login. Porém os preços são bem mais elevados o que ocasiona a diminuição de vendas para a loja.
+
+Mais uma opção seria a EBay possui uma otima variedade de produtos do nicho tema da Manga Shop, entretanto possue preços exorbitantementes, além das taxas de envio por ser uma loja de fora do país.
 
 ## 7.	Visão geral do produto
-Esse projeto consiste em um site voltado para vendas de produtos que pretende funcionar de forma rápida e eficiente, disponibilizando um ambiente acessível a diversos tipos de usuários e possuindo um design confortável. Para tal, o site irá disponibilizar diferentes mecanismos de busca permitindo que o usuário encontre de forma eficiente o que ele precisa. Após a aquisição, o usuário poderá acompanhar o produto comprado, avaliar produtos da loja, comentar e marcar produtos como favoritos. 
+Esse projeto consiste em um site voltado para vendas de produtos de um nicho especifico que pretende atender de forma rápida e eficiente, disponibilizando um ambiente acessível a diversos tipos de usuários e possuindo um design confortável. Para tal, o site irá disponibilizar diferentes mecanismos de busca permitindo que o usuário encontre de forma eficiente o que ele precisa. Após a aquisição, o usuário poderá acompanhar o produto comprado. 
 
 ## 8.	Requisitos funcionais
 | Código | Nome | Descrição |
 |:---  |:--- |:--- |
-| F01	| Adicionar, remover ou alterar produtos | O administrador tem à sua disponibilidade a função de adicionar, remover ou alterar produtos comercializados no site estabelecendo ainda seus preços de venda. 
-| F02	| Adicionar, remover ou alterar grupos de produtos.	| O administrador tem à sua disponibilidade a função de adicionar, remover ou alterar grupos de produtos comercializados no site.
-| F03	| Adicionar, remover ou alterar fabricante de produtos.	| O administrador tem à sua disponibilidade a função de adicionar, remover ou alterar fabricantes de produtos comercializados no site.
-| F04	| Disponibilizar ou bloquear a apresentação do produto no site de venda	| O administrador tem à sua disponibilidade a função de liberar ou bloquear a apresentação de produtos a venda 
-| F05	| Consultar pedidos realizados e não enviados.	| O administrador pode acessar os dados de vendas de produtos do site que foram realizados pelos clientes e que ainda não foram remetidos
-| F06	| Registrar recebimento do pagamento do cliente	| O administrador registra no site a identificação do recebimento do pagamento realizado pelo cliente liberando o pedido para envio.
-| F07	| Registrar o envio do pedido.	| O administrador informa no site a forma de envio do pedido ao cliente.
-| F08	| Visualizar produtos	| O usuário visualiza os produtos disponíveis filtrando ou por grupos, fabricante ou através de um trecho do nome do produto
-| F09	| Adicionar ou remover produtos à cesta de compras	| O usuário  pode escolher mais de um produto para realizar a compra e inserir em uma cesta de compras.
-| F10	| Realizar o cadastro e login no site	| O usuário pode se cadastrar no site para poder comprar produtos e acessar outras diversas funcionalidades como avaliar e comentar os produtos.
-| F11	| Realizar a compra de um produto	| Os clientes podem confirmar a compra dos produtos adicionados em sua cesta de compra gerando assim um pedido.
-| F12	| Realizar o cancelamento de pedido solicitado	| Os clientes podem solicitar o cancelamento de um pedido realizado desde que ainda não tenha sido enviado.
-| F13	| Verificar as compras realizadas	| Os clientes podem verificar seu histórico de compra na loja.
-| F14	| Verificar o andamento do pedido	| Os clientes podem acompanhar o andamento da entrega dos pedidos realizados.
-| F15	| Avaliar o Produto	| Os clientes podem avaliar os produtos realizando um comentário e atribuindo uma nota
-| F16 	| Revisar dados cadastrais	| Os clientes podem alterar seus dados cadastrais permitindo assim que façam, por exemplo, alteração do endereço de entrega
-| | | | 
+| F00	| Sem nenhum recurso atualmente | ... | 
 
 ## 9.	Requisitos não-funcionais
 | Código | Nome | Descrição | Categoria | Classificação |
 |:---  |:--- |:--- |:--- |:--- |
-| NF01	| Design responsivo	| O site apresentará responsividade, deixando-o mais confortável para o usuário | Usabilidade	| obrigatório
-| NF02	| Acesso somente com internet	| É necessário um acesso contínuo à Internet para poder acessar os dados do site e suas funcionalidades, como comprar produtos.	| Disponibilidade	| Obrigatório
-| NF03	| Criptografia das informações sensíveis aos usuários	| Senhas do usuário devem ser gravadas de forma criptografada no banco de dados	| Segurança	| Obrigatório
-| NF04	| Organização do conteúdo de forma objetiva	| O site apresentará o conteúdo de forma objetiva, de modo que o usuário encontre o desejado com facilidade.	| Usabilidade	| Obrigatório
-| | | | 
+| NF00	| Sem nenhum recurso atualmente	| ... | ...	| ... |
