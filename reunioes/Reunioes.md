@@ -23,3 +23,13 @@
 ## 17/04/2023 - 20:30/21:16
 - *Finalizando o preenchimento do documento de visão*:
   - Reunição de forma remota para finalização da primeira atividade.
+
+## 08/05/2023 - 16:00/18:00
+- *Iniciando o diagrama de Casos de uso*
+
+## 08/05/2023 - 21:30/22:32
+- *Finalizando o caso de usos*
+  - Reunião remota.
+
+## 09/05/2023 14:30/16:00
+- *Iniciando o diagrama ER*
