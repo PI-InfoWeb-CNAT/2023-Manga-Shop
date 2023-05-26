@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-26T11:26:05.274Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 OPR/98.0.0.0" etag="ljf8D-ZtOe6oYWh8C_pO" version="21.3.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-26T11:31:02.617Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 OPR/98.0.0.0" etag="IE8c0D9bbeGAXaF0hhIz" version="21.3.4" type="github">
   <diagram name="Página-1" id="hQvVK7cvd6CQwP3TDFYW">
     <mxGraphModel dx="3149" dy="1293" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -132,7 +132,7 @@
           <mxGeometry x="-229.5" y="710" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="j9FKQ9DVJ2H4PCv3UH9r-52" value="Pesquisar e Receber recomendações de produtos" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;" vertex="1" parent="1">
-          <mxGeometry x="-100" y="50" width="140" height="70" as="geometry" />
+          <mxGeometry x="-89.5" y="50" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="j9FKQ9DVJ2H4PCv3UH9r-54" value="Favorita Produtos na lista de desejos&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;" vertex="1" parent="1">
           <mxGeometry x="60" y="50" width="140" height="70" as="geometry" />
