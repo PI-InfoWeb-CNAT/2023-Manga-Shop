@@ -20,3 +20,6 @@ Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/license
 * [Diagrama de classes de domínio](./docs/diagramas/Diagrama_Entidades_e_Relacionamentos.png)
 * Documentação da arquitetura
 
+* [Mapa do Site](https://www.figma.com/file/ecu1IVr4O6D6ARPgpeW1l9/Manga-Shop---Diagrama?type=whiteboard&node-id=0%3A1&t=igsKnirQw0bqwhos-1)
+
+* [Prototipo de Janelas](https://www.figma.com/file/LLZmqlQVEhROjDLbglWDdJ/Manga-Shop?type=design&node-id=75%3A499&t=0Y4Te4fdIKuYuQv7-1)
