@@ -33,3 +33,11 @@
 
 ## 09/05/2023 14:30/16:00
 - *Iniciando o diagrama ER*
+
+## 29/05/2023 16:30/18:00
+- *Apresentação de Projeto integrador*
+
+## 29/05/2023 2042/23:42
+- *Atualizando Diagrama de casos de uso*
+- *Atualizando Mapa do Site*
+- *Atualizando o Github do Projeto*
