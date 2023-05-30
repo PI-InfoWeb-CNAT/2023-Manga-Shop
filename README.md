@@ -16,7 +16,7 @@ Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/license
   1. [Inserir produtos na cesta de compra](./docs/casos_de_uso/cdu_inserir_produtos_na_cesta_de_compra.md)
   2. [Visualizar produtos](./docs/casos_de_uso/cdu_visualizar_produtos.md)
   3. continua...
-* [Diagrama de casos de uso](./docs/imagens/Diagrama cdu.png)
+* [Diagrama de casos de uso](./docs/imagens/Diagrama_cdu.png)
 * [Diagrama de classes de domínio](./docs/diagramas/Diagrama_Entidades_e_Relacionamentos.png)
 * Documentação da arquitetura
 
