@@ -17,7 +17,7 @@ Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/license
   2. [Visualizar produtos](./docs/casos_de_uso/cdu_visualizar_produtos.md)
   3. continua...
 * [Diagrama de casos de uso](./docs/imagens/Diagrama_cdu.PNG)
-* [Diagrama de classes de domínio](./docs/imagens/Diagrama ER_Projeto.png)
+* [Diagrama de classes de domínio](./docs/imagens/Diagrama_ER.png)
 * Documentação da arquitetura
 
 * [Mapa do Site](https://www.figma.com/file/ecu1IVr4O6D6ARPgpeW1l9/Manga-Shop---Diagrama?type=whiteboard&node-id=0%3A1&t=igsKnirQw0bqwhos-1)
