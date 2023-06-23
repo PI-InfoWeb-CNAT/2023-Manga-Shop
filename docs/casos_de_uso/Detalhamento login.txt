@@ -1,0 +1,31 @@
+Detalhamento de Caso de Uso - Realizar login
+
+1) Resumo: Permitir a entrada no site com sua credenciais.
+2) Atores: Alunos e Administradores.
+3) Pré-condição: Possuir resgitro ativo no sistema.
+4) Pós-condição: Ter acesso à funcionalidades do sistema.
+
+5) Fluxo principal:
+
+a) [IN] Usuário entra com as credenciais (email/cpf e senha);
+b) [OUT] O sistema valida os dados;
+c) [IN] Usuário visualiza a página inicial logado em sua conta;
+
+6) Fluxo alternativo.
+
+a) [IN] Usuário aciona a funcionalidade Entrar com Gov.br;
+b) [OUT] Sistema apresenta formulário do Gov.br;
+c) [IN] Usuário entra com as credenciais;
+
+7) Fluxo de exceção
+
+a) Erro nas credenciais: Sistema emite mensagem de erro informando que matrícula e/ou senha são inválidos.
+
+8) Dicionário de dados:
+
+Matrícula - dados numéricos de 14 caracteres;
+Senha - dados alfanuméricos de 8 caracteres ou mais;
+
+9) Regras de négocio
+
+Senha - mínimo de 8 caracteres; pelo menos uma letra maiúscula e minúscula; um caractere especial.
