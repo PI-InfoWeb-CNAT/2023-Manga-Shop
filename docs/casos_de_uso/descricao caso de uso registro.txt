@@ -1,0 +1,31 @@
+Detalhamento de Caso de Uso - Realizar registro no Manga-Shop.
+
+1) Resumo: Permitir o registro do usuário a plataforma.
+2) Atores: Usuário.
+3) Pré-condição: Possuir email institucional.
+4) Pós-condição: Ter acesso as funcionalidades do sistema.
+
+5) Fluxo principal:
+
+a) [IN] O usuário clica na função Registrar-se na tela inicial;
+b) [OUT] O sistema redireciona o usuário para a página de registro e exibe o formulário de registro;
+c) [IN] O usuário insere os dados solicitados no formulário;
+d) [IN] O usuário clica em "Registrar-se";
+e) [OUT] O sistema válida o e-mail e o cpf do usuário;
+g) [OUT] O sistema redireciona o usuário para a página inicial com sua conta ativada;
+h) [IN] O usuário contempla a tela inicial com sua conta ativa;
+
+7) Fluxo de exceção:
+a) Erro nos dados: Sistema emite mensagem de erro informando que email e/ou cpf são inválidos;
+
+8) Dicionário de dados:
+
+E-mail - dados alfanuméricos com 20 caracteres ou mais;
+Senha - dados alfanuméricos com 8 caracteres ou mais;
+CPF - dados numéricos com 11 caracteres;
+
+9) Regras de négocio
+
+Senha - mínimo de 8 caracteres; pelo menos uma letra maiúscula e minúscula; um caractere especial.
+E-mail- String com final em @escolar.ifrn.edu.br;
+CPF - soma dos digitos tem que ser igual a 33, 44, 55 ou 66;
