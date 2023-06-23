@@ -23,9 +23,11 @@ a) Erro nas credenciais: Sistema emite mensagem de erro informando que matrícul
 
 8) Dicionário de dados:
 
-Matrícula - dados numéricos de 14 caracteres;
 Senha - dados alfanuméricos de 8 caracteres ou mais;
+CPF - dados numéricos com 11 caracteres;
 
 9) Regras de négocio
 
-Senha - mínimo de 8 caracteres; pelo menos uma letra maiúscula e minúscula; um caractere especial.
+Senha- mínimo de 8 caracteres; pelo menos uma letra maiúscula e minúscula; um caractere especial.
+Email- string com final em @escolar.ifrn.edu.br;
+CPF- soma dos dígitos igual a 33, 44, 55 ou 66;
