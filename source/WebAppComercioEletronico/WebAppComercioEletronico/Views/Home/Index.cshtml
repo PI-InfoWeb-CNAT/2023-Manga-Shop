@@ -93,7 +93,7 @@ header a{
 }
 #barra_pesquisa{
     display: inherit;
-    flex: wrap;
+    flex-wrap: wrap;
     background-color: #f5f5f5;
     height: 2.8em;
     margin-top: 1.5em;
@@ -378,7 +378,7 @@ footer address div{
 
             <div id="header_cima">
                 <h1 id="logo">
-                    <a href="index.html"><img src="imagens/Logo.png" alt="a logo de uma manga com o nome Manga Shop sobre ela" /></a>
+                    <a href="@Url.Action("Index", "Home")"><img src="imagens/Logo.png" alt="a logo de uma manga com o nome Manga Shop sobre ela" /></a>
                 </h1>
 
                 <form action="pesquisa.html" id="barra_pesquisa">
@@ -387,8 +387,8 @@ footer address div{
                 </form>
 
                 <ul>
-                    <li><a href="registro.html">Registrar-se</a></li>
-                    <li><a href="login.html">Entrar</a></li>
+                    <li><a href="@Url.Action("Index", "Reg")">Registrar-se</a></li>
+                    <li><a href="@Url.Action("Index", "Log")">Entrar</a></li>
                 </ul>
 
             </div>
@@ -432,7 +432,7 @@ footer address div{
                 <h1>Vendedores na área</h1>
             </div>
 
-            <a href=".html">
+            <a href="@Url.Action("Index", "Perfil")">
                 <div class="informacoes_vendedor">
                     <div class="imagem_perfil">
                         <svg height="74" width="74">
@@ -441,18 +441,17 @@ footer address div{
                                     <circle cx="37" cy="37" r="35" stroke="black" stroke-width="3" fill="none" />
                                 </clipPath>
                             </defs>
-                            <image width="80" height="80" xlink:href="imagens/gato_burro.jpg" clip-path="url(#icone_perfil)" />
+                            <image width="80" height="80" xlink:href="imagens/gato_burro.jpg" clip-path="url(#icone_perfil) " />
                         </svg>
                     </div>
                     <div class="vendedor_dados">
-                        <h3>
-                            Esfarrapo da Silva Difunto</h4>
-                            <p>Campus Natal Central</p>
+                        <h3>Esfarrapo da Silva Difunto</h3>
+                        <p>Campus Natal Central</p>
                     </div>
                 </div>
             </a>
 
-            <a href=".html">
+            <a href="@Url.Action("Index", "Perfil")">
                 <div class="informacoes_vendedor">
                     <div class="imagem_perfil">
                         <svg height="74" width="74">
@@ -465,14 +464,13 @@ footer address div{
                         </svg>
                     </div>
                     <div class="vendedor_dados">
-                        <h3>
-                            Esfarrapo da Silva Difunto</h4>
-                            <p>Campus Natal Central</p>
+                        <h3>Esfarrapo da Silva Difunto</h3>
+                        <p>Campus Natal Central</p>
                     </div>
                 </div>
             </a>
 
-            <a href=".html">
+            <a href="@Url.Action("Index", "Perfil")">
                 <div class="informacoes_vendedor">
                     <div class="imagem_perfil">
                         <svg height="74" width="74">
@@ -485,14 +483,13 @@ footer address div{
                         </svg>
                     </div>
                     <div class="vendedor_dados">
-                        <h3>
-                            Esfarrapo da Silva Difunto</h4>
-                            <p>Campus Natal Central</p>
+                        <h3>Esfarrapo da Silva Difunto</h3>
+                        <p>Campus Natal Central</p>
                     </div>
                 </div>
             </a>
 
-            <a href=".html">
+            <a href="@Url.Action("Index", "Perfil")">
                 <div class="informacoes_vendedor">
                     <div class="imagem_perfil">
                         <svg height="74" width="74">
@@ -505,9 +502,8 @@ footer address div{
                         </svg>
                     </div>
                     <div class="vendedor_dados">
-                        <h3>
-                            Esfarrapo da Silva Difunto</h4>
-                            <p>Campus Natal Central</p>
+                        <h3>Esfarrapo da Silva Difunto</h3>
+                        <p>Campus Natal Central</p>
                     </div>
                 </div>
             </a>
