@@ -1,3 +1,5 @@
+FEITO POR RAFA
+
 Detalhamento de Caso de Uso - Editar perfil no Manga-Shop.
 
 1) Resumo: Permitir a atualização dos dados pessoais.
