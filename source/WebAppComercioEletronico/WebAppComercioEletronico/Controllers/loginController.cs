@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace WebAppComercioEletronico.Controllers
 {
-    public class LogController : Controller
+    public class loginController : Controller
     {
-        // GET: Log
+        // GET: login
         public ActionResult Index()
         {
             return View();

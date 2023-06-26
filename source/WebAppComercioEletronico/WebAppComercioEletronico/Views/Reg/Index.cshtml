@@ -238,7 +238,7 @@ footer address div{
 
                 <ul>
                     <li><a href="@Url.Action("Index", "Reg")">Registrar-se</a></li>
-                    <li><a href="@Url.Action("Index", "Log")">Entrar</a></li>
+                    <li><a href="@Url.Action("Index", "login")">Entrar</a></li>
                 </ul>
 
             </div>
@@ -269,7 +269,7 @@ footer address div{
 
             <label>Senha<input type="password" class="barra_texto" required /></label>
 
-            <p id="aviso"><a href="login.html">Já tem uma conta? Faça login!</a></p>
+            <p id="aviso"><a href="@Url.Action("Index", "login")">Já tem uma conta? Faça login!</a></p>
 
             <button type="submit" id="registrar">Registre-se</button>
         </form>
