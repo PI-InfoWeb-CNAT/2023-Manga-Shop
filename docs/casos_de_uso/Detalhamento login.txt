@@ -3,7 +3,7 @@ Detalhamento de Caso de Uso - Realizar login
 1) Resumo: Permitir a entrada no site com sua credenciais.
 2) Atores: Alunos e Administradores.
 3) Pré-condição: Possuir registro ativo no sistema.
-4) Pós-condição: Ter acesso à funcionalidades do sistema.
+4) Pós-condição: Ter acesso às funcionalidades do sistema.
 
 5) Fluxo principal:
 
