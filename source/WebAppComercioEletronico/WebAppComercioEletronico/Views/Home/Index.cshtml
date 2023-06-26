@@ -1,0 +1,280 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="home.css" rel="stylesheet" />
+    <title>Manga Shop - Home</title>
+</head>
+<body>
+
+    <header>
+
+        <nav>
+
+            <div id="header_cima">
+                <h1 id="logo">
+                    <a href="index.html"><img src="imagens/Logo.png" alt="a logo de uma manga com o nome Manga Shop sobre ela" /></a>
+                </h1>
+
+                <form action="pesquisa.html" id="barra_pesquisa">
+                    <input type="search" name="pesquisa" />
+                    <button type="submit"><img src="imagens/lupa.png" /></button>
+                </form>
+
+                <ul>
+                    <li><a href="registro.html">Registrar-se</a></li>
+                    <li><a href="login.html">Entrar</a></li>
+                </ul>
+
+            </div>
+
+            <div id="header_baixo">
+                <ul>
+                    <li><a href="cadastro_produto.html">Vender</a></li>
+                    <li><a href="">Suporte</a></li>
+                    <li><a href="conversas.html">Conversas</a></li>
+                    <li id="lista_desejos"><a href="lista_desejos.html">Lista de Desejos</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div id="banner">
+            <img src="imagens/banner.png" alt="O melhor site para compra e venda de mangás no Brasil!" />
+            <div>O melhor sebo de Mangas dentro do Brasil dentro dos Campus dos IFs pouco nichado graças a deus!</div>
+        </div>
+
+        <section id="produtos_recentes">
+            <div menu="cabecalho">
+                <h2>Produtos vistos recentemente</h2>
+                <button>Ver mais</button>
+            </div>
+
+            <div id="vistos_recentemente">
+                <div class="produto_1"><a href=""><img src="imagens/manga_berserk.png" /></a></div>
+                <div class="produto_2"><a href=""><img src="imagens/manga_kimetsu.png" /></a></div>
+                <div class="produto_3"><a href=""><img src="imagens/hq_anoum.png" /></a></div>
+                <div class="produto_4"><a href=""><img src="imagens/hq_missionario.png" /></a></div>
+            </div>
+        </section>
+
+        <section id="vendedores">
+            <div menu="cabecalho">
+                <h2>Vendedores na área</h2>
+
+            </div>
+
+            <div class="informacoes_vendedor">
+                <div class="imagem_perfil">
+                    <svg height="74" width="74">
+                        <circle cx="37" cy="37" r="35" stroke="black" stroke-width="3" fill="none" />
+                    </svg>
+                </div>
+                <div class="vendedor_dados">
+                    <h3>
+                        Esfarrapo da Silva Difunto</h4>
+                        <p>Campus Natal Central</p>
+                </div>
+            </div>
+
+            <div class="informacoes_vendedor">
+                <div class="imagem_perfil">
+                    <svg height="74" width="74">
+                        <circle cx="37" cy="37" r="35" stroke="black" stroke-width="3" fill="none" />
+                    </svg>
+                </div>
+                <div class="vendedor_dados">
+                    <h3>
+                        Esfarrapo da Silva Difunto</h4>
+                        <p>Campus Natal Central</p>
+                </div>
+            </div>
+
+            <div class="informacoes_vendedor">
+                <div class="imagem_perfil">
+                    <svg height="74" width="74">
+                        <circle cx="37" cy="37" r="35" stroke="black" stroke-width="3" fill="none" />
+                    </svg>
+                </div>
+                <div class="vendedor_dados">
+                    <h3>
+                        Esfarrapo da Silva Difunto</h4>
+                        <p>Campus Natal Central</p>
+                </div>
+            </div>
+
+            <div class="informacoes_vendedor">
+                <div class="imagem_perfil">
+                    <svg height="74" width="74">
+                        <circle cx="37" cy="37" r="35" stroke="black" stroke-width="3" fill="none" />
+                    </svg>
+                </div>
+                <div class="vendedor_dados">
+                    <h3>
+                        Esfarrapo da Silva Difunto</h4>
+                        <p>Campus Natal Central</p>
+                </div>
+            </div>
+
+            <button>Ver mais</button>
+
+        </section>
+
+        <section id="seus_produtos">
+            <div menu="cabecalho">
+                <h2>Seus produtos</h2>
+                <button>Ver mais</button>
+            </div>
+
+            <div id="produtos_seus">
+                <div class="produto_1"><a href=""><img src="imagens/manga_berserk.png" /></a></div>
+                <div class="produto_2"><a href=""><img src="imagens/manga_kimetsu.png" /></a></div>
+                <div class="produto_3"><a href=""><img src="imagens/hq_anoum.png" /></a></div>
+                <div class="produto_4"><a href=""><img src="imagens/hq_missionario.png" /></a></div>
+            </div>
+        </section>
+
+        <section id="recomendados">
+            <h2>Recomendados para você</h2>
+
+            <div class="produtos">
+                <div class="produto">
+                    <a href="">
+                        <div class="imagem_produto">
+                            <img src="imagens/mangas.png" />
+                        </div>
+                        <div class="detalhes_produto">
+                            <h3>Coleção de mangás</h3>
+                            <p>R$ 80000,21</p>
+                            <h4><a href="">Esfarrapo da Silva</a> - Natal Central</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="produto">
+                    <a href="">
+                        <div class="imagem_produto">
+                            <img src="imagens/mangas.png" />
+                        </div>
+                        <div class="detalhes_produto">
+                            <h3>Coleção de mangás</h3>
+                            <p>R$ 80000,21</p>
+                            <h4><a href="">Esfarrapo da Silva</a> - Natal Central</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="produto">
+                    <a href="">
+                        <div class="imagem_produto">
+                            <img src="imagens/mangas.png" />
+                        </div>
+                        <div class="detalhes_produto">
+                            <h3>Coleção de mangás</h3>
+                            <p>R$ 80000,21</p>
+                            <h4><a href="">Esfarrapo da Silva</a> - Natal Central</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="produto">
+                    <a href="">
+                        <div class="imagem_produto">
+                            <img src="imagens/mangas.png" />
+                        </div>
+                        <div class="detalhes_produto">
+                            <h3>Coleção de mangás</h3>
+                            <p>R$ 80000,21</p>
+                            <h4><a href="">Esfarrapo da Silva</a> - Natal Central</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="produto">
+                    <a href="">
+                        <div class="imagem_produto">
+                            <img src="imagens/mangas.png" />
+                        </div>
+                        <div class="detalhes_produto">
+                            <h3>Coleção de mangás</h3>
+                            <p>R$ 80000,21</p>
+                            <h4><a href="">Esfarrapo da Silva</a> - Natal Central</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="produto">
+                    <a href="">
+                        <div class="imagem_produto">
+                            <img src="imagens/mangas.png" />
+                        </div>
+                        <div class="detalhes_produto">
+                            <h3>Coleção de mangás</h3>
+                            <p>R$ 80000,21</p>
+                            <h4><a href="">Esfarrapo da Silva</a> - Natal Central</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="produto">
+                    <a href="">
+                        <div class="imagem_produto">
+                            <img src="imagens/mangas.png" />
+                        </div>
+                        <div class="detalhes_produto">
+                            <h3>Coleção de mangás</h3>
+                            <p>R$ 80000,21</p>
+                            <h4><a href="">Esfarrapo da Silva</a> - Natal Central</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="produto">
+                    <a href="">
+                        <div class="imagem_produto">
+                            <img src="imagens/mangas.png" />
+                        </div>
+                        <div class="detalhes_produto">
+                            <h3>Coleção de mangás</h3>
+                            <p>R$ 80000,21</p>
+                            <h4><a href="">Esfarrapo da Silva</a> - Natal Central</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <button>Ver mais</button>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <address>
+            <div id="contatos">
+                <p>Contato para suporte: mangashop@suporte.com</p>
+                <p>Contato profissional: mangashop@contato.com</p>
+            </div>
+
+            <div id="contatos_2">
+                <p>CNPJ n.º 00.000.000/0000-00 / Av. Num sei o que num sei o que lá nº 8, Ohio, Natal/RN - CEP 00000-000 - empresa do grupo Manga Shop.</p>
+                <p>Copyright © 1799-2023 dorpura.com.br LTDA.</p>
+            </div>
+        </address>
+
+    </footer>
+</body>
+</html>
+

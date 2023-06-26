@@ -1,0 +1,145 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="principal.css" />
+    <title>Perfil page</title>
+</head>
+<body>
+    <header>
+
+        <nav>
+            <h1>
+                <img src="imagens/Logo (1).png" alt="uma manga" />
+            </h1>
+
+            <form action="" id="barra_pesquisa">
+                <input type="search" name="pesquisa" />
+                <button type="submit"></button>
+            </form>
+
+
+            <ul>
+                <li>Entrar</li>
+                <li>Registrar-se</li>
+            </ul>
+
+            <div id="menu">
+                <ul>
+                    <li>Início</li>
+                    <li>Vender</li>
+                    <li>Suporte</li>
+                    <li>Conversas</li>
+                    <li>Lista de Desejos</li>
+                </ul>
+            </div>
+
+        </nav>
+
+    </header>
+    <main>
+        <h2>
+            <a>
+                <svg width="100" heigth="100">
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="1" fill="gray" />
+                </svg>
+            </a>
+        </h2>
+        <section>
+            <div>
+                <div class="dadosp">
+                    <h2> Dados Pessoais</h2>
+                    <input value="Editar Perfil" type="button" class="laranja">
+                </div>
+                <table>
+                    <tr>
+                        <th>Nome Completo:</th>
+                        <th>Esfarrapo da Silva Júnior</th> <!-- Banco de dados-->
+                    </tr>
+                    <tr>
+                        <th>Celular:</th>
+                        <th>+55 (84) 0000-0000</th> <!-- Banco de dados-->
+                    </tr>
+                    <tr>
+                        <th>CPF:</th>
+                        <th>000.000.000-00</th> <!-- Banco de dados-->
+                    </tr>
+                    <tr>
+                        <th>Campus:</th>
+                        <th>Natal Central</th> <!-- Banco de dados-->
+                    </tr>
+                    <tr>
+                        <th>Curso:</th>
+                        <th>Infoweb</th> <!-- Banco de dados-->
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <h3>Segurança</h3>
+                <table>
+                    <tr>
+                        <th>E-mail:</th>
+                        <th>rafael.cunha@escolar.ifrn.ed.br</th> <!-- Banco de dados-->
+                    </tr>
+                    <tr>
+                        <th>Senha</th>
+                        <th>********</th> <!-- Banco de dados-->
+                    </tr>
+                </table>
+                <div class="buttons segurança">
+                    <input value="Alterar senha" type="button" class="laranja">
+                    <input value="Alterar E-mail" type="button" class="laranja">
+                </div>
+            </div>
+            <div>
+                <h3>Seus Produtos</h3>
+                <div class="seusp">
+                    <div class="produtos">
+                        <div>
+                            <!-- Banco de dados-->
+                            <img src="./ims/Ellipse 1.png" alt="foto manga mudar">
+                            <h5>Coleção de Mangas</h5>
+                            <p>R$000,00</p>
+                            <p>Nome - Campus</p>
+                        </div>
+                        <div>
+                            <!-- Banco de dados-->
+                            <img src="./ims/Ellipse 1.png" alt="foto manga mudar">
+                            <h5>Coleção de Mangas</h5>
+                            <p>R$000,00</p>
+                            <p>Nome - Campus</p>
+                        </div>
+                    </div>
+                    <div>
+                        <input value="Visualizar todos" type="button" class="laranja">
+                        <input value="Registrar Produtos" type="button">
+                        <input value="Conversas" type="button">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <address>
+            <div>
+                <p>Contato para suporte: mangashop@suporte.com</p>
+                <p>Contato para suporte: mangashop@contato.com</p>
+            </div>
+            <div>
+                <p>CNPJ n.º 00.000.000/0000-00 / Av. Num sei o que num sei o que lá nº 8, Ohio, Natal/RN - CEP 00000-000 - empresa do grupo Manga Shop.</p>
+                <p>Copyright © 1799-2023 dorpura.com.br LTDA.</p>
+            </div>
+        </address>
+    </footer>
+
+</body>
+</html>
+
