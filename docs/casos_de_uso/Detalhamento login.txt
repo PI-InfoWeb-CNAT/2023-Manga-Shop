@@ -7,8 +7,11 @@ Detalhamento de Caso de Uso - Realizar login
 
 5) Fluxo principal:
 
-a) [IN] Usuário entra com as credenciais (email/cpf e senha);
-b) [OUT] O sistema valida os dados;
+a) [IN] Usuário clica na função Entrar na tela inicial;
+b) [OUT] O sistema redireciona o usuário para a página de login e exibe o formulário;
+c) [IN] Usuário insere suas credenciais (email/cpf e senha);
+e) [OUT] O sistema valida os dados;
+g) [OUT] O sistema redireciona o usuário para a página inicial;
 c) [IN] Usuário visualiza a página inicial logado em sua conta;
 
 7) Fluxo de exceção
