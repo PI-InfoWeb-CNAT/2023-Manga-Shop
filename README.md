@@ -3,7 +3,7 @@
 ## Manga Shop - 1.0
 Este projeto tem como objetivo ser uma aplicação  modelo (_blueprint_) para a disicplina de Análise e Projeto Orientado a Objeto.
 
-Atualmente o projeto não possui uma implementação como modelo de projeto do Microsoft Visual Studio que está aberto a receber contribuições de código que representem as especificação aqui presente.
+Atualmente o projeto começou uma implementação como modeli de projeto Microsoft Visual Stufio, que está em desenvolvimento aceitando contribuições de códigos que respresentem as especificações aqui presente.
 
 Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/licenses/quick-guide-gplv3.pt-br.html).
 
