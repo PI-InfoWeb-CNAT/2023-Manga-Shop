@@ -1,0 +1,23 @@
+FEITO POR RAFA
+
+Detalhamento de Caso de Uso - Editar perfil no Manga-Shop.
+
+1) Resumo: Permitir a atualização dos dados pessoais.
+2) Atores: Usuário.
+3) Pré-condição: Possuir conta já ativada.
+4) Pós-condição: Ter dados pessoais atualizados.
+
+5) Fluxo principal:
+
+a) [IN] O usuário clica na função Editar Perfil na tela do perfil;
+b) [OUT] O sistema redireciona o usuário para a página de edição do perfil e exibe o formulário de registro;
+c) [IN] O usuário insere os dados que deseja editar no formulário;
+d) [IN] O usuário clica em "Salvar Alterações";
+e) [OUT] O sistema redireciona o usuário para a página do perfil com os dados atualizados;
+f) [IN] O usuário contempla a tela do perfil com seus dados atualizados;
+
+8) Dicionário de dados:
+
+Celular - dados númericos com 8 caracteres;
+Campus - dados alfabéticos com 5 ou mais caracteres;
+Curso - dados alfanuméricos com 5 ou mais caracteres;

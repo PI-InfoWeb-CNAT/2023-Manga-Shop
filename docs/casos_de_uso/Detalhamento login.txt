@@ -2,7 +2,7 @@ Detalhamento de Caso de Uso - Realizar login
 
 1) Resumo: Permitir a entrada no site com sua credenciais.
 2) Atores: Alunos e Administradores.
-3) Pré-condição: Possuir resgitro ativo no sistema.
+3) Pré-condição: Possuir registro ativo no sistema.
 4) Pós-condição: Ter acesso à funcionalidades do sistema.
 
 5) Fluxo principal:
@@ -10,12 +10,6 @@ Detalhamento de Caso de Uso - Realizar login
 a) [IN] Usuário entra com as credenciais (email/cpf e senha);
 b) [OUT] O sistema valida os dados;
 c) [IN] Usuário visualiza a página inicial logado em sua conta;
-
-6) Fluxo alternativo.
-
-a) [IN] Usuário aciona a funcionalidade Entrar com Gov.br;
-b) [OUT] Sistema apresenta formulário do Gov.br;
-c) [IN] Usuário entra com as credenciais;
 
 7) Fluxo de exceção
 
