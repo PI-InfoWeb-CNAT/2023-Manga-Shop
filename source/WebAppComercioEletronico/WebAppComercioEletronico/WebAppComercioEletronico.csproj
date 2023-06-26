@@ -103,6 +103,16 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="imagens\banner.png" />
+    <Content Include="imagens\fundo.png" />
+    <Content Include="imagens\gato_burro.jpg" />
+    <Content Include="imagens\hq_anoum.png" />
+    <Content Include="imagens\hq_missionario.png" />
+    <Content Include="imagens\Logo.png" />
+    <Content Include="imagens\lupa.png" />
+    <Content Include="imagens\mangas.png" />
+    <Content Include="imagens\manga_berserk.png" />
+    <Content Include="imagens\manga_kimetsu.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
@@ -112,7 +122,9 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LogController.cs" />
     <Compile Include="Controllers\PerfilController.cs" />
+    <Compile Include="Controllers\RegController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -126,9 +138,11 @@
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
-    <Content Include="Views\Shared\Layout.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Perfil\Index.cshtml" />
+    <Content Include="Views\Log\Index.cshtml" />
+    <Content Include="Views\Reg\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -138,9 +152,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-
-    <Folder Include="Views\Home\" />
-
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,33 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3 col-md-3 bg-success">
+                    <ul class="nav nav-pills nav-stacked" style="padding: 0.3em;">
+                        <!--<li id="liHome" role="presentation" class="active"><a href="#">Home</a></li>-->
+                        <li id="liHome" role="presentation">@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li id="liPerfil" role="presentation">@Html.ActionLink("Perfil", "Index", "Perfil")</li>
+                        <li id="liLogin" role="presentation">@Html.ActionLink("Login", "Index", "Log")</li>
+                        <li id="liRegistro" role="presentation">@Html.ActionLink("Registro", "Index", "Reg")</li>
+                    </ul>
+                </div>
+                <div class="col-xs-9 col-md-9">
+                    <br />
+                    @RenderBody()
+                </div>
+            </div> <br />
+        </div>
+    </div>
+</body>
+</html>
