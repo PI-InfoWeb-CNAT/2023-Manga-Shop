@@ -39,9 +39,9 @@ Após a execução deste casos de uso, espera que o sistema:
 |6. O _usuário_ _visualiza_ a página inicial logado em sua conta. | --- |
 
 
-#### 5.2. Fluxo de excessão 
+#### 5.2. Fluxo de exceção 
 
-a.  Erro nas credenciais: Sistema emite mensagem de erro informando que matrícula e/ou senha são inválidos.
+a.  Erro nas credenciais: Sistema emite mensagem de erro informando que email e/ou senha são inválidos.
 
 ### 6. Dicionário de dados
 
