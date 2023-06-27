@@ -39,7 +39,7 @@ Após a execução deste casos de uso, espera que o sistema:
 |7. O _usuário_ _visualiza_ a página inicial com sua conta ativa. | --- |
 
 ### 6. Fluxo de exceção
-- a) Erro nos dados: Sistema emite mensagem de erro informando que e-mail e/ou cpf são inválidos;
+- a. Erro nos dados: Sistema emite mensagem de erro informando que e-mail e/ou cpf são inválidos;
 
 ### 7. Dicionário de dados
 - E-mail - dados alfanuméricos com 20 caracteres ou mais;
