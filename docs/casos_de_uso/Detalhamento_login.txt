@@ -16,7 +16,7 @@ c) [IN] Usuário visualiza a página inicial logado em sua conta;
 
 7) Fluxo de exceção
 
-a) Erro nas credenciais: Sistema emite mensagem de erro informando que matrícula e/ou senha são inválidos.
+a) Erro nas credenciais: Sistema emite mensagem de erro informando que email e/ou senha são inválidos.
 
 8) Dicionário de dados:
 
