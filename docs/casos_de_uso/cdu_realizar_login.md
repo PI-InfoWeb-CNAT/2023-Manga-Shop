@@ -45,10 +45,10 @@ a.  Erro nas credenciais: Sistema emite mensagem de erro informando que matrícu
 
 ### 6. Dicionário de dados
 
-Senha - dados alfanuméricos de 8 caracteres ou mais;
-CPF - dados numéricos com 11 caracteres;
+- Senha - dados alfanuméricos de 8 caracteres ou mais;
+- CPF - dados numéricos com 11 caracteres;
 
-### 7. Regras de négocio
-Senha- mínimo de 8 caracteres; pelo menos uma letra maiúscula e minúscula; um caractere especial.
-Email- string com final em @escolar.ifrn.edu.br;
-CPF- soma dos dígitos igual a 33, 44, 55 ou 66;
+### 7. Regras de negócio
+- Senha- mínimo de 8 caracteres; pelo menos uma letra maiúscula e minúscula; um caractere especial.
+- E-mail- string com final em @escolar.ifrn.edu.br;
+- CPF- soma dos dígitos igual a 33, 44, 55 ou 66;
