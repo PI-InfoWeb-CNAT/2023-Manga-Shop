@@ -9,7 +9,7 @@ namespace WebAppComercioEletronico.Controllers
     public class HomeController : Controller
     {
         // GET: Home
-        public ActionResult Index()
+        public ActionResult Index_Home()
         {
             return View();
         }
