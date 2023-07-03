@@ -9,7 +9,7 @@ namespace WebAppComercioEletronico.Controllers
     public class PerfilController : Controller
     {
         // GET: Perfil
-        public ActionResult Index()
+        public ActionResult perfil()
         {
             return View();
         }

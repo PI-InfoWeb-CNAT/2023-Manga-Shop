@@ -94,7 +94,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\home.css" />
+    <Content Include="Content\Home.css" />
     <Content Include="Content\Login.css" />
     <Content Include="Content\Perfil.css" />
     <Content Include="Content\Registro.css" />
@@ -118,10 +118,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Context\EFContext.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\loginController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\PerfilController.cs" />
     <Compile Include="Controllers\ProdutoController.cs" />
-    <Compile Include="Controllers\RegController.cs" />
+    <Compile Include="Controllers\RegistroController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -136,11 +136,11 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Index_Home.cshtml" />
-    <Content Include="Views\Perfil\Index.cshtml" />
-    <Content Include="Views\Reg\Index.cshtml" />
+    <Content Include="Views\Home\index.cshtml" />
+    <Content Include="Views\Perfil\perfil.cshtml" />
+    <Content Include="Views\Registro\registro.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\login\Index.cshtml" />
+    <Content Include="Views\Login\login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
