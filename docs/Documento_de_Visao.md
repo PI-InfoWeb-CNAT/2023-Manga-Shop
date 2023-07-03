@@ -8,27 +8,28 @@
 | 03/04/2023 | **1.00** | Versão Inicial. | João Vítor, Rafael Gomes, Rafaella  Duarte, Vinicius Barbosa |
 | 10/04/2023 | **1.01** | Apresentando o projeto aos coordenadores.  | João Vítor, Rafael Gomes, Rafaella Duarte, Vinicius Barbosa |
 | 14/04/2023 | **1.02** | Iniciando o documento de visão do projeto.  | João Vítor, Rafael Gomes, Rafaella Duarte, Vinicius Barbosa |
-| 17/04/2023	| **1.03** | Finalizando o documento de visão | João Vítor, Rafael Gomes, Rafaella Duarte, Vinicius Barbosa, Gabriel Ferreira |
+| 17/04/2023	| **1.03** | Finalizando o documento de visão | João Vítor, Rafael Gomes, Rafaella Duarte, Vinicius Barbosa |
 | 28/05/2023 | **1.04** | Atualização do documento de visão para adequação as sugestões dos professores | João Vítor |
+| 03/07/2023 | **1.05** | Atualização do documento de visão para deixar coerente com as mudanças dos diagramas e projeto | Rafael Gomes |
 
 ## 1. Objetivo do Projeto 
-O objetivo do projeto é facilitar o comércio de mangas e HQs.
+O objetivo do projeto é facilitar o comércio de mangas e HQs através de uma plataforma digital.
  
 ## 2. Descrição do problema 
 | | |
 |:-|:-|
-| **_O problema_**    | Dificuldade de encontrar produtos relacionados a mangas, animes e HQs. |
-| **_afetando_**      | Pessoas interessadas em produtos relacionados a mangas, animes e HQs. |
-| **_cujo impacto é_**| As pessoas normalmente recorrem a compra em marketplaces que, por não serem nichados, costumam ter um preço maior e items pouco cuidados. |
-| **_uma boa solução seria_** | Conectar pessoas do nicho que sabem o valor dos items e cuidam deles. |
+| **_O problema_**    | Dificuldade de encontrar produtos relacionados a mangas, animes e HQs dentro do território nacional com preços acessíveis. |
+| **_afetando_**      | Pessoas interessadas na compra e venda desses produtos. |
+| **_cujo impacto é_**| As pessoas normalmente recorrerem a compra em livrarias e outros marketplaces, onde itens novos tem seu preço inflado e itens usados normalmente não tem uma garantia de qualidade. |
+| **_uma boa solução seria_** | Conectar pessoas do nicho que se importam com a qualidade dos produtos em uma plataforma onde a transparência é essencial. |
 | | |
 
 ## 3. Descrição dos usuários
 | Nome | Descrição | Responsabilidades |
 |:- |:- |:- |
-| Administrador  | Administrador do marketplace; Usuário responsável pelos processos de suporte e resolução de denuncias |  Cadastrar grupo de produtos e fabricantes; Disponibilizar ou bloquear a apresentação do produto no marketplace; Verificar as vendas realizadas; Resolver pedidos de suporte; Checar e resolver denuncias|
-| Usuário   | Usuário que visualiza o site; O usuário tem a possibilidade de obter informações acerca dos produtos vendidos e seus preços, sem fazer registro no site | O usuário deve poder consultar os produtos por várias opções de busca de forma a facilitar que ele encontre os items desejados; Caso deseje, poderá criar um registro de cliente. |
-| Cliente | Usuário cadastrado; O cliente poderá realizar vendas e contatar outros usuários para negociar | Após a realização do cadastro, o cliente poderá adicionar pedidos aos favoritos e também poderá negociar com outros clientes. O cliente deve ter acesso às seguintes funcionalidades no site: Contatar vendedores para negociar items a venda pelos mesmos; Colocar items a venda no site; Alterar alguns de seus dados; Visualizar seu histórico de compras; Avaliar os produtos adquiridos |
+| Administrador | Administrador do marketplace, usuário responsável pelos processos de suporte e resolução de denuncias | Disponibilizar ou bloquear a apresentação do produto no marketplace, verificar e resolver pedidos de suporte, verificar e resolver pedidos de denuncias e gerenciar categorias|
+| Usuário | Usuário sem cadastro, podem visualizar o site, obter informações acerca dos produtos vendidos e seus preços | Podem consultar os produtos do site e realizar o cadastro. |
+| Cliente | Usuário cadastrado, podem realizar compras e vendas e contactar outros usuários | Podem comprar, registrar, avaliar e favoritar produtos. O cliente deve ter acesso às seguintes funcionalidades no site: contactar vendedores; Colocar items a venda no site; Alterar alguns de seus dados; Visualizar seu histórico de compras; Avaliar os produtos adquiridos |
 
 ## 4. Descrição do ambiente dos usuários 
 O marketplace tem um tipo de usuário. O usuario quando não tem cadastro, pode acessar o site e pesquisar por items de seu interesse na região, mas não pode negociar com vendedores ou colocar items.
