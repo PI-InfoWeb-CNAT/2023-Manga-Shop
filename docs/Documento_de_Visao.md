@@ -27,9 +27,10 @@ O objetivo do projeto é facilitar o comércio de mangas e HQs através de uma p
 ## 3. Descrição dos usuários
 | Nome | Descrição | Responsabilidades |
 |:- |:- |:- |
-| Administrador | Administrador do marketplace, usuário responsável pelos processos de suporte e resolução de denuncias | Disponibilizar ou bloquear a apresentação do produto no marketplace, verificar e resolver pedidos de suporte, verificar e resolver pedidos de denuncias e gerenciar categorias|
-| Usuário | Usuário sem cadastro, podem visualizar o site, obter informações acerca dos produtos vendidos e seus preços | Podem consultar os produtos do site e realizar o cadastro. |
-| Cliente | Usuário cadastrado, podem realizar compras e vendas e contactar outros usuários | Podem comprar, registrar, avaliar e favoritar produtos. O cliente deve ter acesso às seguintes funcionalidades no site: contactar vendedores; Colocar items a venda no site; Alterar alguns de seus dados; Visualizar seu histórico de compras; Avaliar os produtos adquiridos |
+| Administrador | Administrador do marketplace, usuário responsável pelos processos de suporte e resolução de denuncias | Disponibilizar ou bloquear a apresentação do produto no marketplace, verificar e resolver pedidos de suporte, verificar e resolver pedidos de denuncias e gerenciar categorias. |
+| Usuário | Usuário sem cadastro, podem visualizar o site, obter informações acerca dos produtos vendidos e seus preços | Podem consultar os produtos e perfis do site e realizar o cadastro. |
+| Cliente | Usuário cadastrado, podem realizar compras, vendas e contactar outros usuários | Mesmas funcionalidades do usuário, porém podendo também: registrar, comprar, avaliar e favoritar produtos; editar seu perfil e 
+informações pessoais; realizar pedidos de suporte e denuncias; conversar com outros clientes através da plataforma; recuperar senha utilizada para cadastro; visualizar os produtos favoritados e vistos recentemente. |
 
 ## 4. Descrição do ambiente dos usuários 
 O marketplace tem um tipo de usuário. O usuario quando não tem cadastro, pode acessar o site e pesquisar por items de seu interesse na região, mas não pode negociar com vendedores ou colocar items.
