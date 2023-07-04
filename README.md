@@ -12,7 +12,7 @@ Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/license
 * [Reuniões da equipe](./reunioes/Reunioes.md)
 * [Documento de visão](./docs/Documento_de_Visao.md)
 * Documento de Requisitos
-* Detalhamento de casos de uso(.docs/casos_de_uso/Descrição_casos_de_Uso)
+* Detalhamento de casos de uso(./docs/casos_de_uso/Descrição_casos_de_Uso)
   1. [Login](./docs/casos_de_uso/Descrição_casos_de_Uso/cdu_realizar_login.md)
   2. [Registro](./docs/casos_de_uso/Descrição_casos_de_Uso/cdu_realizar_registro.md)
   3. [Edição de Dados](./docs/casos_de_uso/Descrição_casos_de_Uso/cdu_editar_perfil.md)
