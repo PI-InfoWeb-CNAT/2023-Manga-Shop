@@ -12,13 +12,13 @@ Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/license
 * [Reuniões da equipe](./reunioes/Reunioes.md)
 * [Documento de visão](./docs/Documento_de_Visao.md)
 * Documento de Requisitos
-* Detalhamento de casos de uso 
-  1. [Edição de Dados](./docs/casos_de_uso/descricao_caso_de_uso_editar_dados.txt)
-  2. [Registro](./docs/casos_de_uso/descricao_caso_de_uso_registro.txt)
-  3. [Login](./docs/casos_de_uso/Detalhamento_login.txt)
+* Detalhamento de casos de uso()
+  1. [Edição de Dados]()
+  2. [Registro]()
+  3. [Login]()
   4. continua...
 * [Diagrama de casos de uso](./docs/imagens/Diagrama_cdu.PNG)
-* [Diagrama de classes de domínio](./docs/imagens/Diagrama_ER.png)
+* [Diagrama de classes de domínio]()
 * Documentação da arquitetura
 
 * [Mapa do Site](https://www.figma.com/file/ecu1IVr4O6D6ARPgpeW1l9/Manga-Shop---Diagrama?type=whiteboard&node-id=0%3A1&t=igsKnirQw0bqwhos-1)
