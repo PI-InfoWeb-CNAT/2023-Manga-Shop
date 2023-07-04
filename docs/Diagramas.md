@@ -10,10 +10,10 @@
 
 ## 1. Diagrama de casos de uso 
 
-[Casos de Uso]()
+[Casos de Uso](./docs/imagens/Diagrama_cdu.PNG)
 
 ## 2. Diagrama de entidades e relacionamentos
 
-[Entidades e Relacionamentos]()
-[Entidades e Relacionamentos Intermediario](.docs/imagens/diagrama_er.png)
-[Modelo Relacional](.docs/imagens/diagrama_relacional_sem.png)
+[Entidades e Relacionamentos](./)
+[Entidades e Relacionamentos Intermediario](./docs/imagens/diagrama_er.png)
+[Modelo Relacional](./docs/imagens/diagrama_relacional_sem.png)
