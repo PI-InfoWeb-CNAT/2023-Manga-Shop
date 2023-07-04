@@ -11,6 +11,7 @@
 | 17/04/2023	| **1.03** | Finalizando o documento de visão | João Vítor, Rafael Gomes, Rafaella Duarte, Vinicius Barbosa |
 | 28/05/2023 | **1.04** | Atualização do documento de visão para adequação as sugestões dos professores | João Vítor |
 | 03/07/2023 | **1.05** | Atualização do documento de visão para deixar coerente com as mudanças dos diagramas e projeto | Rafael Gomes |
+| 04/07/2023 | **1.06** | Fazendo mais porque ninguem quer fazer | Rafael Gomes |
 
 ## 1. Objetivo do Projeto 
 O objetivo do projeto é facilitar o comércio de mangas e HQs através de uma plataforma digital.
@@ -27,34 +28,32 @@ O objetivo do projeto é facilitar o comércio de mangas e HQs através de uma p
 ## 3. Descrição dos usuários
 | Nome | Descrição | Responsabilidades |
 |:- |:- |:- |
-| Administrador | Administrador do marketplace, usuário responsável pelos processos de suporte e resolução de denuncias | Disponibilizar ou bloquear a apresentação do produto no marketplace, verificar e resolver pedidos de suporte, verificar e resolver pedidos de denuncias e gerenciar categorias. |
-| Usuário | Usuário sem cadastro, podem visualizar o site, obter informações acerca dos produtos vendidos e seus preços | Podem consultar os produtos e perfis do site e realizar o cadastro. |
-| Cliente | Usuário cadastrado, podem realizar compras, vendas e contactar outros usuários | Mesmas funcionalidades do usuário, porém podendo também: registrar, comprar, avaliar e favoritar produtos; editar seu perfil e 
-informações pessoais; realizar pedidos de suporte e denuncias; conversar com outros clientes através da plataforma; recuperar senha utilizada para cadastro; visualizar os produtos favoritados e vistos recentemente. |
+| Administrador | Administrador do marketplace, usuário responsável pelos processos de suporte e resolução de denuncias, além de administrar as categorias e alterar a visibilidade de produtos e perfis. | Moderar a plataforma, mantendo um ambiente saudável e confiável |
+| Usuário | Usuário sem cadastro, pode: visualizar o site, obter informações acerca dos produtos vendidos e seus preços, e visualizar perfis de usuários cadastrados. | - |
+| Cliente | Usuário cadastrado, tem as mesmas funcionalidades do usuário comum, porém pode: registrar, vender, avaliar e favoritar produtos; solicitar suporte de administradores e realizar denúncias; conversar com outros usuários dentro da plataforma; editar seu perfil e informações pessoais. | Cumprir as normas do site |
 
 ## 4. Descrição do ambiente dos usuários 
-O marketplace tem um tipo de usuário. O usuario quando não tem cadastro, pode acessar o site e pesquisar por items de seu interesse na região, mas não pode negociar com vendedores ou colocar items.
+O marketplace tem um tipo de usuário. O usuario, quando não é cadastrado, pode acessar o site e pesquisar por items de seu interesse na região, mas não pode registrar, comprar ou favoritar produtos, interagir com usuários ou administradores e ter um perfil. 
 
-Há dois tipos de clientes. O usuário cliente do tipo comprador que representa o cliente quando está barganhando, podendo pesquisar itens e contatar vendedores e o cliente do tipo vendedor que representa o cliente quando está vendendo, podendo vender e modificar items criados por ele.
+O cliente seria um usuário cadastrado, podendo interagir com os produtos, administradores e outros usuários das diversas formas possíveis, além de ser capaz de realizar o cadastro de seus produtos no site e ter um perfil próprio.
 
-O administrador poderá acessar uma area mais simples do site, que funcionara apenas para responder suporte e denuncias.
+O administrador poderá acessar uma área restrita do site, responsável por registrar os pedidos suporte, denuncia e logs. Além disso, pode resgatar os IDs de usuários e produtos para realizar a aplicação ou remoção de punições, as quais são registradas em logs. 
 
 ## 5. Principais necessidades dos usuários
-A principal necessidade de um vendedor é, a partir de uma plataforma confiável, encontrar compradores para o seu item.
+A principal necessidade de um vendedor é encontrar compradores para o seu item.
 
-A principal necessidade de um comprador é, a partir de uma plataforma confiável e eficiente, encontrar o item que procura em bom estado e que possa barganhar um preço justo.
+A principal necessidade de um comprador é encontrar o item que procura em bom estado e por um preço acessível.
 
-A principal necessidade de um administrador é um sistema rápido e facíl de solucionar os problemas tanto de suporte como de denuncia.
+A principal necessidade de um administrador é solucionar os problemas dos usuários de forma eficiente.
 
 ## 6. Alternativas concorrentes
-Uma alternativa ao marketplace desenvolvido é o marketplace do Facebook, que apresenta pesquisa por meio de nome, categoria e distância. Cada produto tem sua descrição e produto similares ao selecionado e também tem um chat com o vendedor.  
-
-Outra opção de marketplace é a OLX, também possui um sistema de pesquisa por nome e filtros além do chat com o vendedor
-
-Mais uma opção seria a EBay que possui uma ótima variedade de produtos do nicho, entretanto possui preços elevados, além das taxas de envio por ser uma loja de fora do país.
+| Panini | Principal concorrente; popular no Brasil; realiza a venda de HQs, Mangás, Álbuns e colecionáveis diversos; lojas físicas com preços mais elevados e menor variedade; lojas digitais com alta varidade, preços menores porém com frete desvantajoso para compras unitárias; extremamente confiável. |
+| Amazon | Empresa multinacional; loja de departamento; preços acessíveis e frete baixo, por muitas vezes gratis; extremamente confiável e popular. |
+| Rika Comic Shop | Sebo nacional para compra e venda de Mangás e HQs; frete desvantajoso para compras fora do Sudeste; produtos usados sem comprovação de estado em ambiente digital. |
+| Mundos Infinitos | Loja digital de produtos Geek; frete acessível para todo Brasil; preços baixos para produtos novos; entrega rápida e eficiente; atendimento confiável e atencioso. |
 
 ## 7.	Visão geral do produto
-Esse projeto consiste em um site voltado para vendas de produtos de um nicho especifico que pretende atender de forma segura e eficiente, disponibilizando um ambiente acessível a diversos tipos de usuários e possuindo um design confortável. Para tal, o site irá disponibilizar diferentes mecanismos de busca permitindo que o usuário encontre de forma rápida o que ele precisa. Após a aquisição, o usuário poderá avaliar o produto. 
+Consiste em uma plataforma estilo marketplace para compra e venda de Mangás e HQs, esperadamente usados, entre os Campus do IFRN.
 
 ## 8.	Requisitos funcionais
 | Código | Nome | Descrição |
