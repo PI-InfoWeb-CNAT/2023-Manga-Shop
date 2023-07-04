@@ -47,6 +47,8 @@ A principal necessidade de um comprador é encontrar o item que procura em bom e
 A principal necessidade de um administrador é solucionar os problemas dos usuários de forma eficiente.
 
 ## 6. Alternativas concorrentes
+| Nome | Descrição |
+|:- |:- |
 | Panini | Principal concorrente; popular no Brasil; realiza a venda de HQs, Mangás, Álbuns e colecionáveis diversos; lojas físicas com preços mais elevados e menor variedade; lojas digitais com alta varidade, preços menores porém com frete desvantajoso para compras unitárias; extremamente confiável. |
 | Amazon | Empresa multinacional; loja de departamento; preços acessíveis e frete baixo, por muitas vezes gratis; extremamente confiável e popular. |
 | Rika Comic Shop | Sebo nacional para compra e venda de Mangás e HQs; frete desvantajoso para compras fora do Sudeste; produtos usados sem comprovação de estado em ambiente digital. |
