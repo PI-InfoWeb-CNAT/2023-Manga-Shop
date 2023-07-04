@@ -21,6 +21,7 @@ Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/license
 
 * [Diagrama de Entidade Relacionamento Intermediario](./docs/imagens/diagrama_er.png)
 * [Diagrama de Modelo Relacional](./docs/imagens/diagrama_relacional_sem.png)
+* [Link dos detalhamentos das tabelas](https://docs.google.com/spreadsheets/d/1L5VPO-juCYT5XqhRPc0VHXcOJ8yoh2VR/edit?usp=sharing&ouid=105018317332431643440&rtpof=true&sd=true)
 * Documentação da arquitetura
 
 * [Mapa do Site](https://www.figma.com/file/ecu1IVr4O6D6ARPgpeW1l9/Manga-Shop---Diagrama?type=whiteboard&node-id=0%3A1&t=igsKnirQw0bqwhos-1)
