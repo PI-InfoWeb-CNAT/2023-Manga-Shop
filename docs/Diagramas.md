@@ -6,12 +6,14 @@
 
 |  Data  | Versão | Descrição | Autor |
 |:-------|:-------|:----------|:------|
-| 01/06/2021 | **1.00** | Versão Inicial  | George Azevedo |
+| 01/06/2021 | **1.00** | Versão Inicial  | Vinicius Barbosa |
 
 ## 1. Diagrama de casos de uso 
 
-![Casos de Uso](imagens/Diagrama_Casos_de_Uso.png)
+![Casos de Uso]()
 
 ## 2. Diagrama de entidades e relacionamentos
 
-![Entidades e Relacionamentos](imagens/Diagrama_Entidades_e_Relacionamentos.png)
+![Entidades e Relacionamentos]()
+![Entidades e Relacionamentos Intermediario](.docs/imagens/diagrama_er.png)
+![Modelo Relacional](.docs/imagens/diagrama_relacional_sem.png)
