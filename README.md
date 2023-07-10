@@ -27,3 +27,6 @@ Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/license
 * [Mapa do Site](https://www.figma.com/file/ecu1IVr4O6D6ARPgpeW1l9/Manga-Shop---Diagrama?type=whiteboard&node-id=0%3A1&t=igsKnirQw0bqwhos-1)
 
 * [Prototipo de Janelas](https://www.figma.com/file/LLZmqlQVEhROjDLbglWDdJ/Manga-Shop?type=design&node-id=75%3A499&t=0Y4Te4fdIKuYuQv7-1)
+* ## Autores 
+| [<img align="center" src="https://avatars.githubusercontent.com/u/94053437?v=4" width=150><br><sub>Vinicius Barbosa</sub>](https://github.com/Vinicius-Barbosa-de-Oliveira) |  [<img src="https://avatars.githubusercontent.com/u/131045323?v=4" width=150><br><sub>Gabriel Franco</sub>](https://github.com/Gkferreira) |  [<img src="https://avatars.githubusercontent.com/u/102371192?v=4" width=150><br><sub>Rafael Gomes</sub>](https://github.com/tankensh) | [<img src="https://avatars.githubusercontent.com/u/89747097?v=4" width=150><br><sub>João Costa</sub>](https://github.com/Repto1) | [<img src="https://avatars.githubusercontent.com/u/102383043?v=4" width=150><br><sub>Rafa Duarte</sub>](https://github.com/Rafa-ll) </div>|
+| :---: | :---: | :---: | :---: | :---: |
