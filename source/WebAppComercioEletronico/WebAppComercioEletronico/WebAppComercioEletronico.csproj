@@ -126,9 +126,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\home.cs" />
+    <Compile Include="Models\usuario - Cópia .cs" />
     <Compile Include="Models\usuario.cs" />
-    <Compile Include="Models\login.cs" />
-    <Compile Include="Models\registro.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

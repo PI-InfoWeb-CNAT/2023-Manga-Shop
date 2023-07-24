@@ -10,8 +10,8 @@ namespace WebAppComercioEletronico.Context
     public class EFContext : DbContext
     {
         public EFContext() : base("Asp_Net_MVC_CS") { }
-        public DbSet<Registro> Registros { get; set; }
-        public DbSet<Login> logins { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Produto> Produtos { get; set; }
 
 
     }
