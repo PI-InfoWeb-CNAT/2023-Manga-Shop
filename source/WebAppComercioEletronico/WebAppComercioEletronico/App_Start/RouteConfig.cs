@@ -19,5 +19,6 @@ namespace WebAppComercioEletronico
                 defaults: new { controller = "Home", action = "index", id = UrlParameter.Optional }
             );
         }
+      
     }
 }
