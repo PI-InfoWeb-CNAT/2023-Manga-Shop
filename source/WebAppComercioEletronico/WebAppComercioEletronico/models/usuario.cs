@@ -7,6 +7,7 @@
         public string Senha { get; set; }
         public string Email { get; set; }
         public string Cpf { get; set; }
+        public string Telefone { get; set; }
         public string Campus { get; set; }
         public string Curso { get; set; }
         public string DataNascimento { get; set; }

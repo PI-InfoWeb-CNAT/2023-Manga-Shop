@@ -8,9 +8,14 @@ namespace WebAppComercioEletronico.Controllers
 {
     public class RegistroController : Controller
     {
+
         // GET: Registro
-        public ActionResult registro()
+
+ 
+     
+        public ActionResult Registro()
         {
+
             return View();
         }
     }
