@@ -1,0 +1,37 @@
+﻿@using Microsoft.EntityFrameworkCore.Metadata.Internal;
+@model UserModel;
+@{
+    ViewData["Title"] = "- Registrar-se";
+}
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="@Url.Content("~/css/registro.css")" />
+    <title>Manga Shop - Registro</title>
+    <script src="todos.js"></script>
+</head>
+
+
+        <form asp-controller="User" asp-action="Signup" method="post">
+            <h1>Registrar-se</h1>
+
+            <label>Nome completo</label><input type="text" asp-for=Name class="barra_texto" />
+            @Html.ValidationMessageFor(x => x.Name)<br />
+
+            <label>E-mail</label><input type="email" asp-for=Email class="barra_texto" />
+            @Html.ValidationMessageFor(x => x.Email)<br />
+
+            <label>CPF</label><input type="text" asp-for=Cpf class="barra_texto" />
+            @Html.ValidationMessageFor(x => x.Cpf) <br/>
+
+            <label>Senha</label><input type="password" asp-for=Password class="barra_texto" />
+            @Html.ValidationMessageFor(x => x.Password)    <br />
+
+            <button type="submit">Registre-se</button>
+            <p id="aviso"><a asp-controller="Login" asp-action="Index">Já tem uma conta? Faça login!</a></p>
+        </form>
+
+

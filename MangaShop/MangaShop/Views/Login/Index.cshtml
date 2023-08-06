@@ -1,0 +1,31 @@
+﻿@model LoginModel
+@{
+    ViewData["title"] = " - Login";
+}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="@Url.Content("~/css/login.css")" />
+    <script src="todos.js"></script>
+</head>
+
+
+        <form asp-action="Login" asp-controller="Login" method="post">
+            <h1>Login</h1>
+
+            <label for="Email">E-mail</label>
+            <input class="barra_texto" type="email" asp-for="Email" placeholder="shaolinmatadordeporco02@email.com" required />
+
+            <label for="Senha">Senha</label>
+            <input class="barra_texto" type="password" asp-for="Password" placeholder="*******" required />
+
+            <div id="avisos">
+                
+            <p id="aviso"><a asp-controller="User" asp-action="Signup">Não tem uma conta? Registre-se!</a></p>
+            </div>
+
+            <button type="submit" id="entrar">Entrar</button>
+        </form>
+

@@ -1,0 +1,180 @@
+@import url("https://fonts.cdnfonts.com/css/made-infinity-personal-use");
+@import URL("https://fonts.cdnfonts.com/css/made-infinity-personal-use");
+/* clears the ‘X’ from Internet Explorer */
+input[type=search]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type=search]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'MADE INFINITY PERSONAL USE', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url(imagens/fundo.png);
+    color: #1d1d1d;
+    font-size: 16px;
+}
+
+/*Header*/
+
+header {
+    box-shadow: 0 0 15px #1a1a1a;
+}
+
+nav div {
+    display: flex;
+}
+
+    nav div ul {
+        display: inherit;
+        list-style: none;
+    }
+
+#header_cima {
+    background-color: #ec7122;
+    height: 100px;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+    box-shadow: 0 0 15px #c76e2a;
+}
+
+#header_cima ul {
+    margin-top: 2.2em;
+}
+
+#header_cima ul li {
+    margin-left: 4em;
+}
+
+#header_baixo {
+    background-color: #f28a3c;
+    height: 2.8em;
+    z-index: 2;
+}
+
+    #header_baixo ul {
+        margin-top: 10px;
+        justify-content: center;
+        margin-left: 35.7em;
+    }
+
+    #header_baixo li {
+        justify-content: center;
+        margin-right: 8em;
+    }
+
+header ul li a:hover {
+    color: #1a1a1a;
+}
+
+header a {
+    color: #f5f5f5;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#logo {
+    margin-right: 4em;
+    position: relative;
+}
+
+    #logo img {
+        width: 120px;
+        margin-top: 5px;
+        transition: 0.3s;
+    }
+
+#barra_pesquisa {
+    display: inherit;
+    flex-wrap: wrap;
+    background-color: #f5f5f5;
+    height: 2.8em;
+    margin-top: 1.5em;
+    margin-right: 2em;
+    box-shadow: 0 5px 15px #c26c2b;
+}
+
+    #barra_pesquisa input {
+        background-color: #f5f5f5;
+        width: 35em;
+        height: 2.3em;
+        border: 0;
+        margin-top: 2px;
+        margin-left: 15px;
+        margin-right: 7px;
+        font-size: 17px;
+        border: none;
+        outline: none;
+    }
+
+    #barra_pesquisa button {
+        background-color: #f5f5f5;
+        height: 3.3em;
+        border: 0;
+    }
+
+        #barra_pesquisa button:hover {
+            cursor: pointer;
+        }
+
+        #barra_pesquisa button img {
+            width: 30px;
+            margin-top: 2px;
+            padding-right: 0.5em;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+        }
+
+#lista_desejos {
+    margin-left: 13.6em;
+}
+
+
+
+/*Footer*/
+
+footer {
+    background-color: #ec7122;
+    color: #f5f5f5;
+}
+
+    footer address {
+        padding: 1.5em;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+        footer address div {
+            display: flex;
+            margin-bottom: 0.3em;
+        }
+
+#contatos {
+    width: 45%;
+    justify-content: space-between;
+}
+
+#contatos_2 {
+    width: 100%;
+    justify-content: space-between;
+}

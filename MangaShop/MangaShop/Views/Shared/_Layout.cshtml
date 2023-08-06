@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MangaShop @ViewData["title"]</title>
+    <link rel="stylesheet" href="@Url.Content("~/css/header_footer.css")" />
+    <script src="@Url.Content("~/js/todos.js")"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="header_cima">
+                <h1 id="logo">
+                    <a asp-controller="Home" asp-action="Index"><img onmouseover="expandir(this)" onmouseout="diminuir(this)" src="@Url.Content("~/imagens/Logo.png")" alt="a logo de uma manga com o nome Manga Shop sobre ela" /></a>
+                </h1>
+                <form action="pesquisa.html" id="barra_pesquisa">
+                    <input type="search" name="pesquisa" placeholder="Pesquisar" />
+                    <button type="submit"><img src="@Url.Content("~/imagens/Lupa.png")" /></button>
+                </form>
+                @await Component.InvokeAsync("Menu")
+            </div>
+            <div id="header_baixo">
+                <ul>
+                    <li><a asp-controller="User" asp-action="Sell">Vender</a></li>
+                    <li><a asp-controller="User" asp-action="Suport">Suporte</a></li>
+                    <li><a asp-controller="User" asp-action="Chat">Conversas</a></li>
+                    <li id="lista_desejos"><a asp-controller="User" asp-action="Wishlist">Lista de Desejos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+        <main role="main">
+            @RenderBody()
+        </main>
+    <footer>
+        <address>
+            <div id="contatos">
+                <p>Contato para suporte: mangashop@suporte.com</p>
+                <p>Contato profissional: mangashop@contato.com</p>
+            </div>
+            <div id="contatos_2">
+                <p>CNPJ n.º 00.000.000/0000-00 / Av. Num sei o que num sei o que lá nº 8, Ohio, Natal/RN - CEP 00000-000 - empresa do grupo Manga Shop.</p>
+                <p>Copyright © 1799-2023 dorpura.com.br LTDA.</p>
+            </div>
+        </address>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

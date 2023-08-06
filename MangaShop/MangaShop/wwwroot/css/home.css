@@ -1,0 +1,264 @@
+/*Main*/
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    box-shadow: 0 0 15px -5px #1a1a1a;
+    background-color: #fafafa;
+    display: grid;
+    grid-template-columns: 557px 530px 557px;
+    grid-template-rows: 280px 570px 850px;
+    grid-gap: 3em 0.5em;
+    padding: 2em;
+}
+
+    main a {
+        transition: 0.3s;
+    }
+
+    main button {
+        transition: 0.3s;
+    }
+
+#banner {
+    position: relative;
+    text-align: center;
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+    #banner img {
+        width: 100%;
+    }
+
+    #banner div {
+        position: absolute;
+        top: 26%;
+        left: 35.1%;
+        font-size: 30px;
+        color: #fefefe;
+        width: 500px;
+        cursor: default;
+        transition: 0.3s;
+    }
+
+#produtos_recentes div.cabecalho {
+    display: flex;
+    width: 88.3%;
+    justify-content: space-between;
+    margin-left: 2em;
+}
+
+#seus_produtos div.cabecalho {
+    display: flex;
+    width: 88.3%;
+    justify-content: space-between;
+    margin-left: 2em;
+}
+
+#produtos_recentes {
+    background-color: #fefefe;
+    grid-area: 2 / 1 / 3 / 2;
+    padding: 1em;
+}
+
+    #produtos_recentes a {
+        color: #f28a3c;
+    }
+
+        #produtos_recentes a:hover {
+            color: #1a1a1a;
+        }
+
+#vistos_recentemente {
+    display: grid;
+    grid-template-columns: 220px 220px;
+    grid-template-rows: 220px 220px;
+    grid-column-gap: 1.3em;
+    grid-row-gap: 1em;
+    padding: 1em;
+    margin-left: 1.1em;
+    margin-top: 0.5em;
+}
+
+#produtos_recentes span {
+    margin-top: 8.5px;
+}
+
+#vistos_recentemente div {
+    background-color: #fefefe;
+    width: 220px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+#vistos_recentemente img {
+    width: 130px;
+    height: 220px;
+}
+
+.produtos_1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.produtos_2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.produtos_3 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.produtos_4 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+#vendedores {
+    background-color: #fefefe;
+    grid-area: 2 / 2 / 2 / 3;
+    margin: 0 auto;
+}
+
+    #vendedores div.cabecalho {
+        width: 250px;
+        margin: 0 auto;
+        margin-bottom: 1.5em;
+        text-align: center;
+    }
+
+.imagem_perfil {
+    padding: 0.2em 1em 0.2em 1em;
+    margin-top: 4px;
+}
+
+#vendedores {
+    padding: 1em;
+    width: 400px;
+}
+
+    #vendedores a {
+        color: #1a1a1a;
+        text-decoration: none;
+    }
+
+        #vendedores a:hover {
+            color: #f28a3c;
+        }
+
+.vendedor_dados {
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+}
+
+.informacoes_vendedor {
+    background-color: #fefefe;
+    display: flex;
+    width: 370px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    margin: 1em auto;
+}
+
+.ver_mais {
+    font-size: 18px;
+    cursor: pointer;
+    padding: 0.5em 2em 0.5em 2em;
+    margin-left: 7.2em;
+    margin-top: 0.5em;
+    border: none;
+    background-color: #f28a3c;
+    color: #1a1a1a;
+}
+
+    .ver_mais:hover {
+        background-color: #ec7122;
+    }
+
+#seus_produtos {
+    background-color: #fefefe;
+    grid-area: 2 / 3 / 3 / 4;
+    padding: 1em;
+}
+
+    #seus_produtos span {
+        margin-top: 8.5px;
+    }
+
+    #seus_produtos a {
+        color: #f28a3c;
+    }
+
+#produtos_seus {
+    display: grid;
+    grid-template-columns: 220px 220px;
+    grid-template-rows: 220px 220px;
+    grid-column-gap: 1.3em;
+    grid-row-gap: 1em;
+    padding: 1em;
+    margin-left: 1.1em;
+    margin-top: 0.5em;
+}
+
+    #produtos_seus div {
+        background-color: #fefefe;
+        width: 220px;
+        text-align: center;
+        border-radius: 3px;
+    }
+
+    #produtos_seus img {
+        width: 130px;
+        height: 220px;
+    }
+
+#recomendados {
+    background-color: #fefefe;
+    grid-area: 3 / 1 / 4 / 4;
+    padding: 1em;
+}
+
+    #recomendados h1 {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: 1.2em;
+    }
+
+    #recomendados a {
+        color: #1d1d1d;
+        text-decoration: none;
+    }
+
+        #recomendados a:hover {
+            color: #f28a3c;
+        }
+
+    #recomendados img {
+        width: 340px;
+    }
+
+#produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 96.5%;
+    margin: 0 auto;
+}
+
+.produto {
+    margin-top: 1em;
+    background-color: #fefefe;
+}
+
+.detalhes_produto {
+    padding-left: 1em;
+    padding-bottom: 1em;
+}
+
+#recomendados button {
+    padding-left: 10em;
+    padding-right: 10em;
+    margin-top: 2em;
+    margin-left: 36.9%;
+}
+

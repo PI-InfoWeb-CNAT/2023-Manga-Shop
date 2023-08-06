@@ -1,0 +1,82 @@
+﻿@model UserModel
+
+<section id="informacoes_perfil">
+
+    <div class="cabecalho">
+        <h1>Dados Pessoais</h1>
+        <a class="botoes_fofos" id="editar_perfil" onclick="document.getElementById('id01').style.display='block'">Editar perfil</a>
+    </div>
+
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+        <form class="modal-content" asp-route-id="@Model.Id" asp-controller="User" asp-action="Edit" method="post">
+            <div class="container">
+                <h1>Alterar perfil</h1>
+
+                <div id="alterar_perfil">
+
+                    <h1>Registrar-se</h1>
+
+                    <label>Nome completo</label><input type="text" asp-for=Name class="barra_texto" />
+
+                    <label>CPF</label><input type="text" asp-for=Cpf class="barra_texto" />
+
+                    <label>Celular</label><input type="tel" asp-for=PhoneNumber class="barra_texto" />
+
+                    <label>Campus</label><input type="text" asp-for=Campus class="barra_texto" />
+
+                    <label>Curso</label><input type="text" asp-for=Curso class="barra_texto" />
+
+                    <div id="botoes_editar">
+                        <button type="submit" id="salvar">Salvar alterações</button>
+                        <a onclick="document.getElementById('id01').style.display='none'">Retornar ao perfil</a>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <table class="dados">
+        <tr>
+            <th>Nome Completo:</th>
+            <th id="nome_usuario">@Model.Name</th> <!-- Banco de dados-->
+        </tr>
+        <tr>
+            <th>Celular:</th>
+            <th id="telefone_usuario">@Model.PhoneNumber</th> <!-- Banco de dados-->
+        </tr>
+        <tr>
+            <th>CPF:</th>
+            <th id="cpf_usuario">@Model.Cpf</th> <!-- Banco de dados-->
+        </tr>
+        <tr>
+            <th>Campus:</th>
+            <th id="campus_usuario">@Model.Campus</th> <!-- Banco de dados-->
+        </tr>
+        <tr>
+            <th>Curso:</th>
+            <th id="curso_usuario">@Model.Curso</th> <!-- Banco de dados-->
+        </tr>
+    </table>
+</section>
+
+<section id="seguranca">
+    <h1>
+        Segurança
+    </h1>
+    <table class="dados">
+        <tr>
+            <th>E-mail:</th>
+            <th id="email_usuario">@Model.Email</th> <!-- Banco de dados-->
+        </tr>
+        <tr>
+            <th>Senha:</th>
+            <th id="senha_usuario">********</th> <!-- Banco de dados-->
+        </tr>
+    </table>
+    <div id="botoes_seguranca">
+        <a class="botoes_fofos" href="">Alterar Senha</a>
+        <a class="botoes_fofos" href="">Alterar E-mail</a>
+    </div>
+</section>
