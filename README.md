@@ -17,7 +17,7 @@ Todo material está publicado sob licença [GPL-3.0](https://www.gnu.org/license
   2. [Registro](./docs/casos_de_uso/Descrição_casos_de_Uso/cdu_realizar_registro.md)
   3. [Edição de Dados](./docs/casos_de_uso/Descrição_casos_de_Uso/cdu_editar_perfil.md)
   4. continua...
-* [Diagrama de casos de uso](./docs/imagens/Diagrama_cdu.PNG)
+* [Diagrama de casos de uso](./docs/imagens/Diagrama_cdu.jpg)
 
 * [Diagrama de Entidade Relacionamento Intermediario](./docs/imagens/diagrama_er.png)
 * [Diagrama de Modelo Relacional](./docs/imagens/diagrama_relacional_sem.png)
