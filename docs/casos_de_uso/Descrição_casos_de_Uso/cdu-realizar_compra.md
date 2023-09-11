@@ -6,7 +6,9 @@
 ### Histórico da Revisão
 |  Data  | Versão | Descrição | Autor |
 |:-------|:-------|:----------|:------|
-| 04/09/2023 | **1.00** | Versão modelo  | João Costa, Rafa Duarte, Rafael, Minora |
+| 04/08/2023 | **0.00** | Descrever exibir um determinado produto | Vinícius Barbosa |
+| 04/09/2023 | **1.00** | Versão modelo  | João Costa, Minora, Rafa Duarte, Rafael |
+| 11/09/2023 | **2.00** | Merge das versões | João Costa, Minora, Rafael, Vinícius |
 
 
 ### 1. Resumo 
@@ -27,6 +29,8 @@ Após a execução deste casos de uso, espera que o sistema:
 
 |  Ator  | Sistema |
 |:-------|:------- |
+| 1. Usuário clica no anúncio do produto | --- |
+| --- | 2. Sistema redireciona usuário para página do Produto clicado |
 
 ### 6. Dicionário de dados
 
