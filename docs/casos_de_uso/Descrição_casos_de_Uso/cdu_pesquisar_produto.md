@@ -6,7 +6,7 @@
 ### Histórico da Revisão
 |  Data  | Versão | Descrição | Autor |
 |:-------|:-------|:----------|:------|
-| 04/08/2023 | **0.00** | Descrever exibir um determinado produto | Vinícius Barbosa |
+| 04/08/2023 | **0.00** | Fazer detalhamento do caso de uso sobre pesquisar um produto especifico | Vinícius Barbosa |
 | 11/09/2023 | **1.00** | Merge das versões | João Costa, Minora, Rafael, Vinícius |
 
 
