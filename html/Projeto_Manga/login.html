@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="login.css" rel="stylesheet" />
+    <title>Manga Shop - Login</title>
+    <script src="todos.js"></script>
+</head>
+<body>
+
+    <header>
+
+        <nav>
+
+            <div id="header_cima">
+                <h1 id="logo">
+                    <a href="index.html"><img onmouseover="expandir(this)" onmouseout="diminuir(this)" src="imagens/Logo.png" alt="a logo de uma manga com o nome Manga Shop sobre ela" /></a>
+                </h1>
+
+                <form action="pesquisa.html" id="barra_pesquisa">
+                    <input type="search" name="pesquisa" placeholder="Pesquise alguma coisa ai" />
+                    <button type="submit"><img src="imagens/lupa.png" /></button>
+                </form>
+
+                <ul>
+                    <li><a href="registro.html">Registrar-se</a></li>
+                    <li><a href="login.html">Entrar</a></li>
+                </ul>
+
+            </div>
+
+            <div id="header_baixo">
+                <ul>
+                    <li><a href="cadastro_produto.html">Vender</a></li>
+                    <li><a href="">Suporte</a></li>
+                    <li><a href="conversas.html">Conversas</a></li>
+                    <li id="lista_desejos"><a href="lista_desejos.html">Lista de Desejos</a></li>
+                </ul> 
+            </div>  
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <form action="perfil.html">
+            <h1>Login</h1>
+        
+            <label>E-mail<input class="barra_texto" type="email" placeholder="shaolinmatadordeporco02@email.com" required/></label>
+
+            <label>Senha<input class="barra_texto" type="password" placeholder="*******" required/></label>
+
+            <div id="avisos">
+                <p><a href="registro.html">Não tem uma conta? Registre-se!</a></p>
+            </div>
+
+            <button type="submit" id="entrar">Entrar</button>
+        </form>
+
+    </main>
+
+    <footer>
+
+        <address>
+            <div id="contatos">
+                <p>Contato para suporte: mangashop@suporte.com</p>
+                <p>Contato profissional: mangashop@contato.com</p>
+            </div>
+
+            <div id="contatos_2">
+                <p>CNPJ n.º 00.000.000/0000-00 / Av. Num sei o que num sei o que lá nº 8, Ohio, Natal/RN - CEP 00000-000 - empresa do grupo Manga Shop.</p>
+                <p>Copyright © 1799-2023 dorpura.com.br LTDA.</p>
+            </div>
+        </address>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,409 @@
+@import url('https://fonts.cdnfonts.com/css/made-infinity-personal-use');
+
+/* clears the ‘X’ from Internet Explorer */
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'MADE INFINITY PERSONAL USE', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-image: url(imagens/fundo.png);
+    color: #1d1d1d;
+    font-size: 16px;
+}
+
+/*Header*/
+
+header{
+    box-shadow: 0 0 15px #1a1a1a;   
+}
+nav div{
+    display: flex;
+}
+nav div ul{
+    display: inherit;
+    list-style: none;
+}
+#header_cima{
+    background-color: #ec7122;
+    height: 100px;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+    box-shadow: 0 0 15px #c76e2a;
+}
+#header_cima ul{
+    margin-top: 2.2em;
+    margin-left: 4.1em;
+}
+#header_baixo{
+    background-color: #f28a3c;
+    height: 2.8em;
+    z-index: 2;
+}
+#header_baixo ul{
+    margin-top: 10px;
+    justify-content: center;
+    margin-left: 35.7em;
+}
+#header_baixo li{
+    justify-content: center;
+    margin-right: 8em;
+}
+header ul li a:hover{
+    color: #1a1a1a;
+}
+header a{
+    color: #f5f5f5;
+    text-decoration: none;
+    transition: 0.3s;
+}
+#logo{
+    margin-right: 4em;
+    position: relative;
+}
+#logo img{
+    width: 120px;
+    margin-top: 5px;
+    transition: 0.3s;
+}
+#barra_pesquisa{
+    display: inherit;
+    flex: wrap;
+    background-color: #f5f5f5;
+    height: 2.8em;
+    margin-top: 1.5em;
+    margin-right: 2em;
+    box-shadow: 0 5px 15px #c26c2b;
+}
+#barra_pesquisa input{
+    background-color: #f5f5f5;
+    width: 35em;
+    height: 2.3em;
+    border: 0;
+    margin-top: 2px;
+    margin-left: 15px;
+    margin-right: 7px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+}
+#barra_pesquisa button{
+    background-color: #f5f5f5;
+    height: 3.3em;
+    border: 0;
+}
+#barra_pesquisa button:hover{
+    cursor: pointer;
+}
+#barra_pesquisa button img{
+    width: 36.66px;
+    margin-top: 2px;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+#lista_desejos{
+    margin-left: 13.6em;
+}
+
+/*Main*/
+
+main{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    box-shadow: 0 0 15px -5px #1a1a1a;
+    background-color: #fafafa;
+    padding: 2em;
+}
+main a{
+    transition: 0.3s;
+}
+main button{
+    transition: 0.3s;
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+h1{
+    font-size: 30px;
+}
+#icone{
+    text-align: center;
+}
+#icone button{
+    cursor: pointer;
+    background-color: #fafafa;
+    border: 0;
+}
+#nao_icone{
+    display: grid;
+    grid-template-columns: 52% 42.3%; 
+    grid-template-rows: 300px 400px;
+    grid-gap: 1.5em;
+    margin-left: 3.5em;
+    margin-top: 2em;
+}
+#informacoes_perfil{
+    background-color: #fefefe;
+    padding: 2.2em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    grid-area: 1 / 1 / 2 / 2;
+}
+#informacoes_perfil div.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1.2em;
+    margin-bottom: 1em;
+}
+.botoes_fofos{
+    margin-top: 4px;
+    margin-right: 1.5em;
+    text-align: center;
+    background-color: #f28a3c;
+    color: #1a1a1a;
+    text-decoration: none;
+    padding: 0.5em 3em 0.5em 3em;
+}
+.botoes_fofos:hover{
+    background-color: #ec7122;
+    color: #fefefe;
+}
+#cabecalho a:hover{
+    background-color: #ec7122;
+}
+.dados{
+    text-align: left;
+    font-size: 18px;
+}
+.dados th{
+    padding: 0 1em 0 1em;
+}
+#seguranca{
+    background-color: #fefefe;
+    padding: 2.2em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    grid-area: 1 / 2 / 2 / 3;
+}
+#seguranca h1{
+    margin-left: 0.6em;
+    margin-bottom: 0.5em;
+}
+#botoes_seguranca{
+    margin-top: 3em;
+    margin-left: 1.2em;
+}
+#seus_produtos{
+    background-color: #fefefe;
+    padding: 2.2em;
+    padding-bottom: 2.2em;
+    grid-area: 2 / 1 / 3 / 3;
+}
+#seus_produtos h1{
+    margin-bottom: 0.5em;
+} 
+#seus_produtos a{
+    color: #1d1d1d;
+    text-decoration: none;
+}
+#seus_produtos a:hover{
+    color: #f28a3c;
+}
+#seus_produtos img{
+    width: 250px;
+}
+#seus_produtos_corpo{
+    display: flex;
+}
+#produtos{
+    display: flex;
+    gap: 2em;
+}
+.produto{
+    margin-top: 1em;
+    background-color: #fefefe;
+}
+.detalhes_produto{
+    padding-left: 1em;
+    padding-bottom: 1.5em;
+}
+.detalhes_produto p{
+    font-size: 15px;
+}
+
+#botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+    margin-top: 1em;
+    margin-left: 2.3em;
+}
+#botoes a{
+    text-align: center;
+    flex: 1;
+    width: 400px;
+    margin-bottom: 2em;
+    padding: 0.8em 1em 0 1em;
+    font-size: 18px;
+    background-color: #f28a3c;
+    color: #1a1a1a;
+}
+#botoes a:hover{
+    background-color: #ec7122;
+    color: #fefefe;
+}
+#botoes a:last-of-type{
+    margin-bottom: 0;
+}
+
+/*Footer*/
+
+footer{
+    background-color: #ec7122;
+    color: #f5f5f5; 
+}
+footer address{
+    padding: 1.5em;
+    width: 90%;
+    margin: 0 auto;
+}
+footer address div{
+    display: flex;
+    margin-bottom: 0.3em;
+}
+#contatos{
+    width: 45%;
+    justify-content: space-between;
+}
+#contatos_2{
+    width: 100%;
+    justify-content: space-between;
+}
+.barra_texto{
+    background-color: #f5f5f5;
+    width: 30em;
+    height: 2.3em;
+    border: 0;
+    font-size: 16px;
+    padding: 0.3em 1em 0.3em 1em;
+    margin: 1em 0 1em 0;
+    border: none;
+    outline: none;
+}
+#alterar_perfil{
+    display: flex;
+    flex-direction: column;
+}
+/*modal*/
+
+/* Float cancel and delete buttons and add an equal width */
+
+/* Add a color to the cancel button */
+.dinheiro {
+  background-color: #f1f1f1;
+  color: black;
+}
+.dinheiro:hover{
+    background-color: #d3d2d2;
+}
+
+/* Add a color to the delete button */
+.pix {
+  background-color: #f28a3c;
+}
+.pix:hover{
+    background-color: #ec7122;
+}
+
+/* Add padding and center-align text to the container */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #3d3d3d4b;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 0 auto;
+  margin-top: 5em;
+  width: 30%; /* Could be more or less, depending on screen size */
+  padding: 2em;
+}
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover, .close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+#botoes_editar{
+    display: flex;
+    margin-top: 2em;
+}
+#botoes_editar button{
+    padding: 1em;
+    width: 200px;
+    background-color: #f28a3c;
+}
+#botoes_editar button:hover{
+    color: #fefefe;
+    background-color: #ec7122;
+}
+#botoes_editar a{
+    color: #1a1a1a;
+    text-decoration: none;
+    padding: 1em;
+    width: 200px;
+    text-align: center;
+}
+#botoes_editar a:hover{
+    color: #ec7122;
+}
+#alterar_perfil{
+    margin-top: 2em;
+}
+#alterar_perfil label{
+    display: flex;
+    flex-direction: column;
+}

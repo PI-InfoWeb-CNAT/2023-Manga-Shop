@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="produto.css" rel="stylesheet" />
+    <title>Manga Shop - Produto</title>
+    <script src="produto.js"></script>
+</head>
+<body>
+
+    <header>
+
+        <nav>
+
+            <div id="header_cima">
+                <h1 id="logo">
+                    <a href="index.html"><img onmouseover="expandir(this)" onmouseout="diminuir(this)" src="imagens/Logo.png" alt="a logo de uma manga com o nome Manga Shop sobre ela" /></a>
+                </h1>
+
+                <form action="pesquisa.html" id="barra_pesquisa">
+                    <input type="search" name="pesquisa" placeholder="Pesquise alguma coisa ai" />
+                    <button type="submit"><img src="imagens/lupa.png" /></button>
+                </form>
+
+                <ul>
+                    <li><a href="perfil.html">Bem-vindo, Esfarrapo!</a></li>
+                </ul>
+
+            </div>
+
+            <div id="header_baixo">
+                <ul>
+                    <li><a href="cadastro_produto.html">Vender</a></li>
+                    <li><a href="">Suporte</a></li>
+                    <li><a href="conversas.html">Conversas</a></li>
+                    <li id="lista_desejos"><a href="lista_desejos.html">Lista de Desejos</a></li>
+                </ul> 
+            </div>  
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="imagens_produto">
+
+            <div id="produto_imagens">
+                <button onclick="mudarImagem1()" class="produtinhos_imagem"><img id="produto_1" src="imagens/mangas.png" /></button>
+                <button onclick="mudarImagem2()" class="produtinhos_imagem"><img id="produto_2" src="imagens/manga_kimetsu.png" /></button>
+                <button onclick="mudarImagem3()" class="produtinhos_imagem"><img id="produto_3" src="imagens/manga_berserk.png" /></button>
+                <button onclick="mudarImagem4()" class="produtinhos_imagem"><img id="produto_4" src="imagens/hq_anoum.png" /></button>
+            </div>
+
+            <div id="produto_selecionado">
+                <button onclick=""><img id="produtinho_selecionado" onclick="" src="imagens/mangas.png" /></button>
+            </div>
+
+        </section>
+
+        <section id="informacoes_produto">
+
+            <div class="informacoes">
+                <h1 id="nome_produto">Coleção de Mangás, 15 unidades</h1>
+                <h3 id="nome_vendedor"><a href="">Esfarrapo da Silva Junior</a> - Campus <span id="campus">Natal Central</span></h3> 
+            </div>
+            <div class="informacoes" id="produto_informacoes">
+                <div>
+                    <h2 id="preco_produto">R$ 520,50</h2>
+                    <h3 id="forma_pagamento">Apenas dinheiro e PIX</h3>
+                </div>
+                <div>
+                    <input type="checkbox" class="checkbox" id="checkbox" />
+                        <label for="checkbox">
+                              <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                                  <path id="heart" d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z" fill="#eeeeee"/>
+                                  <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5"/>
+                                
+                                  <g id="grp7" opacity="0" transform="translate(7 6)">
+                                    <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2"/>
+                                    <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2"/>
+                                  </g>
+                              
+                                  <g id="grp6" opacity="0" transform="translate(0 28)">
+                                    <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2"/>
+                                    <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2"/>
+                                  </g>
+                              
+                                  <g id="grp3" opacity="0" transform="translate(52 28)">
+                                    <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2"/>
+                                    <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2"/>
+                                  </g>
+                              
+                                  <g id="grp2" opacity="0" transform="translate(44 6)">
+                                    <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2"/>
+                                    <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2"/>
+                                  </g>
+                              
+                                  <g id="grp5" opacity="0" transform="translate(14 50)">
+                                    <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2"/>
+                                    <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2"/>
+                                  </g>
+                              
+                                  <g id="grp4" opacity="0" transform="translate(35 50)">
+                                    <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2"/>
+                                    <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2"/>
+                                  </g>
+                              
+                                  <g id="grp1" opacity="0" transform="translate(24)">
+                                    <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2"/>
+                                    <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2"/>
+                                  </g>
+                                </g>
+                              </svg>
+                        </label>
+                </div>
+            </div>
+            <div class="informacoes">
+                <p id="descricao_breve">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit tortor vitae cursus ultricies. Duis pretium lobortis dui. Proin felis urna, semper a tellus vitae, 
+                accumsan mollis ipsum. Etiam ac sapien blandit, pulvinar urna vitae, imperdiet enim. Praesent purus sapien, sodales at nibh eu, ornare varius orci. Sed pulvinar gravida 
+                vestibulum. Etiam arcu tortor, fringilla sed mauris quis, pharetra sollicitudin augue. Donec tristique placerat mauris, non accumsan mi fermentum ut.
+                </p>
+            </div>
+            <div id="botoes_produto">
+                <button onclick="document.getElementById('id01').style.display='block'" id="botao_comprar">Comprar</button>
+                <a href="" id="botao_conversa">Contatar vendedor</a>
+            </div>
+            <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                <form class="modal-content" action="/action_page.php">
+                  <div class="container">
+                    <h1>Realizar compra</h1>
+                    <p>Compras em dinheiro devem ser combinadas com o vendedor e não tem suporte da plataforma.</p>
+                  
+                    <div class="clearfix">
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="pix">Pagamento em PIX</button>
+                      <a onclick="document.getElementById('id01').style.display='none'" class="dinheiro" href="conversas.html">Pagamento em dinheiro</a>
+                    </div>
+                  </div>
+                </form>
+            </div>
+
+        </section>
+
+        <section id="descricao_produto">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit tortor vitae cursus ultricies. Duis pretium lobortis dui. Proin felis urna, semper a tellus vitae, 
+                accumsan mollis ipsum. Etiam ac sapien blandit, pulvinar urna vitae, imperdiet enim. Praesent purus sapien, sodales at nibh eu, ornare varius orci. Sed pulvinar gravida 
+                vestibulum. Etiam arcu tortor, fringilla sed mauris quis, pharetra sollicitudin augue. Donec tristique placerat mauris, non accumsan mi fermentum ut.</p>
+            <p>Proin ut metus non sapien aliquet condimentum. Phasellus pulvinar vel erat vitae lacinia. Curabitur turpis ligula, elementum in tincidunt sed, finibus sit amet tellus. 
+                Sed vel egestas nibh, nec consectetur velit. Nullam luctus placerat enim, at pulvinar risus tristique sit amet. Pellentesque nec nulla neque. Quisque diam enim, placerat ac 
+                lacinia ut, dapibus vel orci. Pellentesque lectus tortor, gravida in mi eget, finibus molestie ipsum. Morbi egestas, tortor eu blandit convallis, est nunc fringilla purus, 
+                vel faucibus nulla tellus vitae metus. Vivamus et suscipit velit. Suspendisse dolor risus, euismod at lobortis vel, tempor et lorem. Etiam in quam vel libero congue gravida 
+                quis vel sapien.</p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <address>
+            <div id="contatos">
+                <p>Contato para suporte: mangashop@suporte.com</p>
+                <p>Contato profissional: mangashop@contato.com</p>
+            </div>
+
+            <div id="contatos_2">
+                <p>CNPJ n.º 00.000.000/0000-00 / Av. Num sei o que num sei o que lá nº 8, Ohio, Natal/RN - CEP 00000-000 - empresa do grupo Manga Shop.</p>
+                <p>Copyright © 1799-2023 dorpura.com.br LTDA.</p>
+            </div>
+        </address>
+
+    </footer>
+</body>
+</html>

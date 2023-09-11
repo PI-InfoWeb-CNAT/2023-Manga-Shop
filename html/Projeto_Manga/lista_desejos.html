@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="lista_desejos.css" rel="stylesheet" />
+    <title>Manga Shop - Lista</title>
+    <script src="lista_desejos.js"></script>
+</head>
+<body>
+
+    <header>
+
+        <nav>
+
+            <div id="header_cima">
+                <h1 id="logo">
+                    <a href="index.html"><img onmouseover="expandir(this)" onmouseout="diminuir(this)" src="imagens/Logo.png" alt="a logo de uma manga com o nome Manga Shop sobre ela" /></a>
+                </h1>
+
+                <form action="pesquisa.html" id="barra_pesquisa">
+                    <input type="search" name="pesquisa" placeholder="Pesquise alguma coisa ai" />
+                    <button type="submit"><img src="imagens/lupa.png" /></button>
+                </form>
+
+                <ul>
+                    <li><a href="registro.html">Registrar-se</a></li>
+                    <li><a href="login.html">Entrar</a></li>
+                </ul>
+
+            </div>
+
+            <div id="header_baixo">
+                <ul>
+                    <li><a href="cadastro_produto.html">Vender</a></li>
+                    <li><a href="">Suporte</a></li>
+                    <li><a href="conversas.html">Conversas</a></li>
+                    <li id="lista_desejos"><a href="lista_desejos.html">Lista de Desejos</a></li>
+                </ul> 
+            </div>  
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="produtos" id="produto_1">
+            <div class="coracao_favorito">
+                <input type="checkbox" class="checkbox" id="checkbox" checked />
+                <label for="checkbox">
+                    <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                        <path id="heart" d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z" fill="#eeeeee"/>
+                        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5"/>
+                    
+                        <g id="grp7" opacity="0" transform="translate(7 6)">
+                        <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2"/>
+                        <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2"/>
+                        </g>
+                    
+                        <g id="grp6" opacity="0" transform="translate(0 28)">
+                        <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2"/>
+                        <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2"/>
+                        </g>
+                    
+                        <g id="grp3" opacity="0" transform="translate(52 28)">
+                        <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2"/>
+                        <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2"/>
+                        </g>
+                    
+                        <g id="grp2" opacity="0" transform="translate(44 6)">
+                        <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2"/>
+                        <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2"/>
+                        </g>
+                    
+                        <g id="grp5" opacity="0" transform="translate(14 50)">
+                        <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2"/>
+                        <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2"/>
+                        </g>
+                    
+                        <g id="grp4" opacity="0" transform="translate(35 50)">
+                        <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2"/>
+                        <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2"/>
+                        </g>
+                    
+                        <g id="grp1" opacity="0" transform="translate(24)">
+                        <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2"/>
+                        <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2"/>
+                        </g>
+                    </g>
+                    </svg>
+                </label>
+            </div>
+
+            <div class="imagens_favorito">
+                <a href="produto.html"><img src="imagens/mangas.png" id="imagem1"/></a>
+            </div>
+
+            <div class="informacoes">
+                <h2 class="nome_produto" id="nome_produto_1">Coleção de Mangás, 15 unidades</h2>
+                <h3 class="nome_vendedor" id="nome_vendedor_1"><a href="">Esfarrapo da Silva Junior</a> - Campus <span id="campus_1">Natal Central</span></h3> 
+            </div>
+
+            <div class="preco">
+                <h2 class="preco_produto" id="preco_produto_1">R$ 520,50</h2>
+            </div>
+
+            <div class="botoes_produto">
+                <a href="produto.html" class="botao_pagina">Visitar página</a>
+            </div>
+        </div>
+
+        <div class="produtos" id="produto_2">
+            <div class="coracao_favorito">
+                <input type="checkbox" class="checkbox" id="checkbox" checked />
+                <label for="checkbox">
+                    <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                        <path id="heart" d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z" fill="#eeeeee"/>
+                        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5"/>
+                    
+                        <g id="grp7" opacity="0" transform="translate(7 6)">
+                        <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2"/>
+                        <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2"/>
+                        </g>
+                    
+                        <g id="grp6" opacity="0" transform="translate(0 28)">
+                        <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2"/>
+                        <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2"/>
+                        </g>
+                    
+                        <g id="grp3" opacity="0" transform="translate(52 28)">
+                        <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2"/>
+                        <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2"/>
+                        </g>
+                    
+                        <g id="grp2" opacity="0" transform="translate(44 6)">
+                        <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2"/>
+                        <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2"/>
+                        </g>
+                    
+                        <g id="grp5" opacity="0" transform="translate(14 50)">
+                        <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2"/>
+                        <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2"/>
+                        </g>
+                    
+                        <g id="grp4" opacity="0" transform="translate(35 50)">
+                        <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2"/>
+                        <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2"/>
+                        </g>
+                    
+                        <g id="grp1" opacity="0" transform="translate(24)">
+                        <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2"/>
+                        <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2"/>
+                        </g>
+                    </g>
+                    </svg>
+                </label>
+            </div>
+
+            <div class="imagens_favorito">
+                <a href="produto.html"><img src="imagens/mangas.png" id="imagem2"/></a>
+            </div>
+
+            <div class="informacoes">
+                <h2 class="nome_produto" id="nome_produto_2">Coleção de Mangás, 15 unidades</h2>
+                <h3 class="nome_vendedor" id="nome_vendedor_2"><a href="">Esfarrapo da Silva Junior</a> - Campus <span id="campus_2">Natal Central</span></h3> 
+            </div>
+
+            <div class="preco">
+                <h2 class="preco_produto" id="preco_produto_2">R$ 520,50</h2>
+            </div>
+
+            <div class="botoes_produto">
+                <a href="produto.html" class="botao_pagina">Visitar página</a>
+            </div>
+        </div>
+
+        <div class="produtos" id="produto_3">
+            <div class="coracao_favorito">
+                <input type="checkbox" class="checkbox" id="checkbox" checked />
+                <label for="checkbox">
+                    <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                        <path id="heart" d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z" fill="#eeeeee"/>
+                        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5"/>
+                    
+                        <g id="grp7" opacity="0" transform="translate(7 6)">
+                        <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2"/>
+                        <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2"/>
+                        </g>
+                    
+                        <g id="grp6" opacity="0" transform="translate(0 28)">
+                        <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2"/>
+                        <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2"/>
+                        </g>
+                    
+                        <g id="grp3" opacity="0" transform="translate(52 28)">
+                        <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2"/>
+                        <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2"/>
+                        </g>
+                    
+                        <g id="grp2" opacity="0" transform="translate(44 6)">
+                        <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2"/>
+                        <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2"/>
+                        </g>
+                    
+                        <g id="grp5" opacity="0" transform="translate(14 50)">
+                        <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2"/>
+                        <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2"/>
+                        </g>
+                    
+                        <g id="grp4" opacity="0" transform="translate(35 50)">
+                        <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2"/>
+                        <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2"/>
+                        </g>
+                    
+                        <g id="grp1" opacity="0" transform="translate(24)">
+                        <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2"/>
+                        <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2"/>
+                        </g>
+                    </g>
+                    </svg>
+                </label>
+            </div>
+
+            <div class="imagens_favorito">
+                <a href="produto.html"><img src="imagens/mangas.png" id="imagem3"/></a>
+            </div>
+
+            <div class="informacoes">
+                <h2 class="nome_produto" id="nome_produto_3">Coleção de Mangás, 15 unidades</h2>
+                <h3 class="nome_vendedor" id="nome_vendedor_3"><a href="">Esfarrapo da Silva Junior</a> - Campus <span id="campus_3">Natal Central</span></h3> 
+            </div>
+
+            <div class="preco">
+                <h2 class="preco_produto" id="preco_produto_3">R$ 520,50</h2>
+            </div>
+
+            <div class="botoes_produto">
+                <a href="produto.html" class="botao_pagina">Visitar página</a>
+            </div>
+        </div>
+
+        <div class="produtos" id="produto_4">
+            <div class="coracao_favorito">
+                <input type="checkbox" class="checkbox" id="checkbox" checked />
+                <label for="checkbox">
+                    <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                        <path id="heart" d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z" fill="#eeeeee"/>
+                        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5"/>
+                    
+                        <g id="grp7" opacity="0" transform="translate(7 6)">
+                        <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2"/>
+                        <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2"/>
+                        </g>
+                    
+                        <g id="grp6" opacity="0" transform="translate(0 28)">
+                        <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2"/>
+                        <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2"/>
+                        </g>
+                    
+                        <g id="grp3" opacity="0" transform="translate(52 28)">
+                        <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2"/>
+                        <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2"/>
+                        </g>
+                    
+                        <g id="grp2" opacity="0" transform="translate(44 6)">
+                        <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2"/>
+                        <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2"/>
+                        </g>
+                    
+                        <g id="grp5" opacity="0" transform="translate(14 50)">
+                        <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2"/>
+                        <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2"/>
+                        </g>
+                    
+                        <g id="grp4" opacity="0" transform="translate(35 50)">
+                        <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2"/>
+                        <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2"/>
+                        </g>
+                    
+                        <g id="grp1" opacity="0" transform="translate(24)">
+                        <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2"/>
+                        <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2"/>
+                        </g>
+                    </g>
+                    </svg>
+                </label>
+            </div>
+
+            <div class="imagens_favorito">
+                <a href="produto.html"><img src="imagens/mangas.png" id="imagem4"/></a>
+            </div>
+
+            <div class="informacoes">
+                <h2 class="nome_produto" id="nome_produto_4">Coleção de Mangás, 15 unidades</h2>
+                <h3 class="nome_vendedor" id="nome_vendedor_4"><a href="">Esfarrapo da Silva Junior</a> - Campus <span id="campus_4">Natal Central</span></h3> 
+            </div>
+
+            <div class="preco">
+                <h2 class="preco_produto" id="preco_produto_4">R$ 520,50</h2>
+            </div>
+
+            <div class="botoes_produto">
+                <a href="produto.html" class="botao_pagina">Visitar página</a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <address>
+            <div id="contatos">
+                <p>Contato para suporte: mangashop@suporte.com</p>
+                <p>Contato profissional: mangashop@contato.com</p>
+            </div>
+
+            <div id="contatos_2">
+                <p>CNPJ n.º 00.000.000/0000-00 / Av. Num sei o que num sei o que lá nº 8, Ohio, Natal/RN - CEP 00000-000 - empresa do grupo Manga Shop.</p>
+                <p>Copyright © 1799-2023 dorpura.com.br LTDA.</p>
+            </div>
+        </address>
+
+    </footer>
+</body>
+</html>
