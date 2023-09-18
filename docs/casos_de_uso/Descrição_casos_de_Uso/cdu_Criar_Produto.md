@@ -2,7 +2,7 @@
 ﻿
 # Projeto Comercio Eletrônico - MangaShop
 
-## Especificação do caso de uso - Produto Vendido
+## Especificação do caso de uso - Criar Produto
 
 ### Histórico da Revisão
 |  Data  | Versão | Descrição | Autor |
