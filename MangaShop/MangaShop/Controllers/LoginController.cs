@@ -17,7 +17,7 @@ namespace MangaShop.Controllers
         }
         public IActionResult Index()
         {
-            // If logged redirect to perfil
+            // Se logado redirecionar para perfil
             if (_sessao.GetUserSession() != null) return RedirectToAction("Index", "User");
             return View();
         }

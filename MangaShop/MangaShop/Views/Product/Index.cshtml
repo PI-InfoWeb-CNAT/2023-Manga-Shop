@@ -1,6 +1,7 @@
-﻿@model ProductModel
+﻿@model MangaShop.Models.ProductModel;
 @{
-    ViewData["title"] = " - ";
+    Layout = "_Layout";
+    ViewData["title"] = " - produto";
 }
 
 <head>
@@ -30,11 +31,11 @@
 
     <div class="informacoes">
         <h1 id="nome_produto">@Model.Title</h1>
-        <h3 id="nome_vendedor"><a href="">@Model.UserId.</a> - Campus <span id="campus">Natal Central</span></h3>
+        <h3 id="nome_vendedor"><a href="">@Model.UserId</a> - Campus <span id="campus">Natal Central</span></h3>
     </div>
     <div class="informacoes" id="produto_informacoes">
         <div>
-            <h2 id="preco_produto">R$ @Model.Value</h2>
+            <h2 id="preco_produto">R$@Model.Value</h2>
             <h3 id="forma_pagamento">Apenas dinheiro e PIX</h3>
         </div>
         <div>

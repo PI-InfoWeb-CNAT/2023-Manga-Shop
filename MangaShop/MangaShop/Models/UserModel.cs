@@ -4,7 +4,7 @@ namespace MangaShop.Models
 {
     public class UserModel
     {
-
+        [Key]
         public int Id { get; set; }
         [Required(ErrorMessage = "Digite o seu nome")]
         public string Name { get; set; }

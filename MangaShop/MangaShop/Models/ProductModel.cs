@@ -1,12 +1,13 @@
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MangaShop.Models
 {
     public class ProductModel
     {
+        [Key]
         public int Id { get; set; }
-        public int UserId { get; set; }
         [Required(ErrorMessage = "Digite o titulo do produto")]
         public string Title { get; set; }
         [Required(ErrorMessage = "Digite a descrição do produto")]
@@ -15,5 +16,8 @@ namespace MangaShop.Models
         public int Value { get; set; }
         [Required(ErrorMessage = "Selecione pelo menos uma imagem do produto")]
         public string Images { get; set; }
+        [ForeignKey("UserId")]
+        public int UserId { get; set; }
+        public virtual UserModel User { get; set; }
     }
 }

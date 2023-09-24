@@ -3,6 +3,7 @@ using MangaShop.Models;
 using MangaShop.Repositorio;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace MangaShop.Controllers
 {
@@ -11,10 +12,12 @@ namespace MangaShop.Controllers
         // User Repositorio
         private readonly IUserRepositorio _userRepositorio;
         private readonly ISessao _sessao;
+    
         public UserController(IUserRepositorio userRepositorio, ISessao sessao)
         {
             _userRepositorio = userRepositorio;
             _sessao = sessao;
+        
         }
         //
 
@@ -67,8 +70,10 @@ namespace MangaShop.Controllers
         // Perfil do usuario
         public IActionResult Index(UserModel user)
         {
-           
-            return View(user);
+
+            return View("Index",user);
+            
+
         }
         public IActionResult Perfil() => View();
 

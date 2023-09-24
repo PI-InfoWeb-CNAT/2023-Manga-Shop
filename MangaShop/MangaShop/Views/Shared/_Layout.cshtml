@@ -1,4 +1,4 @@
-﻿@model UserModel
+﻿
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +20,9 @@
                     <input type="search" name="pesquisa" placeholder="Pesquisar" />
                     <button type="submit"><img src="@Url.Content("~/imagens/Lupa.png")" /></button>
                 </form>
+                @model UserModel
                 @await Component.InvokeAsync("Menu")
+                
             </div>
             <div id="header_baixo">
                 <ul>

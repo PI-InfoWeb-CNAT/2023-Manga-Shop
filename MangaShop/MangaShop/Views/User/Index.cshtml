@@ -1,4 +1,4 @@
-﻿@model UserModel;
+﻿
 @{
     ViewData["title"] = " - Perfil";
 }
@@ -22,10 +22,12 @@
 
         <div id="nao_icone">
     @await Component.InvokeAsync("Information")
-
+    
             <section id="seus_produtos">
                 <h1>
                     Seus Produtos</h1>
+                    
+        
                     <div id="seus_produtos_corpo">
                         <div id="produtos">
                             <div class="produto">
