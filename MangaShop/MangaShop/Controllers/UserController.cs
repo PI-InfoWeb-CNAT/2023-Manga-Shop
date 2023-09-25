@@ -1,9 +1,12 @@
 ﻿using MangaShop.Helper;
 using MangaShop.Models;
 using MangaShop.Repositorio;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Security.Policy;
 
 namespace MangaShop.Controllers
@@ -54,7 +57,6 @@ namespace MangaShop.Controllers
             return RedirectToAction("Index");
         }
         //
-
         // Deletar usuario
         public IActionResult Delete(int id)
         {
@@ -66,16 +68,32 @@ namespace MangaShop.Controllers
             _userRepositorio.Deletar(id);
             return RedirectToAction("Index");
         }
-        
-
-            // Perfil do usuario
+        // Perfil do usuario
         public IActionResult Index(UserModel user)
         {
-            
-            return View(user);
+            return View();
         }
-        public IActionResult Perfil() => View();
 
+        [HttpPost]
+        public IActionResult UploadIcon(UserModel userModel, IFormFile icon)
+        {
+            if (icon != null && icon.Length > 0)
+            {
+                // Verifique se o arquivo foi enviado
+                var nomeArquivo = Guid.NewGuid().ToString() + Path.GetExtension(icon.FileName);
+                var caminhoDoArquivo = Path.Combine("~/imagens/", nomeArquivo);
 
+                using (var stream = new FileStream(caminhoDoArquivo, FileMode.Create))
+                {
+                    icon.CopyTo(stream);
+                }
+
+       
+                userModel.IconPath = nomeArquivo;
+            }
+
+    
+            return RedirectToAction("Index");
+        }
     }
 }

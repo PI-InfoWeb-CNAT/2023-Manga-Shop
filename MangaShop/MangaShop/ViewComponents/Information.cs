@@ -13,8 +13,6 @@ namespace MangaShop.ViewComponents
         {
             string userSession = HttpContext.Session.GetString("LoggedUserSession");
 
-            
-
             UserModel user = JsonConvert.DeserializeObject<UserModel>(userSession);
 
             return View(user);

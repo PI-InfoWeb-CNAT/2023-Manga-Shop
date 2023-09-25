@@ -49,7 +49,7 @@ namespace MangaShop.Controllers
                 }
                 TempData["MensagemErro"] = "Email e/ou senha não são validos";
                 return View("Index");
-            }
+                }
                 return RedirectToAction("Signup", "User");
         }
     }

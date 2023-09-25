@@ -35,7 +35,7 @@ namespace MangaShop
 
             services.AddScoped<IUserRepositorio, UserRepositorio>();
             services.AddScoped<ISessao, Sessao>();
-            services.AddTransient<IProductRepositorio, ProductRepositorio>();
+            services.AddScoped<IProductRepositorio, ProductRepositorio>();
 
             services.AddSession(o =>
             {
@@ -71,6 +71,7 @@ namespace MangaShop
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+               
             });
         }
     }

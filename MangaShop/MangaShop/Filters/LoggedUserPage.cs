@@ -27,7 +27,6 @@ namespace MangaShop.Filters
 
                 }
             }
-
             base.OnActionExecuting(context);
         }
     }

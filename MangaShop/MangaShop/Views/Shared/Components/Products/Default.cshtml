@@ -3,7 +3,7 @@
 @foreach (var product in Model)
 {
     <div class="produto">
-        <a href="">
+        <a asp-route-id="@product.Id" asp-controller="Product" asp-action="Index">
             <div class="imagem_produto">
                 <img src="@Url.Content("~/imagens/mangas.png")" />
             </div>

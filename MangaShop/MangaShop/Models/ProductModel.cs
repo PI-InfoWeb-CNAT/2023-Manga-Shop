@@ -1,4 +1,6 @@
+using Microsoft.AspNetCore.Http;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -15,7 +17,8 @@ namespace MangaShop.Models
         [Required(ErrorMessage = "Digite o valor do produto")]
         public int Value { get; set; }
         [Required(ErrorMessage = "Selecione pelo menos uma imagem do produto")]
-        public string Images { get; set; }
+        public string imagesPaths { get; set; }
+
         [ForeignKey("UserId")]
         public int UserId { get; set; }
         public virtual UserModel User { get; set; }

@@ -1,13 +1,21 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MangaShop.Models;
+using MangaShop.Repositorio;
 
 namespace MangaShop.Controllers
 {
     public class ProductController : Controller
     {
-        public IActionResult Index(ProductModel product)
+        // User Repositorio
+        private readonly IProductRepositorio _productRepositorio;
+        public ProductController(IProductRepositorio ProductRepositorio)
         {
-            return View(product);
+            _productRepositorio = ProductRepositorio;
+        }
+        public IActionResult Index(int id)
+        {
+            ProductModel product = _productRepositorio.ListByid(id);
+            return View("Index", product);
         }
     }
 }
