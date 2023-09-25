@@ -35,6 +35,7 @@ namespace MangaShop
 
             services.AddScoped<IUserRepositorio, UserRepositorio>();
             services.AddScoped<ISessao, Sessao>();
+            services.AddTransient<IProductRepositorio, ProductRepositorio>();
 
             services.AddSession(o =>
             {

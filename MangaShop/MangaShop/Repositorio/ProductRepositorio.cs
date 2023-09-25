@@ -17,9 +17,10 @@ namespace MangaShop.Repositorio
         {
             return _bancoContext.Products.FirstOrDefault(x => x.Id == id);
         }
-        public ProductModel ListByUserId(int id)
+        public List<ProductModel> ListByUserId(int userId)
         {
-            return _bancoContext.Products.FirstOrDefault(x => x.UserId == id);
+            var products = _bancoContext.Products.Where(x => x.UserId == userId).ToList();
+            return products;
         }
         public List<ProductModel> ListarTodos()
         {
@@ -32,6 +33,8 @@ namespace MangaShop.Repositorio
             _bancoContext.SaveChanges();
             return product;
         }
+
+       
 
         public ProductModel Editar(ProductModel product)
         {

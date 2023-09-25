@@ -24,47 +24,14 @@
     @await Component.InvokeAsync("Information")
     
             <section id="seus_produtos">
-                <h1>
-                    Seus Produtos</h1>
+                <h1>Seus Produtos</h1>
                     
-        
+
                     <div id="seus_produtos_corpo">
+                        
                         <div id="produtos">
-                            <div class="produto">
-                                <a href="">
-                                    <div class="imagem_produto">
-                            <img src="@Url.Content("~/imagens/mangas.png")" />
-                                    </div>
-                                    <div class="detalhes_produto">
-                                        <h3>Coleção de mangás</h3>
-                                        <p>R$ 80000,21</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="produto">
-                                <a href="">
-                                    <div class="imagem_produto">
-                            <img src="@Url.Content("~/imagens/mangas.png")" />
-                                    </div>
-                                    <div class="detalhes_produto">
-                                        <h3>Coleção de mangás</h3>
-                                        <p>R$ 80000,21</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="produto">
-                                <a href="">
-                                    <div class="imagem_produto">
-                            <img src="@Url.Content("~/imagens/mangas.png")" />
-                                    </div>
-                                    <div class="detalhes_produto">
-                                        <h3>Coleção de mangás</h3>
-                                        <p>R$ 80000,21</p>
-                                    </div>
-                                </a>
-                            </div>
+                @await Component.InvokeAsync("Products")
+                            
                         </div>
 
                         <div id="botoes">

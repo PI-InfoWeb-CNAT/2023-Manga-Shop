@@ -5,9 +5,8 @@ namespace MangaShop.Controllers
 {
     public class ProductController : Controller
     {
-        public IActionResult Index(ProductModel product, UserModel user)
+        public IActionResult Index(ProductModel product)
         {
-            ViewBag.User = user;
             return View(product);
         }
     }

@@ -7,7 +7,7 @@ namespace MangaShop.Repositorio
     {
         ProductModel GetByValue(int value);
         ProductModel ListByid(int id);
-        ProductModel ListByUserId(int UserId);
+        List<ProductModel> ListByUserId(int UserId);
         List<ProductModel> ListarTodos();
         ProductModel Adicionar(ProductModel product);
         ProductModel Editar(ProductModel product);
