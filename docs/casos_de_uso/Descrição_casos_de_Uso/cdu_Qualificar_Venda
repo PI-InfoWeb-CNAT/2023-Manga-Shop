@@ -1,0 +1,45 @@
+
+﻿
+# Projeto Comercio Eletrônico - MangaShop
+
+## Especificação do caso de uso - Qualificar Venda
+
+### Histórico da Revisão
+|  Data  | Versão | Descrição | Autor |
+|:-------|:-------|:----------|:------|
+| 24/10/2023 | **0.00** | Fazer o detalhamento para qualificar um venda efetuada | Vinícius Barbosa |
+
+
+### 1. Resumo 
+    Detalha o processo de qualificação para uma venda feita na manga shop para que depois possa ser notificada ao vendedor
+### 2. Atores
+-    Usuários do Sistema(vendedor)
+-    Usuários do Sistema(comprador)
+
+### 3. Pré-condições
+São pré-condições para iniciar este caso de uso:
+- 	O usuário deve possuir um registro ativo no sistema.
+- 	O usuário deve estar logado no sistema.
+
+### 4.Pós-condições
+Após a execução deste casos de uso, espera que o sistema:
+- O usuário Registra seu produto para venda
+
+### 5. Fluxos de evento
+
+#### 5.1. Fluxo Principal
+
+|  Ator  | Sistema |
+|:-------|:------- |
+| 1. Usuário compra um produto | --- |
+| --- | 2. Sistema recebe os dados para a efetivação da compra |
+| --- | 3.  Sistema valida os dados | 
+| --- | 4.  Sistema confirma a compra|
+| --- | 5. Sistema retira anuncio do produto do ar | 
+| --- | 6. Sistema notifica vendedor |
+| --- | 7. Sistema notifica comprador |
+| --- | 8. Sistema Finaliza Qualificação da |
+
+### 6. Dicionário de dados
+
+### 7. Protótipos de UI
