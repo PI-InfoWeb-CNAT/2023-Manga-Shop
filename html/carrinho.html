@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="carrinho.css" rel="stylesheet" />
+    <title>Manga Shop - Home</title>
+    <script src="todos.js"></script>
+</head>
+<body>
+
+    <header>
+
+        <nav>
+
+            <div id="header_cima">
+                <h1 id="logo">
+                    <a href="index.html"><img onmouseover="expandir(this)" onmouseout="diminuir(this)" src="imagens/Logo.png" alt="a logo de uma manga com o nome Manga Shop sobre ela" /></a>
+                </h1>
+
+                <form action="pesquisa.html" id="barra_pesquisa">
+                    <input type="search" name="pesquisa" placeholder="Pesquise alguma coisa ai" />
+                    <button type="submit"><img src="imagens/lupa.png" /></button>
+                </form>
+
+                <ul>
+                    <li><a href="perfil.html">Bem-vindo, Rafael!</a></li>
+                </ul>
+
+            </div>
+
+            <div id="header_baixo">
+                <ul>
+                    <li><a href="chat.html"><img src="imagens/chat_icone.png" alt="conversas" /></a></li>
+                    <li><a href="vender.html">Vender</a></li>
+                    <li><a href="suporte.html">Suporte</a></li>
+                    <li><a href="conversas.html">Conversas</a></li>
+                    <li id="lista_desejos"><a href="lista_desejos.html">Favoritos</a></li>
+                    <li><a href="carrinho.html">Carrinho</a></li>
+                </ul> 
+            </div>  
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="produtos" id="produto_1">
+
+            <label id="checkbox_1"><input type="checkbox" checked /></label>
+
+            <div class="imagens_favorito">
+                <a href="produto.html"><img src="imagens/mangas.png" id="imagem1"/></a>
+            </div>
+
+            <div class="informacoes">
+                <h2 class="nome_produto" id="nome_produto_1">Coleção de Mangás, 15 unidades</h2>
+                <h3 class="nome_vendedor" id="nome_vendedor_1"><a href="">Esfarrapo da Silva Junior</a> - Campus <span id="campus_1">Natal Central</span></h3> 
+            </div>
+
+            <div class="preco">
+                <h2 class="preco_produto" id="preco_produto_1">R$ 520,50</h2>
+            </div>
+
+            <div class="botoes_produto">
+                <a href="produto.html" class="botao_pagina">Visitar página</a>
+            </div>
+        </section>
+
+        <div>
+            <button onclick="document.getElementById('id01').style.display='block'" id="botao_comprar">Fechar pedido</button>
+        </div>
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+            <form class="modal-content" action="/action_page.php">
+              <div class="container">
+                <h1>Realizar compra</h1>
+                <p>Compras em dinheiro devem ser combinadas com o vendedor e não tem suporte da plataforma.</p>
+              
+                <div class="clearfix">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="pix">Pagamento em PIX</button>
+                  <a onclick="document.getElementById('id01').style.display='none'" class="dinheiro" href="conversas.html">Pagamento em dinheiro</a>
+                </div>
+              </div>
+            </form>
+        </div>
+
+    </main>        
+
+    <footer>
+
+        <address>
+            <div id="contatos">
+                <p>Contato para suporte: mangashop@suporte.com</p>
+                <p>Contato profissional: mangashop@contato.com</p>
+            </div>
+
+            <div id="contatos_2">
+                <p>CNPJ n.º 00.000.000/0000-00 / Av. Num sei o que num sei o que lá nº 8, Ohio, Natal/RN - CEP 00000-000 - empresa do grupo Manga Shop.</p>
+                <p>Copyright © 1799-2023 dorpura.com.br LTDA.</p>
+            </div>
+        </address>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="chat_comprar.css" rel="stylesheet" />
+    <title>Manga Shop - Home</title>
+    <script src="chat.js"></script>
+</head>
+<body>
+
+    <header id="body_header">
+
+        <nav>
+
+            <div id="header_cima">
+                <h1 id="logo">
+                    <a href="index.html"><img onmouseover="expandir(this)" onmouseout="diminuir(this)" src="imagens/Logo.png" alt="a logo de uma manga com o nome Manga Shop sobre ela" /></a>
+                </h1>
+
+                <form action="pesquisa.html" id="barra_pesquisa">
+                    <input type="search" name="pesquisa" placeholder="Pesquise alguma coisa ai" />
+                    <button type="submit"><img src="imagens/lupa.png" /></button>
+                </form>
+
+                <ul>
+                    <li><a href="perfil.html">Bem-vindo, Rafael!</a></li>
+                </ul>
+
+            </div>
+
+            <div id="header_baixo">
+                <ul>
+                    <li><a href="chat.html"><img src="imagens/chat_icone.png" alt="conversas" /></a></li>
+                    <li><a href="vender.html">Vender</a></li>
+                    <li><a href="suporte.html">Suporte</a></li>
+                    <li><a href="conversas.html">Conversas</a></li>
+                    <li id="lista_desejos"><a href="lista_desejos.html">Favoritos</a></li>
+                    <li><a href="carrinho.html">Carrinho</a></li>
+                </ul> 
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main id="body_main">
+        
+        <div id="container">
+            <aside>
+                <header id="container_header">
+                    <div id="cabecalho_1">
+                        <h1>Conversas</h1>
+                        <img src="imagens/config_icone.png" id="config_icone" />
+                    </div>
+                    <div id="cabecalho_2"><input type="text" placeholder="Pesquisar" id="pesquisar_conversa"></div>
+                    
+                </header>
+                <ul>
+                    <li>
+                        <button>
+                            <img src="imagens/gato_burro.jpg" /> 
+                            <div>
+                                <h2>Esmiralhado da Silva</h2>
+                                <h3>OK</h3>
+                            </div>
+                            <span>10:12</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <img src="imagens/gato_burro.jpg" /> 
+                            <div>
+                                <h2>Esmiralhado da Silva</h2>
+                                <h3>OK</h3>
+                            </div>
+                            <span>10:12</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <img src="imagens/gato_burro.jpg" /> 
+                            <div>
+                                <h2>Esmiralhado da Silva</h2>
+                                <h3>OK</h3>
+                            </div>
+                            <span>10:12</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <img src="imagens/gato_burro.jpg" /> 
+                            <div>
+                                <h2>Esmiralhado da Silva</h2>
+                                <h3>OK</h3>
+                            </div>
+                            <span>10:12</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <img src="imagens/gato_burro.jpg" /> 
+                            <div>
+                                <h2>Esmiralhado da Silva</h2>
+                                <h3>OK</h3>
+                            </div>
+                            <span>10:12</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <img src="imagens/gato_burro.jpg" /> 
+                            <div>
+                                <h2>Esmiralhado da Silva</h2>
+                                <h3>OK</h3>
+                            </div>
+                            <span>10:12</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <img src="imagens/gato_burro.jpg" /> 
+                            <div>
+                                <h2>Esmiralhado da Silva</h2>
+                                <h3>OK</h3>
+                            </div>
+                            <span>10:12</span>
+                        </button>
+                    </li>
+                    
+                </ul>
+                
+            </aside>
+            <main>
+                <header>
+                    <img src="imagens/gato_burro.jpg" id="icone_conversa"/>
+                    <div>
+                        <h2>Conversa com Esmiralhado da Silva</h2>
+                        <h3>Ultima vez online: 10:12</h3>
+                    </div>
+                    <button onclick="document.getElementById('id01').style.display='block'" id="botao_denunciar"><img src="imagens/denunciar.png" id="icone_denuncia"/></button>
+                    <div id="div_entrega"><button onclick="document.getElementById('id02').style.display='block'" id="botao_entrega">Confirmar recebimento do produto</button></div>
+                </header>
+                <ul id="chat">
+                    <li class="you">
+                        <div class="entete">
+                            <span class="status green"></span>
+                            <h2>Esmiralhado</h2>
+                            <h3>10:12, Hoje</h3>
+                        </div>
+                        <div class="message">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        </div>
+                    </li>
+                    <li class="me">
+                        <div class="entete">
+                            <h3>10:12, Hoje</h3>
+                            <h2>Você</h2>
+                            <span class="status blue"></span>
+                        </div>
+                        <div class="message">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        </div>
+                    </li>
+                    <li class="me">
+                        <div class="entete">
+                            <h3>10:12, Hoje</h3>
+                            <h2>Você</h2>
+                            <span class="status blue"></span>
+                        </div>
+                        <div class="message">
+                            OK
+                        </div>
+                    </li>
+                    <li class="you">
+                        <div class="entete">
+                            <span class="status green"></span>
+                            <h2>Esmiralhado</h2>
+                            <h3>10:12, Hoje</h3>
+                        </div>
+                        <div class="message">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        </div>
+                    </li>
+                    <li class="me">
+                        <div class="entete">
+                            <h3>10:12, Hoje</h3>
+                            <h2>Você</h2>
+                            <span class="status blue"></span>
+                        </div>
+                        <div class="message">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        </div>
+                    </li>
+                    <li class="me">
+                        <div class="entete">
+                            <h3>10:12, Hoje</h3>
+                            <h2>Você</h2>
+                            <span class="status blue"></span>
+                        </div>
+                        <div class="message">
+                            OK
+                        </div>
+                    </li>
+                </ul>
+                <footer id="hud_conversa">
+
+                    <img src="imagens/emoji.png" />
+                    <textarea></textarea>
+                    <button><img src="imagens/enviar_icone.png" /></button>
+                    <img src="imagens/clipe_icone.png" />
+
+                </footer>
+            </main>
+        </div>
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                <form class="modal-content" action="chat.html">
+                    <div class="container">
+                        <h1>Denunciar conversa?</h1>
+                        <p>O histórico de mensagens será enviado para nossos administradores.</p>
+                        <input type="text" placeholder="Detalhe seu problema."/>
+
+                        <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="denunciar">Denunciar</button>
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelar">Cancelar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="id02" class="modal">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+                <form class="modal-content" action="chat.html">
+                    <div class="container">
+                        <h1>Confirmar entrega do produto?</h1>
+                        <p>Isso significa que você confirma ter recebido o produto.</p>
+
+                        <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelar_2">Cancelar</button>
+                        <a class="confirmar" href="chat.html">Confirmar</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer id="body_footer">
+
+        <address>
+            <div id="contatos">
+                <p>Contato para suporte: mangashop@suporte.com</p>
+                <p>Contato profissional: mangashop@contato.com</p>
+            </div>
+
+            <div id="contatos_2">
+                <p>CNPJ n.º 00.000.000/0000-00 / Av. Num sei o que num sei o que lá nº 8, Ohio, Natal/RN - CEP 00000-000 - empresa do grupo Manga Shop.</p>
+                <p>Copyright © 1799-2023 dorpura.com.br LTDA.</p>
+            </div>
+        </address>
+
+    </footer>
+</body>
+</html>

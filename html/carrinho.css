@@ -44,7 +44,9 @@ nav div ul{
 }
 #header_cima ul{
     margin-top: 2.2em;
-    margin-left: 4.1em;
+}
+#header_cima ul li{
+    margin-left: 4em;
 }
 #header_baixo{
     background-color: #f28a3c;
@@ -113,7 +115,7 @@ header a{
     cursor: pointer;
 }
 #barra_pesquisa button img{
-    width: 36.66px;
+    width: 30px;
     margin-top: 2px;
     padding-right: 0.5em;
     padding-top: 0.5em;
@@ -126,162 +128,103 @@ header a{
 /*Main*/
 
 main{
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     margin-top: 2em;
     margin-bottom: 2em;
     box-shadow: 0 0 15px -5px #1a1a1a;
-    background-color: #fafafa;
-    padding: 2em;
+    background-color: #fefefe;
+    padding: 2em 5em 2em 5em;
 }
 main a{
     transition: 0.3s;
 }
 main button{
     transition: 0.3s;
-    border: 0;
-    cursor: pointer;
-    font-size: 16px;
 }
 main h1{
     font-size: 30px;
   }
-#icone{
-    text-align: center;
-}
-#icone button{
-    cursor: pointer;
-    background-color: #fafafa;
-    border: 0;
-}
-#nao_icone{
-    display: grid;
-    grid-template-columns: 52% 42.3%; 
-    grid-template-rows: 300px 400px;
-    grid-gap: 1.5em;
-    margin-left: 3.5em;
-    margin-top: 2em;
-}
-#informacoes_perfil{
-    background-color: #fefefe;
-    padding: 2.2em;
-    padding-left: 1em;
-    padding-bottom: 1em;
-    grid-area: 1 / 1 / 2 / 2;
-}
-#informacoes_perfil div.cabecalho{
+.produtos{
     display: flex;
+    width: 100%;
+    padding: 1em;
     justify-content: space-between;
-    margin-left: 1.2em;
-    margin-bottom: 1em;
 }
-.botoes_fofos{
-    margin-top: 4px;
-    margin-right: 1.5em;
-    text-align: center;
-    background-color: #f28a3c;
-    color: #1a1a1a;
-    text-decoration: none;
-    padding: 0.5em 3em 0.5em 3em;
+#checkbox_1{
+    position: relative;
+    margin-top: 4.3em;
 }
-.botoes_fofos:hover{
-    background-color: #ec7122;
-    color: #fefefe;
+#checkbox_1 input{
+    width: 1.3em;
+    height: 1.3em;
 }
-#cabecalho a:hover{
-    background-color: #ec7122;
-}
-.dados{
-    text-align: left;
-    font-size: 18px;
-}
-.dados th{
-    padding: 0 1em 0 1em;
-}
-#seguranca{
-    background-color: #fefefe;
-    padding: 2.2em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    grid-area: 1 / 2 / 2 / 3;
-}
-#seguranca h1{
-    margin-left: 0.6em;
-    margin-bottom: 0.5em;
-}
-#botoes_seguranca{
-    margin-top: 3em;
-    margin-left: 1.2em;
-}
-#seus_produtos{
-    background-color: #fefefe;
-    padding: 2.2em;
-    padding-bottom: 2.2em;
-    grid-area: 2 / 1 / 3 / 3;
-}
-#seus_produtos h1{
-    margin-bottom: 0.5em;
-} 
-#seus_produtos a{
-    color: #1d1d1d;
-    text-decoration: none;
-}
-#seus_produtos a:hover{
-    color: #f28a3c;
-}
-#seus_produtos img{
+.imagens_favorito{
     width: 250px;
 }
-#seus_produtos_corpo{
-    display: flex;
+.imagens_favorito img{
+    object-fit: cover;
+    width: 250px;
 }
-#produtos{
-    display: flex;
-    gap: 2em;
+.nome_vendedor a{
+    color: #f28a3c;
+    transition: 0.3s;
 }
-.produto{
-    margin-top: 1em;
-    background-color: #fefefe;
+.nome_vendedor a:hover{
+    color: #cf570c;
 }
-.detalhes_produto{
-    padding-left: 1em;
-    padding-bottom: 1.5em;
+.informacoes{
+    margin-left: 2em;
+    margin-top: 3em;
 }
-.detalhes_produto p{
-    font-size: 15px;
+.preco{
+    margin-right: 4em;
+    margin-left: 4em;
+    margin-top: 4em;
 }
-
-#botoes{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 400px;
-    margin-top: 1em;
-    margin-left: 2.3em;
-}
-#botoes a{
+.botao_pagina{
+    text-decoration: none;
+    color: #1d1d1d;
+    padding: 0.8em 3em 0.8em 3em;
+    font-size: 22px;
     text-align: center;
-    flex: 1;
-    width: 400px;
-    margin-bottom: 2em;
-    padding: 0.8em 1em 0 1em;
-    font-size: 18px;
     background-color: #f28a3c;
-    color: #1a1a1a;
+    border-radius: 1px;
+    transition: 0.3s;
+    position: relative;
+    top: 3em;
+    width: 200px;
 }
-#botoes a:hover{
+.botao_pagina:hover{
     background-color: #ec7122;
-    color: #fefefe;
 }
-#botoes a:last-of-type{
-    margin-bottom: 0;
+#botao_comprar{
+    border: 0;
+    width: 400px;
+    height: 2.5em;
+    font-size: 22px;
+    padding-top: 0.8em;
+    padding-bottom: 2em;
+    cursor: pointer;
+    background-color: #f28a3c;
+    border-radius: 1px;
+    transition: 0.3s;
+    margin-top: 3em;
+    margin-left: 27em;
+}
+#botao_comprar:hover{
+    background-color: #ec7122;
+    color: #f5f5f5;
 }
 
 /*Footer*/
 
 footer{
     background-color: #ec7122;
-    color: #f5f5f5; 
+    color: #f5f5f5;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 footer address{
     padding: 1.5em;
@@ -300,24 +243,23 @@ footer address div{
     width: 100%;
     justify-content: space-between;
 }
-.barra_texto{
-    background-color: #f5f5f5;
-    width: 30em;
-    height: 2.3em;
-    border: 0;
-    font-size: 16px;
-    padding: 0.3em 1em 0.3em 1em;
-    margin: 1em 0 1em 0;
-    border: none;
-    outline: none;
-}
-#alterar_perfil{
-    display: flex;
-    flex-direction: column;
-}
+
 /*modal*/
 
 /* Float cancel and delete buttons and add an equal width */
+
+.pix, .dinheiro {
+    margin: 0 auto;
+    width: 600px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 15px;
+    transition: 0.3s;
+    text-decoration: none;
+}
 
 /* Add a color to the cancel button */
 .dinheiro {
@@ -339,6 +281,7 @@ footer address div{
 /* Add padding and center-align text to the container */
 .container {
   padding: 16px;
+  text-align: center;
 }
 
 /* The Modal (background) */
@@ -359,10 +302,10 @@ footer address div{
 .modal-content {
   background-color: #fefefe;
   margin: 0 auto;
-  margin-top: 5em;
-  width: 30%; /* Could be more or less, depending on screen size */
-  padding: 2em;
+  margin-top: 15em;
+  width: 70%; /* Could be more or less, depending on screen size */
 }
+
 /* Style the horizontal ruler */
 hr {
   border: 1px solid #f1f1f1;
@@ -383,33 +326,13 @@ hr {
   color: #f44336;
   cursor: pointer;
 }
-#botoes_editar{
+.clearfix{
     display: flex;
     margin-top: 2em;
 }
-#botoes_editar button{
-    padding: 1em;
-    width: 200px;
-    background-color: #f28a3c;
-}
-#botoes_editar button:hover{
-    color: #fefefe;
-    background-color: #ec7122;
-}
-#botoes_editar a{
-    color: #1a1a1a;
-    text-decoration: none;
-    padding: 1em;
-    width: 200px;
-    text-align: center;
-}
-#botoes_editar a:hover{
-    color: #ec7122;
-}
-#alterar_perfil{
-    margin-top: 2em;
-}
-#alterar_perfil label{
-    display: flex;
-    flex-direction: column;
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }

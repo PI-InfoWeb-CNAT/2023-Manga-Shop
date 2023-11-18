@@ -16,7 +16,7 @@
 
             <div id="header_cima">
                 <h1 id="logo">
-                    <a href="index.html"><img onmouseover="expandir(this)" onmouseout="diminuir(this)" src="imagens/Logo.png" alt="a logo de uma manga com o nome Manga Shop sobre ela" /></a>
+                    <a href="home.html"><img onmouseover="expandir(this)" onmouseout="diminuir(this)" src="imagens/Logo.png" alt="a logo de uma manga com o nome Manga Shop sobre ela" /></a>
                 </h1>
 
                 <form action="pesquisa.html" id="barra_pesquisa">
@@ -25,17 +25,19 @@
                 </form>
 
                 <ul>
-                    <li><a href="perfil.html">Bem-vindo, Esfarrapo!</a></li>
+                    <li><a href="perfil.html">Bem-vindo, Rafael!</a></li>
                 </ul>
 
             </div>
 
             <div id="header_baixo">
                 <ul>
-                    <li><a href="cadastro_produto.html">Vender</a></li>
-                    <li><a href="">Suporte</a></li>
+                    <li><a href="chat.html"><img src="imagens/chat_icone.png" alt="conversas" /></a></li>
+                    <li><a href="vender.html">Vender</a></li>
+                    <li><a href="suporte.html">Suporte</a></li>
                     <li><a href="conversas.html">Conversas</a></li>
-                    <li id="lista_desejos"><a href="lista_desejos.html">Lista de Desejos</a></li>
+                    <li id="lista_desejos"><a href="lista_desejos.html">Favoritos</a></li>
+                    <li><a href="carrinho.html">Carrinho</a></li>
                 </ul> 
             </div>  
 
@@ -72,7 +74,7 @@
                     <h3 id="forma_pagamento">Apenas dinheiro e PIX</h3>
                 </div>
                 <div>
-                    <input type="checkbox" class="checkbox" id="checkbox" />
+                    <input type="checkbox" class="checkbox" id="checkbox" checked />
                         <label for="checkbox">
                               <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
                                 <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
@@ -126,8 +128,8 @@
                 </p>
             </div>
             <div id="botoes_produto">
-                <button onclick="document.getElementById('id01').style.display='block'" id="botao_comprar">Comprar</button>
-                <a href="" id="botao_conversa">Contatar vendedor</a>
+                <button onclick="document.getElementById('id01').style.display='block'" id="botao_comprar">Comprar agora</button>
+                <a href="carrinho.html" id="botao_carrinho">Adicionar ao carrinho</a>
             </div>
             <div id="id01" class="modal">
                 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
@@ -137,8 +139,8 @@
                     <p>Compras em dinheiro devem ser combinadas com o vendedor e não tem suporte da plataforma.</p>
                   
                     <div class="clearfix">
-                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="pix">Pagamento em PIX</button>
-                      <a onclick="document.getElementById('id01').style.display='none'" class="dinheiro" href="conversas.html">Pagamento em dinheiro</a>
+                      <a href="chat_comprar.html" class="pix">Pagamento em PIX</button>
+                      <a onclick="document.getElementById('id01').style.display='none'" class="dinheiro" href="chat.html">Pagamento em dinheiro</a>
                     </div>
                   </div>
                 </form>

@@ -50,18 +50,24 @@ nav div ul{
     margin-left: 4em;
 }
 #header_baixo{
-    background-color: #f28a3c;
-    height: 2.8em;
-    z-index: 2;
+  background-color: #f28a3c;
+  height: 2.8em;
+  z-index: 2;
 }
 #header_baixo ul{
-    margin-top: 10px;
-    justify-content: center;
-    margin-left: 35.7em;
+  margin-top: 10px;
+  justify-content: center;
+  margin-left: 35.7em;
+  position: relative;
+  left: -9.5em;
 }
 #header_baixo li{
-    justify-content: center;
-    margin-right: 8em;
+  justify-content: center;
+  margin-right: 8em;
+}
+#header_baixo a img[src="imagens/chat_icone.png"]{
+  width: 30px;
+  position: relative;
 }
 header ul li a:hover{
     color: #1a1a1a;
@@ -117,7 +123,7 @@ header a{
     padding-bottom: 0.5em;
 }
 #lista_desejos{
-    margin-left: 13.6em;
+  margin-left: 10em;
 }
 
 /*Main*/
@@ -137,8 +143,8 @@ main a{
 main button{
     transition: 0.3s;
 }
-h1{
-    font-size: 30px;
+main h1{
+  font-size: 30px;
 }
 .produtos{
     display: flex;

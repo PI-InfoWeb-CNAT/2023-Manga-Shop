@@ -12,36 +12,40 @@
 
     <header>
 
-        <nav>
+        <header>
 
-            <div id="header_cima">
-                <h1 id="logo">
-                    <a href="index.html"><img onmouseover="expandir(this)" onmouseout="diminuir(this)" src="imagens/Logo.png" alt="a logo de uma manga com o nome Manga Shop sobre ela" /></a>
-                </h1>
-
-                <form action="pesquisa.html" id="barra_pesquisa">
-                    <input type="search" name="pesquisa" placeholder="Pesquise alguma coisa ai" />
-                    <button type="submit"><img src="imagens/lupa.png" /></button>
-                </form>
-
-                <ul>
-                    <li><a href="perfil.html">Bem-vindo, Esfarrapo!</a></li>
-                </ul>
-
-            </div>
-
-            <div id="header_baixo">
-                <ul>
-                    <li><a href="cadastro_produto.html">Vender</a></li>
-                    <li><a href="">Suporte</a></li>
-                    <li><a href="conversas.html">Conversas</a></li>
-                    <li id="lista_desejos"><a href="lista_desejos.html">Lista de Desejos</a></li>
-                </ul> 
-            </div>  
-
-        </nav>
-
-    </header>
+            <nav>
+    
+                <div id="header_cima">
+                    <h1 id="logo">
+                        <a href="home.html"><img onmouseover="expandir(this)" onmouseout="diminuir(this)" src="imagens/Logo.png" alt="a logo de uma manga com o nome Manga Shop sobre ela" /></a>
+                    </h1>
+    
+                    <form action="pesquisa.html" id="barra_pesquisa">
+                        <input type="search" name="pesquisa" placeholder="Pesquise alguma coisa ai" />
+                        <button type="submit"><img src="imagens/lupa.png" /></button>
+                    </form>
+    
+                    <ul>
+                        <li><a href="perfil.html">Bem-vindo, Rafael!</a></li>
+                    </ul>
+    
+                </div>
+    
+                <div id="header_baixo">
+                    <ul>
+                        <li><a href="chat.html"><img src="imagens/chat_icone.png" alt="conversas" /></a></li>
+                        <li><a href="vender.html">Vender</a></li>
+                        <li><a href="suporte.html">Suporte</a></li>
+                        <li><a href="conversas.html">Conversas</a></li>
+                        <li id="lista_desejos"><a href="lista_desejos.html">Favoritos</a></li>
+                        <li><a href="carrinho.html">Carrinho</a></li>
+                    </ul> 
+                </div>  
+    
+            </nav>
+    
+        </header>
 
     <main>
         <div id="icone">
@@ -72,15 +76,15 @@
                         <h1>Alterar perfil</h1>
                         
                         <div id="alterar_perfil">
-                            <label>Nome completo<input class="barra_texto" type="text" value="Esfarrapo da Silva Júnior" required /></label>
+                            <label>Nome completo<input class="barra_texto" type="text" value="Rafael Gomes da Cunha" required /></label>
                 
-                            <label>Celular<input class="barra_texto" type="tel" value="+55 (84) 0000-0000" /></label>
+                            <label>Celular<input class="barra_texto" type="tel" value="-" /></label>
                         
                             <label>CPF<input class="barra_texto" type="text" value="000.000.000-00" required /></label>
                 
-                            <label>Campus<input class="barra_texto" type="text" value="Natal Central" /></label>
+                            <label>Campus<input class="barra_texto" type="text" value="Natal - Central" /></label>
                         
-                            <label>Curso<input class="barra_texto" type="text" value="Infoweb" /></label>
+                            <label>Curso<input class="barra_texto" type="text" value="-" /></label>
 
                             <div id="botoes_editar">
                                 <button type="submit" id="salvar">Salvar alterações</button>
@@ -95,11 +99,11 @@
                 <table class="dados">
                     <tr>
                         <th>Nome Completo:</th>
-                        <th id="nome_usuario">Esfarrapo da Silva Júnior</th> <!-- Banco de dados-->
+                        <th id="nome_usuario">Rafael Gomes da Cunha</th> <!-- Banco de dados-->
                     </tr>
                     <tr>
                         <th>Celular:</th>
-                        <th id="telefone_usuario">+55 (84) 0000-0000</th> <!-- Banco de dados-->
+                        <th id="telefone_usuario">-</th> <!-- Banco de dados-->
                     </tr>
                     <tr>
                         <th>CPF:</th>
@@ -107,11 +111,11 @@
                     </tr>
                     <tr>
                         <th>Campus:</th>
-                        <th id="campus_usuario">Natal Central</th> <!-- Banco de dados-->
+                        <th id="campus_usuario">Natal - Central</th> <!-- Banco de dados-->
                     </tr>
                     <tr>
                         <th>Curso:</th>
-                        <th id="curso_usuario">Infoweb</th> <!-- Banco de dados-->
+                        <th id="curso_usuario">-</th> <!-- Banco de dados-->
                     </tr>
                 </table>
             </section>
@@ -121,7 +125,7 @@
                 <table class="dados">
                     <tr>
                         <th>E-mail:</th>
-                        <th id="email_usuario">rafael.cunha@escolar.ifrn.edu.br</th> <!-- Banco de dados-->
+                        <th id="email_usuario">emaildeteste@email.com</th> <!-- Banco de dados-->
                     </tr>
                     <tr>
                         <th>Senha:</th>

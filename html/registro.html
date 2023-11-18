@@ -33,12 +33,14 @@
 
             <div id="header_baixo">
                 <ul>
-                    <li><a href="cadastro_produto.html">Vender</a></li>
-                    <li><a href="">Suporte</a></li>
-                    <li><a href="conversas.html">Conversas</a></li>
-                    <li id="lista_desejos"><a href="lista_desejos.html">Lista de Desejos</a></li>
+                    <li><a href="registro.html"><img src="imagens/chat_icone.png" alt="conversas" /></a></li>
+                    <li><a href="registro.html">Vender</a></li>
+                    <li><a href="registro.html">Suporte</a></li>
+                    <li><a href="registro.html">Conversas</a></li>
+                    <li id="lista_desejos"><a href="registro.html">Favoritos</a></li>
+                    <li><a href="registro.html>">Carrinho</a></li>
                 </ul> 
-            </div>  
+            </div> 
 
         </nav>
 
@@ -46,16 +48,45 @@
 
     <main>
 
-        <form action="perfil.html">
+        <form action="index.html">
             <h1>Registrar-se</h1>
         
             <label>Nome completo<input type="text" class="barra_texto" required /></label>
 
             <label>E-mail<input type="email" class="barra_texto" required /></label>
 
-            <label>CPF<input type="text" class="barra_texto" required /></label>
-
             <label>Senha<input type="password" class="barra_texto" required /></label>
+
+        <section id="barra_dividida">
+            <label>CPF<input type="text" class="barra_texto_dividida" required /></label>
+
+            <div id="campus_selecionar">
+                <label>Campus<select class="barra_texto_dividida" id="select" style="width: 230px; height: 45px;" required>
+                    <option value="apodi">Apodi</option>
+                    <option value="caico">Caicó</option>
+                    <option value="canguaretama">Canguaretama</option>
+                    <option value="ceara_mirim">Ceará-Mirim</option>
+                    <option value="currais_novos">Currais Novos</option>
+                    <option value="ipanguacu">Ipanguaçu</option>
+                    <option value="joao_camara">João Câmara</option>
+                    <option value="jucurutu">Jucurutu</option>
+                    <option value="lajes">Lajes</option>
+                    <option value="macau">Macau</option>
+                    <option value="mossoro">Mossoró</option>
+                    <option value="natal_zona_norte">Natal - Zona Norte</option>
+                    <option value="natal_central">Natal - Central</option>
+                    <option value="natal_cidade_alta">Natal - Cidade Alta</option>
+                    <option value="natal_zona_leste">Natal - Zona Leste</option>
+                    <option value="nova_cruz">Nova Cruz</option>
+                    <option value="parelhas">Parelhas</option>
+                    <option value="parnamirim">Parnamirim</option>
+                    <option value="pau_dos_ferros">Pau dos Ferros</option>
+                    <option value="santa_cruz">Santa Cruz</option>
+                    <option value="sao_goncalo_do_amarante">São Gonçalo do Amarante</option>
+                    <option value="sao_paulo_do_potengi">São Paulo do Potengi</option>
+                </select></label>
+            </div>
+        </section>
 
             <p id="aviso"><a href="login.html">Já tem uma conta? Faça login!</a></p>
 

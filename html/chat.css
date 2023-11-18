@@ -1,0 +1,494 @@
+@import url('https://fonts.cdnfonts.com/css/made-infinity-personal-use');
+
+/* clears the ‘X’ from Internet Explorer */
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'MADE INFINITY PERSONAL USE', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+  background-image: url(imagens/fundo.png);
+  color: #1d1d1d;
+  font-size: 16px;
+}
+
+/*Header*/
+
+#body_header{
+  box-shadow: 0 0 15px #1a1a1a;   
+}
+#body_header nav div{
+  display: flex;
+}
+#body_header nav div ul{
+  display: inherit;
+  list-style: none;
+}
+#header_cima{
+  background-color: #ec7122;
+  height: 100px;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+  box-shadow: 0 0 15px #c76e2a;
+}
+#header_cima ul{
+  margin-top: 2.2em;
+}
+#header_cima ul li{
+  margin-left: 4em;
+}
+#header_baixo{
+  background-color: #f28a3c;
+  height: 2.8em;
+  z-index: 2;
+}
+#header_baixo ul{
+  margin-top: 10px;
+  justify-content: center;
+  margin-left: 35.7em;
+  position: relative;
+  left: -9.5em;
+}
+#header_baixo li{
+  justify-content: center;
+  margin-right: 8em;
+}
+#header_baixo a img[src="imagens/chat_icone.png"]{
+  width: 30px;
+  position: relative;
+}
+#body_header ul li a:hover{
+  color: #1a1a1a;
+}
+#body_header a{
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: 0.3s;
+}
+#logo{
+  margin-right: 4em;
+  position: relative;
+}
+#logo img{
+  width: 120px;
+  margin-top: 5px;
+  transition: 0.3s;
+}
+#barra_pesquisa{
+  display: inherit;
+  flex: wrap;
+  background-color: #f5f5f5;
+  height: 2.8em;
+  margin-top: 1.5em;
+  margin-right: 2em;
+  box-shadow: 0 5px 15px #c26c2b;
+}
+#barra_pesquisa input{
+  background-color: #f5f5f5;
+  width: 35em;
+  height: 2.3em;
+  border: 0;
+  margin-top: 2px;
+  margin-left: 15px;
+  margin-right: 7px;
+  font-size: 17px;
+  border: none;
+  outline: none;
+}
+#barra_pesquisa button{
+  background-color: #f5f5f5;
+  height: 3.3em;
+  border: 0;
+}
+#barra_pesquisa button:hover{
+  cursor: pointer;
+}
+#barra_pesquisa button img{
+  width: 30px;
+  margin-top: 2px;
+  padding-right: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+#lista_desejos{
+  margin-left: 10em;
+}
+
+/*Main*/
+
+#body_main{
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  box-shadow: 0 0 15px -5px #1a1a1a;
+  background-color: #fafafa;
+  display: flex;
+  gap: 1em;
+}
+#body_main a{
+  transition: 0.3s;
+}
+#body_main button{
+  transition: 0.3s;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+#body_main h1{
+  font-size: 30px;
+}
+
+#container main *{
+	box-sizing:border-box;
+}
+
+#container{
+	width:100%;
+	background:#ffffff;
+	margin: 0 auto;
+	font-size:0;
+	overflow:hidden;
+}
+#container aside{
+	width: 32%;
+	display: inline-block;
+	font-size: 15px;
+	vertical-align: top;
+}
+#container main{
+	width:68%;
+	height:800px;
+  display:inline-block;
+	font-size:15px;
+	vertical-align:top;
+}
+#container_header{
+  background-color: #FFFFFF;
+  padding: 1em;
+}
+#container_header div#cabecalho_1{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+#container_header div#cabecalho_1 h1{
+  font-size: 35px;
+}
+#container_header #config_icone{
+  margin-top: 10px;
+  width: 38px;
+  height: 38px;
+}
+#container_header div#cabecalho_2{
+  margin-left: 1em;
+}
+#container aside input{
+	width: 280px;
+	height:50px;
+	line-height:50px;
+	padding:0 50px 0 20px;
+	border: none;
+  background-color: #f5f5f5;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+#container aside ul{
+	list-style-type: none;
+	overflow-y: scroll;
+	height: 550px;
+  margin-left: 2em;
+}
+#container aside ul li{
+  width: 350px;
+  margin-bottom: 0.5em;
+}
+#container aside ul li span{
+  font-size: 12px;
+  margin-left: 4em;
+  vertical-align: top;
+}
+#container aside li button{
+  padding: 0.5em;
+  width: 350px;
+  text-align: left;
+}
+#container aside li button img{
+	border-radius:50%;
+  width: 65px;
+  margin-right: 0.7em;
+}
+#container aside li div{
+	display: inline-block;
+  vertical-align: top;
+	margin-top: 10px;
+  text-align: left;
+}
+#container aside li h2{
+	font-size: 16px;
+	font-weight:normal;
+	margin-bottom:5px;
+}
+#container aside li h3{
+	font-size: 12px;
+	font-weight: normal;
+  color: rgb(59, 59, 59);
+}
+
+.status{
+	width:8px;
+	height:8px;
+	border-radius:50%;
+	display:inline-block;
+	margin-right:7px;
+}
+
+#container main header{
+	height:110px;
+	padding:30px 20px 30px 40px;
+}
+#container main header #icone_conversa{
+  width: 65px;
+}
+#container main header > *{
+	display:inline-block;
+	vertical-align:top;
+}
+#container main header img:first-child{
+	border-radius:50%;
+}
+#container main header img:last-child{
+	width:24px;
+	margin-top:8px;
+}
+#container main header div{
+	margin-left:10px;
+	margin-right:145px;
+}
+#container main header button{
+  position: relative;
+  left: 15em;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  background-color: #FFFFFF;
+}
+#container main header #icone_denuncia{
+  width: 40px;
+}
+#container main header h2{
+	font-size:16px;
+	margin-bottom:5px;
+}
+#container main header h3{
+	font-size:14px;
+	font-weight:normal;
+	color:#7e818a;
+}
+
+#chat{
+	padding-left:0;
+	margin:0;
+	list-style-type:none;
+	overflow-y:scroll;
+	height:535px;
+	border-top:2px solid #fff;
+	border-bottom:2px solid #fff;
+}
+#chat li{
+	padding:10px 30px;
+}
+#chat h2,#chat h3{
+	display:inline-block;
+	font-size:13px;
+	font-weight:normal;
+}
+#chat h3{
+	color:#bbb;
+}
+#chat .entete{
+	margin-bottom:5px;
+}
+#chat .message{
+	padding:20px;
+	color:#fff;
+	line-height:25px;
+	max-width:90%;
+	display:inline-block;
+	text-align:left;
+	border-radius:5px;
+}
+#chat .me{
+	text-align:right;
+}
+#chat .you .message{
+	background-color:#F5F5F5;
+  color: #1d1d1d;
+}
+#chat .me .message{
+	background-color:#f28a3c;
+}
+
+#container main footer{
+  display: flex;
+  background-color: #F5F5F5;
+  height: 60px;
+  padding-left: 1em;
+}
+#container main footer textarea{
+	border: none;
+  padding: 0.5em;
+	width: 40em;
+  height: 40px;
+	font-size: 15px;
+  margin-top: 0.6em;
+  margin-left: 1em;
+}
+#container main footer > img{
+	height: 30px;
+  width: 30px;
+	cursor: pointer;
+  margin: 1em;
+}
+#hud_conversa button{
+  background-color: #F5F5F5;
+}
+#container main footer button img{
+  width: 35px;
+  height: 35px;
+  margin: 0.5em;
+}
+
+/*Footer*/
+
+#body_footer{
+  background-color: #ec7122;
+  color: #f5f5f5;
+  padding-bottom: 1em;
+}
+#body_footer address{
+  padding: 1.5em;
+  width: 90%;
+  margin: 0 auto;
+}
+#body_footer address div{
+  display: flex;
+  margin-bottom: 0.3em;
+}
+#contatos{
+  width: 45%;
+  justify-content: space-between;
+}
+#contatos_2{
+  width: 100%;
+  justify-content: space-between;
+}
+/* Float cancel and delete buttons and add an equal width */
+
+.denunciar, .cancelar {
+  margin: 0 auto;
+  width: 500px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 15px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+/* Add a color to the cancel button */
+.cancelar {
+background-color: #f1f1f1;
+color: black;
+}
+.cancelar:hover{
+  background-color: #d3d2d2;
+}
+
+/* Add a color to the delete button */
+.denunciar {
+background-color: #f28a3c;
+}
+.denunciar:hover{
+  background-color: #ec7122;
+}
+
+/* Add padding and center-align text to the container */
+.container {
+padding: 16px;
+text-align: center;
+}
+.container input{
+  width: 1000px;
+  height: 100px;
+  margin-top: 2em;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: #3d3d3d4b;
+padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+background-color: #fefefe;
+margin: 0 auto;
+margin-top: 15em;
+width: 70%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+}
+
+/* The Modal Close Button (x) */
+.close {
+position: absolute;
+right: 35px;
+top: 15px;
+font-size: 40px;
+font-weight: bold;
+color: #f1f1f1;
+}
+
+.close:hover, .close:focus {
+color: #f44336;
+cursor: pointer;
+}
+.clearfix{
+  display: flex;
+  margin-top: 2em;
+}
+/* Clear floats */
+.clearfix::after {
+content: "";
+clear: both;
+display: table;
+}
