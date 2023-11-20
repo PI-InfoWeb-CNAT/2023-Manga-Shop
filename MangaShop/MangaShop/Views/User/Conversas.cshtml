@@ -1,0 +1,160 @@
+﻿@using Microsoft.EntityFrameworkCore.Metadata.Internal;
+@model UserModel;
+@{
+    ViewData["Title"] = "- Conversas";
+}
+
+
+
+<head>
+    <link rel="stylesheet" href="@Url.Content("~/css/chat.css")" />
+</head>
+
+
+<main id="body_main">
+
+    <div id="container">
+        <aside>
+            <header id="container_header">
+                <div id="cabecalho_1">
+                    <h1>Conversas</h1>
+                    <img src="imagens/config_icone.png" id="config_icone" />
+                </div>
+                <div id="cabecalho_2"><input type="text" placeholder="Pesquisar" id="pesquisar_conversa"></div>
+
+            </header>
+            <ul>
+                <li>
+                    <button>
+                        <img src="imagens/gato_burro.jpg" />
+                        <div>
+                            <h2>Esmiralhado da Silva</h2>
+                            <h3>OK</h3>
+                        </div>
+                        <span>10:12</span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <img src="imagens/gato_burro.jpg" />
+                        <div>
+                            <h2>Esmiralhado da Silva</h2>
+                            <h3>OK</h3>
+                        </div>
+                        <span>10:12</span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <img src="imagens/gato_burro.jpg" />
+                        <div>
+                            <h2>Esmiralhado da Silva</h2>
+                            <h3>OK</h3>
+                        </div>
+                        <span>10:12</span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <img src="imagens/gato_burro.jpg" />
+                        <div>
+                            <h2>Esmiralhado da Silva</h2>
+                            <h3>OK</h3>
+                        </div>
+                        <span>10:12</span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <img src="imagens/gato_burro.jpg" />
+                        <div>
+                            <h2>Esmiralhado da Silva</h2>
+                            <h3>OK</h3>
+                        </div>
+                        <span>10:12</span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <img src="imagens/gato_burro.jpg" />
+                        <div>
+                            <h2>Esmiralhado da Silva</h2>
+                            <h3>OK</h3>
+                        </div>
+                        <span>10:12</span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <img src="imagens/gato_burro.jpg" />
+                        <div>
+                            <h2>Esmiralhado da Silva</h2>
+                            <h3>OK</h3>
+                        </div>
+                        <span>10:12</span>
+                    </button>
+                </li>
+
+            </ul>
+
+        </aside>
+        <main>
+            <header>
+                <img src="@Url.Content("~/imagens/gato_burro.jpg")" id="icone_conversa" />
+                <div>
+                    <h2>Conversa com Esmiralhado da Silva</h2>
+                    <h3>Ultima vez online: 10:12</h3>
+                </div>
+                <button onclick="document.getElementById('id01').style.display='block'" id="botao_denunciar"><img src="imagens/denunciar.png" id="icone_denuncia" /></button>
+
+            </header>
+            <ol id="chat">
+                <li class="you">
+                    <div class="entete">
+                        <span class="status green"></span>
+                        <h2>Esmiralhado</h2>
+                        <h3>10:12, Hoje</h3>
+                    </div>
+                    <div class="message">
+                        LEGAL!
+                    </div>
+                </li>
+                <li class="me">
+                    <div class="entete">
+                        <h3>10:12, Hoje</h3>
+                        <h2>Você</h2>
+                        <span class="status blue"></span>
+                    </div>
+                    <div class="message">
+                        OK
+                    </div>
+                </li>
+            </ol>
+            <footer id="hud_conversa">
+
+                <textarea rows="10" cols="50" id="txtMsg"></textarea>
+                <button type="submit" id="btnSend"><img src="@Url.Content("~/imagens/enviar_icone.png")" /></button>
+
+            </footer>
+        </main>
+    </div>
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+        <form class="modal-content" action="chat.html">
+            <div class="container">
+                <h1>Denunciar conversa?</h1>
+                <p>O histórico de mensagens será enviado para nossos administradores.</p>
+                <input type="text" placeholder="Detalhe seu problema." />
+
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="denunciar">Denunciar</button>
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelar">Cancelar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</main>
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/lib/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/site.js"></script>

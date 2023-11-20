@@ -1,4 +1,22 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿var connection = new signalR.HubConnectionBuilder().withUrl("/ConversasHub").build();
 
-// Write your JavaScript code.
+connection.on("ReceiveMessage", function (userId, message) {
+    var msg = message;
+    var li = document.createElement("li");
+    var divMessage = document.createElement("div")
+    divMessage.classList.add("message")
+    divMessage.textContent = msg
+    li.append(divMessage);
+    if (id == userId) { li.classList.add("me") }
+    else { li.classList.add("you") }
+    $('#chat').prepend(li);
+});
+
+connection.start();
+
+$("#btnSend").on("click", function () {
+    var userId = $.;
+    var message = $("#txtMsg").val();
+
+    connection.invoke("SendMessage", userId, message);
+})

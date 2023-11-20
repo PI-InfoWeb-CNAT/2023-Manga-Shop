@@ -12,7 +12,6 @@ namespace MangaShop.ViewComponents
     public class Product : ViewComponent
     {
         private readonly IProductRepositorio _productRepositorio;
-        
 
         public Product (IProductRepositorio productRepositorio)
         {
@@ -22,7 +21,7 @@ namespace MangaShop.ViewComponents
         {
             int id = 0;
 
-             ProductModel userProducts = _productRepositorio.ListByid(id);
+            ProductModel userProducts = _productRepositorio.ListByid(id);
 
             
 

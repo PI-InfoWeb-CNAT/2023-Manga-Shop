@@ -73,6 +73,10 @@ namespace MangaShop.Controllers
         {
             return View();
         }
+        public IActionResult Conversas(UserModel user)
+        {
+            return View();
+        }
 
         [HttpPost]
         public IActionResult UploadIcon(UserModel userModel, IFormFile icon)

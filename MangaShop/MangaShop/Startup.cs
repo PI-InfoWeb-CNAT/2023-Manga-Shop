@@ -1,5 +1,6 @@
 using MangaShop.Data;
 using MangaShop.Helper;
+using MangaShop.Hubs;
 using MangaShop.Repositorio;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -30,6 +31,8 @@ namespace MangaShop
         {
             services.AddControllersWithViews();
             services.AddEntityFrameworkSqlServer().AddDbContext<BancoContext>(sql => sql.UseSqlServer(Configuration.GetConnectionString("DataBase")));
+
+            services.AddSignalR();
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
@@ -65,6 +68,8 @@ namespace MangaShop
             app.UseAuthorization();
 
             app.UseSession();
+
+            app.UseEndpoints(endpoints => { endpoints.MapHub<ConversasHub>("/ConversasHub"); });
 
             app.UseEndpoints(endpoints =>
             {
