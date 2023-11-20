@@ -31,7 +31,7 @@ Após a execução deste casos de uso, espera que o sistema:
 |:-------|:------- |
 | 1. Usuário clica botão de conversas | --- |
 | --- | 2. Sistema redireciona usuário para página de conversas |
-| 3.  usuario clica visualiza todas as conversas que posui no momento | --- |
+| 3.  usuario visualiza todas as conversas que posui no momento | --- |
 | 5. Usuário Continua Navegando | --- |
 
 ### 6. Dicionário de dados
