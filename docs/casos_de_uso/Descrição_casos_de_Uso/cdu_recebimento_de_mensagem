@@ -1,0 +1,40 @@
+﻿
+# Projeto Comercio Eletrônico - MangaShop
+
+## Especificação do caso de uso - Receber notificações de mensagem
+
+### Histórico da Revisão
+|  Data  | Versão | Descrição | Autor |
+|:-------|:-------|:----------|:------|
+| 20/11/2023 | **0.00** | Caso de uso retratando o recebimento de mensagens | Vinícius Barbosa |
+
+
+### 1. Resumo 
+    Detalhamento do método de como sera feito para um usuario receber a notificação de uma mensagem nova em nossa plataforma
+### 2. Atores
+- Usuarios do Sistema
+
+
+### 3. Pré-condições
+São pré-condições para iniciar este caso de uso:
+- 	O usuário deve possuir um registro ativo no sistema.
+- 	O usuário deve estar logado no sistema.
+
+### 4.Pós-condições
+Após a execução deste casos de uso, espera que o sistema:
+- usuario podera abri o caso de uso "Visualizar conversas"
+
+### 5. Fluxos de evento
+
+#### 5.1. Fluxo Principal
+
+|  Ator  | Sistema |
+|:-------|:------- |
+| 3.  usuario usuario na pagina principal | --- |
+| --- | 2. Sistema adiciona contador em cima do botão de conversas(cada mensagem adiciona 1 ao contador) |
+| 3.  usuario visualiza notificação | --- |
+| 11. Usuário Continua Navegando | --- |
+
+### 6. Dicionário de dados
+
+### 7. Protótipos de UI
