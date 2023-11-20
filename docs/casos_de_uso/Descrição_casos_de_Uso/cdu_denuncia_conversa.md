@@ -1,7 +1,7 @@
 ﻿
 # Projeto Comercio Eletrônico - MangaShop
 
-## Especificação do caso de uso - Visualizar Conversas
+## Especificação do caso de uso - Denúnciar Conversas
 
 ### Histórico da Revisão
 |  Data  | Versão | Descrição | Autor |
