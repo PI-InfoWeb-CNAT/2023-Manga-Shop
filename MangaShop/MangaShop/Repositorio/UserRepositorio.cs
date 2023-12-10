@@ -1,6 +1,9 @@
 ﻿using MangaShop.Data;
 using MangaShop.Models;
+using Microsoft.AspNetCore.Hosting;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 namespace MangaShop.Repositorio
@@ -8,9 +11,12 @@ namespace MangaShop.Repositorio
     public class UserRepositorio : IUserRepositorio
     {
         private readonly BancoContext _bancoContext;
-        public UserRepositorio(BancoContext bancoContext)
+        private readonly IWebHostEnvironment webHostEnvironment;
+
+        public UserRepositorio(BancoContext bancoContext, IWebHostEnvironment webHost)
         {
             _bancoContext = bancoContext;
+            webHostEnvironment = webHost;
         }
         public UserModel ListByid(int id)
         {
@@ -33,7 +39,10 @@ namespace MangaShop.Repositorio
             UserModel userDB = ListByid(user.Id);
 
             if (userDB == null) throw new System.Exception("usuario nao existe no sistema!");
-            
+
+            string uniqueFileName = UploadedFile(userDB);
+
+
             userDB.Name = user.Name;
             // userDB.Email = user.Email;
             userDB.Cpf = user.Cpf;
@@ -41,7 +50,9 @@ namespace MangaShop.Repositorio
             userDB.Campus = user.Campus;
             userDB.Curso = user.Curso;
             userDB.PhoneNumber = user.PhoneNumber;
-            
+            userDB.IconPath = uniqueFileName;
+
+
             _bancoContext.Users.Update(userDB);
             _bancoContext.SaveChanges();
             return userDB;  
@@ -61,6 +72,25 @@ namespace MangaShop.Repositorio
         public UserModel GetByEmail(string email)
         {
             return _bancoContext.Users.FirstOrDefault(x => x.Email == email);   
+    
         }
+        private string UploadedFile(UserModel user)
+        {
+            string uniqueFileName = null;
+
+            if (user.Icon != null)
+            {
+                string uploadsFolder = Path.Combine(webHostEnvironment.WebRootPath, "imagens");
+                uniqueFileName = Guid.NewGuid().ToString() + "_" + user.Icon.FileName;
+                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    user.Icon.CopyTo(fileStream);
+                }
+            }
+            return uniqueFileName;
+        }
+
     }
+
 }

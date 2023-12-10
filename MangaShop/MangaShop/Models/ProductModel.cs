@@ -16,9 +16,10 @@ namespace MangaShop.Models
         public string Description { get; set; }
         [Required(ErrorMessage = "Digite o valor do produto")]
         public int Value { get; set; }
+        public string ImagesPaths { get; set; }
         [Required(ErrorMessage = "Selecione pelo menos uma imagem do produto")]
-        public string imagesPaths { get; set; }
-
+        [NotMapped]
+        public IFormFile ImagesFiles { get; set; }
         [ForeignKey("UserId")]
         public int UserId { get; set; }
         public virtual UserModel User { get; set; }

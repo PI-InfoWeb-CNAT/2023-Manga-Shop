@@ -2,26 +2,33 @@
 using MangaShop.Models;
 using MangaShop.Repositorio;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Security.Policy;
+using MangaShop.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace MangaShop.Controllers
 {
     public class UserController : Controller
     {
+
         // User Repositorio
+        private readonly BancoContext _context;
         private readonly IUserRepositorio _userRepositorio;
         private readonly ISessao _sessao;
        
-        public UserController(IUserRepositorio userRepositorio, ISessao sessao)
+        public UserController(IUserRepositorio userRepositorio, ISessao sessao, BancoContext context)
         {
-            _userRepositorio = userRepositorio;
+            _userRepositorio = userRepositorio; 
             _sessao = sessao;
-            
+            _context = context;
+
+
         }
         //
 
@@ -51,6 +58,7 @@ namespace MangaShop.Controllers
         [HttpPost]
         public IActionResult Edit(UserModel user)
         {
+            
             _userRepositorio.Editar(user);
             _sessao.RemoveUserSession();
             _sessao.CreateUserSession(user);
@@ -95,9 +103,11 @@ namespace MangaShop.Controllers
        
                 userModel.IconPath = nomeArquivo;
             }
-
-    
             return RedirectToAction("Index");
         }
+
+       
+
+
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MangaShop.Models
 {
@@ -16,6 +17,8 @@ namespace MangaShop.Models
         [Required(ErrorMessage = "Digite a sua senha")]
         public string Password { get; set; }
         public string? IconPath { get; set; }
+        [NotMapped]
+        public IFormFile Icon { get; set; }
 
         public string? PhoneNumber { get; set; }
         public string? Campus { get; set; }
