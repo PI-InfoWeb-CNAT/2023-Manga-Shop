@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="@Url.Content("~/css/produto.css")" />
-    <script src="todos.js"></script>
+    <script src="~/js/todos.js"></script>
 </head>
+
 
 
 <section id="imagens_produto">
@@ -29,7 +30,7 @@
 
     <div class="informacoes">
         <h1 id="nome_produto">@Model.Title</h1>
-        <h3 id="nome_vendedor"><a href="">@Model.UserId</a> - Campus <span id="campus">Natal Central</span></h3>
+        <h3 id="nome_vendedor"><a href="">@Model.UserId</a> - Campus <span id="campus">@Model.</span></h3>
     </div>
     <div class="informacoes" id="produto_informacoes">
         <div>
@@ -37,7 +38,7 @@
             <h3 id="forma_pagamento">Apenas dinheiro e PIX</h3>
         </div>
         <div>
-            <input type="checkbox" class="checkbox" id="checkbox" />
+            <input type="checkbox" class="checkbox" id="checkbox" checked />
             <label for="checkbox">
                 <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
                     <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
@@ -83,14 +84,10 @@
             </label>
         </div>
     </div>
-    <div class="informacoes">
-        <p id="descricao_breve">
-            @Model.Description
-        </p>
-    </div>
+    
     <div id="botoes_produto">
-        <button onclick="document.getElementById('id01').style.display='block'" id="botao_comprar">Comprar</button>
-        <a href="" id="botao_conversa">Contatar vendedor</a>
+        <button onclick="document.getElementById('id01').style.display='block'" id="botao_comprar">Comprar agora</button>
+        <a href="carrinho.html" id="botao_carrinho">Adicionar ao carrinho</a>
     </div>
     <div id="id01" class="modal">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
@@ -100,8 +97,9 @@
                 <p>Compras em dinheiro devem ser combinadas com o vendedor e não tem suporte da plataforma.</p>
 
                 <div class="clearfix">
-                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="pix">Pagamento em PIX</button>
-                    <a onclick="document.getElementById('id01').style.display='none'" class="dinheiro" href="conversas.html">Pagamento em dinheiro</a>
+                    <a href="chat_comprar.html" class="pix">
+                        Pagamento em PIX</button>
+                        <a onclick="document.getElementById('id01').style.display='none'" class="dinheiro" href="chat.html">Pagamento em dinheiro</a>
                 </div>
             </div>
         </form>
@@ -111,16 +109,7 @@
 
 <section id="descricao_produto">
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit tortor vitae cursus ultricies. Duis pretium lobortis dui. Proin felis urna, semper a tellus vitae,
-        accumsan mollis ipsum. Etiam ac sapien blandit, pulvinar urna vitae, imperdiet enim. Praesent purus sapien, sodales at nibh eu, ornare varius orci. Sed pulvinar gravida
-        vestibulum. Etiam arcu tortor, fringilla sed mauris quis, pharetra sollicitudin augue. Donec tristique placerat mauris, non accumsan mi fermentum ut.
-    </p>
-    <p>
-        Proin ut metus non sapien aliquet condimentum. Phasellus pulvinar vel erat vitae lacinia. Curabitur turpis ligula, elementum in tincidunt sed, finibus sit amet tellus.
-        Sed vel egestas nibh, nec consectetur velit. Nullam luctus placerat enim, at pulvinar risus tristique sit amet. Pellentesque nec nulla neque. Quisque diam enim, placerat ac
-        lacinia ut, dapibus vel orci. Pellentesque lectus tortor, gravida in mi eget, finibus molestie ipsum. Morbi egestas, tortor eu blandit convallis, est nunc fringilla purus,
-        vel faucibus nulla tellus vitae metus. Vivamus et suscipit velit. Suspendisse dolor risus, euismod at lobortis vel, tempor et lorem. Etiam in quam vel libero congue gravida
-        quis vel sapien.
+        @Model.Description
     </p>
 
 </section>

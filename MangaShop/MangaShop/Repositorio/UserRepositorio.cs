@@ -40,7 +40,7 @@ namespace MangaShop.Repositorio
 
             if (userDB == null) throw new System.Exception("usuario nao existe no sistema!");
 
-            string uniqueFileName = UploadedFile(userDB);
+            string uniqueFileName = UploadedFile(user);
 
 
             userDB.Name = user.Name;
