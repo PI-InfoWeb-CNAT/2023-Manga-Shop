@@ -17,5 +17,22 @@ namespace MangaShop.Controllers
             ProductModel product = _productRepositorio.ListByid(id);
             return View("Index", product);
         }
+
+        // Criacao do produto
+        public IActionResult Create()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Create(ProductModel product)
+        {
+            if (ModelState.IsValid)
+            {
+                _productRepositorio.Adicionar(product);
+            }
+
+            return View(product);
+        }
+        //
     }
 }

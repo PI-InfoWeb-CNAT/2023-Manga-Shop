@@ -21,27 +21,16 @@ namespace MangaShop.ViewComponents
         public async Task<IViewComponentResult> InvokeAsync()
         {
             string userSession = HttpContext.Session.GetString("LoggedUserSession");
-            
             UserModel user = JsonConvert.DeserializeObject<UserModel>(userSession);
-            if (string.IsNullOrEmpty(userSession))
-            {
+            if (string.IsNullOrEmpty(userSession)){
                 return View("Index", "Login");
             }
-
-
-
             var userProducts = _productRepositorio.ListByUserId(user.Id);
-
             productList.AddRange(userProducts);
-
-            if (userProducts == null)
-            {
+            if (userProducts == null){
                 return View("Ghost");
             }
-
-            
-                return View(userProducts);
-            
+            return View(userProducts);
         }
     }
 }

@@ -19,7 +19,12 @@ namespace MangaShop.ViewComponents
         }
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            int id = 0;
+
+            string userSession = HttpContext.Session.GetString("LoggedUserSession");
+
+            UserModel user = JsonConvert.DeserializeObject<UserModel>(userSession);
+
+            int id = user.Id;
 
             ProductModel userProducts = _productRepositorio.ListByid(id);
 

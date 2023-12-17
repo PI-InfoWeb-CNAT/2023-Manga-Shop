@@ -1,0 +1,35 @@
+﻿@using Microsoft.EntityFrameworkCore.Metadata.Internal;
+@model ProductModel;
+@{
+    ViewData["Title"] = "- Vender";
+}
+
+
+<head>
+    <link rel="stylesheet" href="~/css/criar_produto.css" />
+</head>
+
+
+<form asp-controller="Product" asp-action="Create" method="post">
+    <fieldset id="imagens_produto">
+        <button><input type="file" asp-for=ImagesFiles name="imagens" required /></button>
+    </fieldset>
+    <fieldset id="registro_produto">
+        <label>Nome do produto</label>
+        <input class="barra_texto" type="text" asp-for=Title name="nome_produto">
+        <label>Descrição do produto</label>
+        <input class="barra_texto_2" type="text" asp-for="Description" name="desc_produto">
+        <label>Condição do produto</label>
+            <select name="condicao" id="condicao_produto" asp-for=Estado>
+                <option value="lacrado">Lacrado</option>
+                <option value="novo">Novo</option>
+                <option value="seminovo">Seminovo</option>
+                <option value="gasto">Gasto</option>
+                <option value="danificado">Danificado</option>
+            </select>
+        
+        <label id="preco_produto">Preço</label>
+        <input type="number" name="preco" asp-for=Value/>
+        <input type="submit" id="submeter_produto" />
+    </fieldset>
+</form>

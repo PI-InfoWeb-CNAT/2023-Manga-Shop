@@ -16,6 +16,7 @@ namespace MangaShop.Models
         public string Description { get; set; }
         [Required(ErrorMessage = "Digite o valor do produto")]
         public int Value { get; set; }
+        public string Estado { get; set; }
         public string ImagesPaths { get; set; }
         [Required(ErrorMessage = "Selecione pelo menos uma imagem do produto")]
         [NotMapped]

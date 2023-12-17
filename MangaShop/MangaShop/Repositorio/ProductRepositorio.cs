@@ -33,9 +33,6 @@ namespace MangaShop.Repositorio
             _bancoContext.SaveChanges();
             return product;
         }
-
-       
-
         public ProductModel Editar(ProductModel product)
         {
             ProductModel productDB = ListByid(product.Id);
@@ -43,15 +40,14 @@ namespace MangaShop.Repositorio
             if (productDB == null) throw new System.Exception("usuario nao existe no sistema!");
 
             productDB.Title = product.Title;
-            // userDB.Email = user.Email;
             productDB.Value = product.Value;
-            // userDB.Password = user.Password;
             productDB.Description = product.Description;
-            
+            productDB.ImagesPaths = product.ImagesPaths;
+            productDB.Estado= product.Estado;
+
             _bancoContext.Products.Update(productDB);
             _bancoContext.SaveChanges();
             return productDB;  
-
         }
 
         public bool Deletar(int id)

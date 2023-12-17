@@ -1,11 +1,17 @@
 ﻿@model List<ProductModel>
 
-@foreach (var product in Model)
+
+@if (Model.Count == 0) 
 {
+    <div class="produto">
+    <p>Você não possui produtos</p>
+    </div>
+} else {
+    @foreach (var product in Model){
     <div class="produto">
         <a asp-route-id="@product.Id" asp-controller="Product" asp-action="Index">
             <div class="imagem_produto">
-                <img src="@Url.Content("~/imagens/mangas.png")" />
+                <img src="~/imagens/@product.ImagesPaths" />
             </div>
             <div class="detalhes_produto">
                 <h3>@product.Title</h3>
@@ -13,5 +19,5 @@
             </div>
         </a>
     </div>
+    }
 }
-
