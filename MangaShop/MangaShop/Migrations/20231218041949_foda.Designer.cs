@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MangaShop.Migrations
 {
     [DbContext(typeof(BancoContext))]
-    [Migration("20230924175346_ForeignKeys")]
-    partial class ForeignKeys
+    [Migration("20231218041949_foda")]
+    partial class foda
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -31,8 +31,7 @@ namespace MangaShop.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Images")
-                        .IsRequired()
+                    b.Property<string>("ImagesPaths")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
@@ -46,8 +45,6 @@ namespace MangaShop.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("Products");
                 });
@@ -72,6 +69,9 @@ namespace MangaShop.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("IconPath")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -86,17 +86,6 @@ namespace MangaShop.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
-                });
-
-            modelBuilder.Entity("MangaShop.Models.ProductModel", b =>
-                {
-                    b.HasOne("MangaShop.Models.UserModel", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }

@@ -9,7 +9,7 @@ namespace MangaShop.Repositorio
         ProductModel ListByid(int id);
         List<ProductModel> ListByUserId(int UserId);
         List<ProductModel> ListarTodos();
-        ProductModel Adicionar(ProductModel product);
+        ProductModel Adicionar(ProductModel product, string userSession);
         ProductModel Editar(ProductModel product);
         bool Deletar(int id);
 

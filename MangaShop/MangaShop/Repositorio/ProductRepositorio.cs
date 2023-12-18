@@ -1,7 +1,13 @@
 ﻿using MangaShop.Data;
+using MangaShop.Helper;
 using MangaShop.Models;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 
 namespace MangaShop.Repositorio
@@ -9,9 +15,15 @@ namespace MangaShop.Repositorio
     public class ProductRepositorio : IProductRepositorio
     {
         private readonly BancoContext _bancoContext;
-        public ProductRepositorio(BancoContext bancoContext)
+        private readonly IWebHostEnvironment webHostEnvironment;
+        private readonly ISessao _sessao;
+
+
+        public ProductRepositorio(BancoContext bancoContext, IWebHostEnvironment webHost, ISessao sessao)
         {
             _bancoContext = bancoContext;
+            webHostEnvironment = webHost;
+            _sessao = sessao;
         }
         public ProductModel ListByid(int id)
         {
@@ -26,11 +38,18 @@ namespace MangaShop.Repositorio
         {
             return _bancoContext.Products.ToList();
         }
-        public ProductModel Adicionar(ProductModel product)
+        public ProductModel Adicionar(ProductModel product, string userSession)
         {
+            string uniqueFileName = UploadedFile(product);
+            UserModel user = JsonConvert.DeserializeObject<UserModel>(userSession);
             // gravar no banco
+            product.UserId = user.Id;
             _bancoContext.Products.Add(product);
             _bancoContext.SaveChanges();
+            product.ImagePath = uniqueFileName;
+            _bancoContext.Products.Update(product);
+            _bancoContext.SaveChanges();
+
             return product;
         }
         public ProductModel Editar(ProductModel product)
@@ -42,8 +61,8 @@ namespace MangaShop.Repositorio
             productDB.Title = product.Title;
             productDB.Value = product.Value;
             productDB.Description = product.Description;
-            productDB.ImagesPaths = product.ImagesPaths;
-            productDB.Estado= product.Estado;
+            productDB.ImagePath = product.ImagePath;
+            
 
             _bancoContext.Products.Update(productDB);
             _bancoContext.SaveChanges();
@@ -63,6 +82,23 @@ namespace MangaShop.Repositorio
         public ProductModel GetByValue(int value)
         {
             return _bancoContext.Products.FirstOrDefault(x => x.Value == value);   
+        }
+
+        private string UploadedFile(ProductModel product)
+        {
+            string uniqueFileName = null;
+
+            if (product.Image != null)
+            {
+                string uploadsFolder = Path.Combine(webHostEnvironment.WebRootPath, "imagens");
+                uniqueFileName = Guid.NewGuid().ToString() + "_" + product.Image.FileName;
+                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    product.Image.CopyTo(fileStream);
+                }
+            }
+            return uniqueFileName;
         }
     }
 }

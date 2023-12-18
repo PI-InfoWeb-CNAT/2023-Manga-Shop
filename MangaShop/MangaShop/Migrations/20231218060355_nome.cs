@@ -2,22 +2,22 @@
 
 namespace MangaShop.Migrations
 {
-    public partial class addprodutoestado : Migration
+    public partial class nome : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AddColumn<string>(
-                name: "Estado",
+            migrationBuilder.RenameColumn(
+                name: "ImagesPaths",
                 table: "Products",
-                type: "nvarchar(max)",
-                nullable: true);
+                newName: "ImagePath");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropColumn(
-                name: "Estado",
-                table: "Products");
+            migrationBuilder.RenameColumn(
+                name: "ImagePath",
+                table: "Products",
+                newName: "ImagesPaths");
         }
     }
 }

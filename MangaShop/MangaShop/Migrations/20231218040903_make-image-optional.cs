@@ -2,7 +2,7 @@
 
 namespace MangaShop.Migrations
 {
-    public partial class addicon : Migration
+    public partial class makeimageoptional : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

@@ -2,15 +2,10 @@
 
 namespace MangaShop.Migrations
 {
-    public partial class Images : Migration
+    public partial class foda : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.RenameColumn(
-                name: "imagesPaths",
-                table: "Products",
-                newName: "ImagesPaths");
-
             migrationBuilder.AlterColumn<string>(
                 name: "ImagesPaths",
                 table: "Products",
@@ -22,13 +17,8 @@ namespace MangaShop.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.RenameColumn(
-                name: "ImagesPaths",
-                table: "Products",
-                newName: "imagesPaths");
-
             migrationBuilder.AlterColumn<string>(
-                name: "imagesPaths",
+                name: "ImagesPaths",
                 table: "Products",
                 type: "nvarchar(max)",
                 nullable: false,

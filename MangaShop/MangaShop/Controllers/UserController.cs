@@ -27,8 +27,6 @@ namespace MangaShop.Controllers
             _userRepositorio = userRepositorio; 
             _sessao = sessao;
             _context = context;
-
-
         }
         //
 
