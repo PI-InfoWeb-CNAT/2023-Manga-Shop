@@ -1,7 +1,7 @@
 ﻿@using Microsoft.EntityFrameworkCore.Metadata.Internal;
 @model ProductModel;
 @{
-    ViewData["Title"] = "- Vender";
+    ViewData["Title"] = "- Editar";
 }
 
 
@@ -10,7 +10,7 @@
 </head>
 
 
-<form asp-controller="Product" asp-action="Create" method="post" enctype="multipart/form-data">
+<form  asp-controller="Product" asp-action="Edit" method="post" enctype="multipart/form-data">
     <fieldset id="imagens_produto">
         <input asp-for="Image" class="custom-file-input" id="FLFrontImage" />
     </fieldset>
@@ -33,5 +33,5 @@
         <label id="preco_produto">Preço</label><input type="number" asp-for=Value />
 
     </fieldset>
-        <button type="submit" id="submeter_produto">Pronto </button>
+    <button type="submit" id="submeter_produto">Pronto </button>
 </form>

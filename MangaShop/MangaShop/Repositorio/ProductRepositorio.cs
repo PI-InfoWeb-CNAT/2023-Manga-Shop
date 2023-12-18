@@ -55,14 +55,14 @@ namespace MangaShop.Repositorio
         public ProductModel Editar(ProductModel product)
         {
             ProductModel productDB = ListByid(product.Id);
-
+            string uniqueFileName = UploadedFile(product);
             if (productDB == null) throw new System.Exception("usuario nao existe no sistema!");
 
             productDB.Title = product.Title;
             productDB.Value = product.Value;
             productDB.Description = product.Description;
-            productDB.ImagePath = product.ImagePath;
-            
+            product.ImagePath = uniqueFileName;
+
 
             _bancoContext.Products.Update(productDB);
             _bancoContext.SaveChanges();

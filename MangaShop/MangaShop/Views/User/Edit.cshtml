@@ -4,22 +4,25 @@
 }
 
 
-    <form enctype="multipart/form-data" asp-controller="User" asp-action="Edit" method="post">
-        <h1>Registrar-se</h1>
+<form enctype="multipart/form-data" asp-controller="User" asp-action="Edit" method="post">
+    <h1>Registrar-se</h1>
 
-        <label>Nome completo</label><input type="text" asp-for=Name class="barra_texto"  />
-
-        <label>E-mail</label><input type="email" asp-for=Email class="barra_texto"  />
-
-        <label>CPF</label><input type="text" asp-for=Cpf class="barra_texto"  />
-
-        <label>Senha</label><input type="password" asp-for=Password class="barra_texto"  />
+    <input asp-for="Icon" class="custom-file-input" id="FLFrontImage" />
 
 
+    <label>Nome completo</label><input type="text" asp-for=Name class="barra_texto" />
 
-        <button type="submit">Confirmar</button>
-        <p id="aviso"><a asp-controller="User" asp-action="Login">Cancelar</a></p>
+    <label>E-mail</label><input type="email" asp-for=Email class="barra_texto" />
 
-    </form>
+    <label>CPF</label><input type="text" asp-for=Cpf class="barra_texto" />
+
+    <label>Senha</label><input type="password" asp-for=Password class="barra_texto" />
+
+
+
+    <button type="submit">Confirmar</button>
+    <p id="aviso"><a asp-controller="User" asp-action="Login">Cancelar</a></p>
+
+</form>
 
 

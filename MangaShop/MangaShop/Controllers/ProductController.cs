@@ -41,15 +41,34 @@ namespace MangaShop.Controllers
         {
             string userSession = HttpContext.Session.GetString("LoggedUserSession");
          
-
             _productRepositorio.Adicionar(product, userSession);
-            return View("Index", product);
-            
-
+            return View("Index", product);            
 
         }
         //
-        
+        public IActionResult Delete(int id)
+        {
+            ProductModel product = _productRepositorio.ListByid(id);
+            return View(product);
+        }
+        public IActionResult Deletar(int id)
+        {
+            _productRepositorio.Deletar(id);
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Edit(int id)
+        {
+            ProductModel product = _productRepositorio.ListByid(id);
+            return View(product);
+        }
+        [HttpPost]
+        public IActionResult Edit(ProductModel product)
+        {
+
+            _productRepositorio.Editar(product);
+            return RedirectToAction("Index");
+        }
 
     }
 }
