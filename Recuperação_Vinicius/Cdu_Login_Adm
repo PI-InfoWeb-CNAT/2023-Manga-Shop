@@ -1,0 +1,52 @@
+﻿
+# Projeto Comercio Eletrônico - MangaShop
+
+## Especificação do caso de uso - Realizar Login Adiministrador
+
+### Histórico da Revisão
+|  Data  | Versão | Descrição | Autor |
+|:-------|:-------|:----------|:------|
+| 04/08/2023 | **0.00** | Descrever realização de login | Vinícius Barbosa |
+
+
+### 1. Resumo 
+    Detalhamento do método de relaização de login como administrador
+### 2. Atores
+- Administradores
+
+### 3. Pré-condições
+São pré-condições para iniciar este caso de uso:
+- 	O administrador deve possuir um registro ativo no sistema.
+
+### 4.Pós-condições
+Após a execução deste casos de uso, espera que o sistema:
+-  O Adiministrador terá acessoa  pagina inicial
+
+### 5. Fluxos de evento
+
+#### 5.1. Fluxo Principal
+
+|  Ator  | Sistema |
+|:-------|:------- |
+| 1. adiministrador clica para fazer login | --- |
+| --- | 2. Sistema redireciona usuário para página login |
+| 3.  Adiministrador digita suas informações de login | --- |
+| --- | 4. Sistema checa credenciais |
+| --- | 5. Sistema redireciona usuário para página inicial de adiministração |
+| 6. adiministrador tem acesso a pagina de login | --- |
+
+#### 5.1. Fluxo alternativo
+
+|  Ator  | Sistema |
+|:-------|:------- |
+| 1. adiministrador clica para fazer login | --- |
+| --- | 2. Sistema redireciona usuário para página login |
+| 3.  Adiministrador digita suas informações de login | --- |
+| --- | 4. Sistema checa credenciais |
+| --- | 5. Credenciais incorretas |
+| --- | 5. Sistema redireciona usuário para página de login |
+
+
+### 6. Dicionário de dados
+
+### 7. Protótipos de UI
