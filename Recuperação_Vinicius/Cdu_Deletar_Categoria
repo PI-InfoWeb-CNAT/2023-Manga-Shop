@@ -1,0 +1,45 @@
+﻿
+# Projeto Comercio Eletrônico - MangaShop
+
+## Especificação do caso de uso - Deletar Categoria
+
+### Histórico da Revisão
+|  Data  | Versão | Descrição | Autor |
+|:-------|:-------|:----------|:------|
+| 07/01/2024 | **0.00** | Deletar categoria| Vinícius Barbosa |
+
+
+### 1. Resumo 
+    Detalhamento do método como Deletar uma nova categoria
+### 2. Atores
+- Administradores
+
+### 3. Pré-condições
+São pré-condições para iniciar este caso de uso:
+- 	O administrador deve possuir um registro ativo no sistema.
+- 	O adiministrador deve está logado no sistema
+- 	A categoria deve esta registrada no sistema
+
+### 4.Pós-condições
+Após a execução deste casos de uso, espera que o sistema:
+-  
+
+### 5. Fluxos de evento
+
+#### 5.1. Fluxo Principal
+
+|  Ator  | Sistema |
+|:-------|:------- |
+| 1. adiministrador na pagina inicial clica para pagina ver Categorias| --- |
+| --- | 2. Sistema Redireciona para a pagina |
+| 3. Adiministrador clica para Deletar categoria | --- |
+| --- | 4. Sistema Redireciona para a pagina |
+| 5. Adiministrador clica para excluir categoria | --- |
+| --- | 6. Sistema apaga a categoria do banco | 
+
+
+
+
+### 6. Dicionário de dados
+
+### 7. Protótipos de UI
