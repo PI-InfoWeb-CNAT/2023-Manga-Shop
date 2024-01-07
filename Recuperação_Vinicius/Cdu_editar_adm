@@ -1,0 +1,55 @@
+﻿
+# Projeto Comercio Eletrônico - MangaShop
+
+## Especificação do caso de uso - editar Adiministrador
+
+### Histórico da Revisão
+|  Data  | Versão | Descrição | Autor |
+|:-------|:-------|:----------|:------|
+| 04/08/2023 | **0.00** | Descrever realização da edição das credenciais do administrador | Vinícius Barbosa |
+
+
+### 1. Resumo 
+    Detalhamento do método de relaização de login como administrador
+### 2. Atores
+- Administradores
+
+### 3. Pré-condições
+São pré-condições para iniciar este caso de uso:
+- 	O administrador deve possuir um registro ativo no sistema.
+- 	O adiministrador deve está logado no sistema
+
+### 4.Pós-condições
+Após a execução deste casos de uso, espera que o sistema:
+-  O Adiministrador mudara suas credenciais salvas no sistema
+
+### 5. Fluxos de evento
+
+#### 5.1. Fluxo Principal
+
+|  Ator  | Sistema |
+|:-------|:------- |
+| 1. adiministrador na pagina inicial clica para fazer editar | --- |
+| --- | 2. Sistema redireciona usuário para edição |
+| 3.  Adiministrador digita as novas credenciais | --- |
+| --- | 4. Sistema checa credenciais |
+| --- | 5. Sistema modifica as credenciais |
+| 6. adiministrador modificou suas credenciais com sucesso | --- |
+
+#### 5.1. Fluxo alternativo
+
+|  Ator  | Sistema |
+|:-------|:------- |
+| 1. adiministrador na pagina inicial clica para pagina de detalhes| --- |
+| --- | 2. Sistema redireciona usuário para detalhes |
+| 3. adiministrador na pagina inicial clica para pagina de edição| --- |
+| --- | 4. Sistema redireciona usuário para edição |
+| 5.  Adiministrador digita as novas credenciais | --- |
+| --- | 6. Sistema checa credenciais |
+| --- | 7. Sistema modifica as credenciais |
+| 8. adiministrador modificou suas credenciais com sucesso | --- |
+
+
+### 6. Dicionário de dados
+
+### 7. Protótipos de UI
