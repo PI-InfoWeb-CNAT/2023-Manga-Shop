@@ -4,14 +4,16 @@ using MangaShop.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MangaShop.Migrations
 {
     [DbContext(typeof(BancoContext))]
-    partial class BancoContextModelSnapshot : ModelSnapshot
+    [Migration("20240107210109_carrinhocompras")]
+    partial class carrinhocompras
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -19,24 +21,24 @@ namespace MangaShop.Migrations
                 .HasAnnotation("ProductVersion", "5.0.17")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("MangaShop.Models.CarrinhoCompraItem", b =>
+            modelBuilder.Entity("MangaShop.Models.ListaDesejoItem", b =>
                 {
-                    b.Property<int>("CarrinhoCompraItemId")
+                    b.Property<int>("ListaDesejoItemId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("CarrinhoCompraId")
+                    b.Property<string>("ListaDesejoId")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("ProductModelId")
                         .HasColumnType("int");
 
-                    b.HasKey("CarrinhoCompraItemId");
+                    b.HasKey("ListaDesejoItemId");
 
                     b.HasIndex("ProductModelId");
 
-                    b.ToTable("CarrinhoCompraItens");
+                    b.ToTable("ListaDesejo");
                 });
 
             modelBuilder.Entity("MangaShop.Models.ProductModel", b =>
@@ -110,7 +112,7 @@ namespace MangaShop.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("MangaShop.Models.CarrinhoCompraItem", b =>
+            modelBuilder.Entity("MangaShop.Models.ListaDesejoItem", b =>
                 {
                     b.HasOne("MangaShop.Models.ProductModel", "ProductModel")
                         .WithMany()

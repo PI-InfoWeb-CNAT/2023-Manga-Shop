@@ -79,7 +79,10 @@
     </div>
     
     <div id="botoes_produto">
-        <button onclick="document.getElementById('id01').style.display='block'" id="botao_comprar">Comprar agora</button>
+        <a class="btn btn-success" asp-controller="CarrinhoCompras" asp-action="AdicionarItem" asp-route-id="@Model.Id">
+            Incluir no Carrinho
+        </a>
+        &nbsp;&nbsp;
         <a href="carrinho.html" id="botao_carrinho">Adicionar ao carrinho</a>
     </div>
     <div id="id01" class="modal">
