@@ -4,29 +4,7 @@
     <link rel="stylesheet" href="@Url.Content("~/css/carrinho.css")" />
 </head>
 
- @foreach (ProductModel product in Model.Carrrinho){
-<section class="produtos" id="produto_1">
-
-    <label id="checkbox_1"><input type="checkbox" checked /></label>
-
-    <div class="imagens_favorito">
-        <a href="produto.html"><img src="@Url.Content("~/imagens/mangas.png")" id="imagem1" /></a>
-    </div>
-
-    <div class="informacoes">
-        <h2 class="nome_produto" id="nome_produto_1">Coleção de Mangás, 15 unidades</h2>
-        <h3 class="nome_vendedor" id="nome_vendedor_1"><a href="">Esfarrapo da Silva Junior</a> - Campus <span id="campus_1">Natal Central</span></h3>
-    </div>
-
-    <div class="preco">
-        <h2 class="preco_produto" id="preco_produto_1">R$ 520,50</h2>
-    </div>
-
-    <div class="botoes_produto">
-        <a href="produto.html" class="botao_pagina">Visitar página</a>
-    </div>
-</section>
-}
+@await Component.InvokeAsync("Carrinho")
 <div>
     <button onclick="document.getElementById('id01').style.display='block'" id="botao_comprar">Fechar pedido</button>
 </div>

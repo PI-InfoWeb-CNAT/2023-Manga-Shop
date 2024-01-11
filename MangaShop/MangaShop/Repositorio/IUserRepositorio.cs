@@ -10,6 +10,9 @@ namespace MangaShop.Repositorio
         List<UserModel> ListarTodos();
         UserModel Adicionar(UserModel user);
         UserModel Editar(UserModel user);
+        void AdicionarProdutoAoCarrinho(int userId, int productId);
+        void RemoverProdutoDoCarrinho(int userId, int productId);
+        List<UserCartItem> ObterProdutosDoCarrinho(int userId);
         bool Deletar(int id);
 
 

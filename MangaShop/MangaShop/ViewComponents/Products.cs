@@ -25,7 +25,7 @@ namespace MangaShop.ViewComponents
             if (string.IsNullOrEmpty(userSession)){
                 return View("Index", "Login");
             }
-            var userProducts = _productRepositorio.ListByUserId(user.Id);
+            var userProducts = _productRepositorio.ListByUserId(user.UserId);
             productList.AddRange(userProducts);
             if (userProducts == null){
                 return View("Ghost");

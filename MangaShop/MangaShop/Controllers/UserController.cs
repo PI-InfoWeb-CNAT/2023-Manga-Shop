@@ -11,6 +11,7 @@ using System.IO;
 using System.Security.Policy;
 using MangaShop.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Routing;
 
 namespace MangaShop.Controllers
 {
@@ -20,13 +21,15 @@ namespace MangaShop.Controllers
         // User Repositorio
         private readonly BancoContext _context;
         private readonly IUserRepositorio _userRepositorio;
+        private readonly IProductRepositorio _productRepositorio;
         private readonly ISessao _sessao;
        
-        public UserController(IUserRepositorio userRepositorio, ISessao sessao, BancoContext context)
+        public UserController(IUserRepositorio userRepositorio, ISessao sessao, BancoContext context, IProductRepositorio productRepositorio)
         {
             _userRepositorio = userRepositorio; 
             _sessao = sessao;
             _context = context;
+            _productRepositorio = productRepositorio;
         }
         //
 
@@ -88,7 +91,6 @@ namespace MangaShop.Controllers
         {
             return View();
         }
-
         [HttpPost]
         public IActionResult UploadIcon(UserModel userModel, IFormFile icon)
         {

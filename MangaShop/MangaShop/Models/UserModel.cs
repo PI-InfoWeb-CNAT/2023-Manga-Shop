@@ -9,7 +9,8 @@ namespace MangaShop.Models
     public class UserModel
     {
         [Key]
-        public int Id { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int UserId { get; set; }
         [Required(ErrorMessage = "Digite o seu nome")]
         public string Name { get; set; }
         [Required(ErrorMessage = "Digite o seu e-mail")]
@@ -29,6 +30,6 @@ namespace MangaShop.Models
         {
             return Password == password;
         }
-        public ICollection<ProductModel> Carrrinho { get; set; }
+        public List<UserCartItem> Carrinho { get; set; } = new List<UserCartItem>();
     }
 }

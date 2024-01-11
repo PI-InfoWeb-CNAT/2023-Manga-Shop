@@ -1,0 +1,51 @@
+﻿@model List<UserCartItem>
+
+<head>
+    <link rel="stylesheet" href="@Url.Content("~/css/carrinho.css")" />
+</head>
+
+@if (Model != null && Model.Count == 0)
+{
+    <div class="produto">
+        <p>Você não possui produtos no carrinho</p>
+    </div>
+}
+else
+{
+    @foreach (var cartItem in Model)
+    {
+     
+            <section class="produtos" id="produto_@cartItem.Product.ProductId">
+
+                <div class="imagens_favorito" style="max-height: 300px;">
+                <a a asp-controller="Product" asp-action="Index" asp-route-id="@cartItem.Product.ProductId"><img  style="max-height: 300px;" src="~/imagens/@cartItem.Product.ImagePath" id="imagem_@cartItem.Product.ProductId" /></a>
+                </div>
+
+                <div class="informacoes">
+                    <h2 class="nome_produto" id="nome_produto_@cartItem.Product.ProductId">@cartItem.Product.Title</h2>
+                    <h3 class="nome_vendedor" id="nome_vendedor_@cartItem.Product.ProductId">@cartItem.Product.UserId</h3>
+                </div>
+
+                <div class="preco">
+                    <h2 class="preco_produto" id="preco_produto_@cartItem.Product.ProductId">R$ @cartItem.Product.Value</h2>
+                </div>
+
+                <div class="botoes_produto">
+                    <div class="botoes_produto">
+                        <a asp-controller="Product" asp-action="Index" asp-route-id="@cartItem.Product.ProductId" class="botao_pagina">Visitar página</a>
+                        <form asp-controller="Carrinho" asp-action="RemoverDoCarrinho" method="post">
+                            <input type="hidden" name="productId" value="@cartItem.Product.ProductId" />
+                            <button type="submit" class="botao_pagina">Remover do Carrinho</button>
+                        </form>
+                    
+                    </div>
+                
+
+                </div>
+            <a asp-controller="User" asp-action="Conversas">
+                Comprar Agora
+            </a>
+            </section>
+        }
+    
+}

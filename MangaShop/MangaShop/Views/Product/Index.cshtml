@@ -78,13 +78,11 @@
         </div>
     </div>
     
-    <div id="botoes_produto">
-        <a class="btn btn-success" asp-controller="CarrinhoCompras" asp-action="AdicionarItem" asp-route-id="@Model.Id">
-            Incluir no Carrinho
-        </a>
-        &nbsp;&nbsp;
-        <a href="carrinho.html" id="botao_carrinho">Adicionar ao carrinho</a>
-    </div>
+    
+    <form asp-controller="Carrinho" asp-action="AdicionarAoCarrinho" method="post">
+        <input type="hidden" name="productId" value="@Model.ProductId" />
+        <button type="submit">Adicionar ao Carrinho</button>
+    </form>
     <div id="id01" class="modal">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
         <form class="modal-content" action="/action_page.php">

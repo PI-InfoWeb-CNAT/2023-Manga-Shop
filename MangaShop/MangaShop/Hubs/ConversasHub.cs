@@ -19,7 +19,7 @@ namespace MangaShop.Hubs
         
         public async Task SendMessage(string message, UserModel user)
         {
-            var userId = user.Id;
+            var userId = user.UserId;
             await Clients.All.SendAsync("ReceiveMessage", userId, message);
         }
     }

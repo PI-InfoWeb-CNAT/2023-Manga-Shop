@@ -9,7 +9,8 @@ namespace MangaShop.Models
     public class ProductModel
     {
         [Key]
-        public int Id { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int ProductId { get; set; }
         [Required(ErrorMessage = "Digite o titulo do produto")]
         public string Title { get; set; }
         [Required(ErrorMessage = "Digite a descrição do produto")]

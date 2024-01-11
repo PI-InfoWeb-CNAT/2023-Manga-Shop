@@ -27,8 +27,18 @@ namespace MangaShop.Repositorio
         }
         public ProductModel ListByid(int id)
         {
-            return _bancoContext.Products.FirstOrDefault(x => x.Id == id);
+            return _bancoContext.Products.FirstOrDefault(x => x.ProductId == id);
         }
+
+        public List<ProductModel> GetProductsFromCart(UserModel user)
+        {
+            // Certifique-se de que User.Carrinho seja uma lista de CartItem
+            var productIds = user.Carrinho.Select(ci => ci.ProductId).ToList();
+
+            return _bancoContext.Products.Where(p => productIds.Contains(p.ProductId)).ToList();
+        }
+
+
         public List<ProductModel> ListByUserId(int userId)
         {
             var products = _bancoContext.Products.Where(x => x.UserId == userId).ToList();
@@ -43,7 +53,7 @@ namespace MangaShop.Repositorio
             string uniqueFileName = UploadedFile(product);
             UserModel user = JsonConvert.DeserializeObject<UserModel>(userSession);
             // gravar no banco
-            product.UserId = user.Id;
+            product.UserId = user.UserId;
             _bancoContext.Products.Add(product);
             _bancoContext.SaveChanges();
             product.ImagePath = uniqueFileName;
@@ -54,7 +64,7 @@ namespace MangaShop.Repositorio
         }
         public ProductModel Editar(ProductModel product)
         {
-            ProductModel productDB = ListByid(product.Id);
+            ProductModel productDB = ListByid(product.ProductId);
             string uniqueFileName = UploadedFile(product);
             if (productDB == null) throw new System.Exception("usuario nao existe no sistema!");
 

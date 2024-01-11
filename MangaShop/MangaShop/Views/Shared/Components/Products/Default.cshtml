@@ -9,7 +9,7 @@
 } else {
     @foreach (var product in Model){
 <div class="produto">
-    <a asp-route-id="@product.Id" asp-controller="Product" asp-action="Index">
+    <a asp-route-id="@product.ProductId" asp-controller="Product" asp-action="Index">
         <div class="imagem_produto">
             <img src="~/imagens/@product.ImagePath" />
         </div>
@@ -18,8 +18,8 @@
             <p>R$ @product.Value</p>
         </div>
     </a>
-    <a asp-route-id="@product.Id" asp-controller="Product" asp-action="Deletar">Excluir</a>
-    <a asp-route-id="@product.Id" asp-controller="Product" asp-action="Edit">Editar</a>
+    <a asp-route-id="@product.ProductId" asp-controller="Product" asp-action="Deletar">Excluir</a>
+    <a asp-route-id="@product.ProductId" asp-controller="Product" asp-action="Edit">Editar</a>
 
 </div>
     }

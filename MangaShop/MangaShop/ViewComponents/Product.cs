@@ -24,7 +24,7 @@ namespace MangaShop.ViewComponents
 
             UserModel user = JsonConvert.DeserializeObject<UserModel>(userSession);
 
-            int id = user.Id;
+            int id = user.UserId;
 
             ProductModel userProducts = _productRepositorio.ListByid(id);
 

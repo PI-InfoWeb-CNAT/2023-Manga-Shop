@@ -12,7 +12,7 @@
         </svg>
     </button>
 </div>
-<form asp-route-id="@Model.Id" asp-controller="User" asp-action="Edit" method="post" enctype="multipart/form-data">
+<form asp-route-id="@Model.UserId" asp-controller="User" asp-action="Edit" method="post" enctype="multipart/form-data">
     <button type="submit" id="salvar">Salvar alterações</button>
 </form>
 
@@ -26,7 +26,7 @@
 
     <div id="id01" class="modal">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
-        <form class="modal-content" asp-route-id="@Model.Id" asp-controller="User" asp-action="Edit" method="post" enctype="multipart/form-data">
+        <form class="modal-content" asp-route-id="@Model.UserId" asp-controller="User" asp-action="Edit" method="post" enctype="multipart/form-data">
             <div class="container">
                 <h1>Alterar perfil</h1>
 

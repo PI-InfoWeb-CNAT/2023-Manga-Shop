@@ -6,7 +6,7 @@
     <form asp-controller="User" asp-action="Deletar" method="post">
         <h1>Tem certeza que deseja apagar sua conta, @Model.Name?</h1>
 
-        <a asp-route-id="@Model.Id" asp-controller="User" asp-action="Deletar">Confirmar Exclusão</a>
+        <a asp-route-id="@Model.UserId" asp-controller="User" asp-action="Deletar">Confirmar Exclusão</a>
 
         <p id="aviso"><a asp-controller="User" asp-action="Index">Cancelar</a></p>
 
