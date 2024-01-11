@@ -8,6 +8,8 @@ using MangaShop.Data;
 using Microsoft.AspNetCore.Hosting;
 using System.IO;
 using System;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace MangaShop.Controllers
 {
@@ -29,6 +31,22 @@ namespace MangaShop.Controllers
         {
             ProductModel product = _productRepositorio.ListByid(id);
             return View("Index", product);
+        }
+
+        [HttpPost]
+        public IActionResult Pesquisar(string termo)
+        {
+            if (string.IsNullOrEmpty(termo))
+            {
+                var todosOsProdutos = _context.Products.ToList();
+                return View("ResultadoPesquisa", todosOsProdutos);
+            }
+
+            var resultados = _context.Products
+                .Where(p => EF.Functions.Like(p.Title, $"%{termo}%"))
+                .ToList();
+
+            return View("ResultadoPesquisa", resultados);
         }
 
         // Criacao do produto

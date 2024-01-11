@@ -19,11 +19,12 @@
                 <h1 id="logo">
                     <a asp-controller="Home" asp-action="Index">
                         <img onmouseover="expandir(this)" onmouseout="diminuir(this)" src="@Url.Content("~/imagens/Logo.png")" alt="a logo de uma manga com o nome Manga Shop sobre ela" />
-                        </a>
+                    </a>
                 </h1>
 
-                <form action="pesquisa.html" id="barra_pesquisa">
-                    <input type="search" name="pesquisa" placeholder="Pesquisar" />
+                <form method="post" asp-controller="Product" asp-action="Pesquisar" id="barra_pesquisa">
+                    <label for="termo"></label>
+                    <input type="text" name="termo" placeholder="Procure seu próximo mangá :)"/>
                     <button type="submit"><img src="@Url.Content("~/imagens/Lupa.png")" /></button>
                 </form>
 

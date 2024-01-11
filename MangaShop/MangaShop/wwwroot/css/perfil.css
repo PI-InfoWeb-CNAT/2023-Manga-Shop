@@ -117,6 +117,7 @@ h1{
 .produto{
     margin-top: 1em;
     background-color: #fefefe;
+    height: 100%;
 }
 .detalhes_produto{
     padding-left: 1em;

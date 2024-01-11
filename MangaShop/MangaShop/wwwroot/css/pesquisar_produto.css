@@ -1,0 +1,72 @@
+body {
+    background-image: url('/imagens/fundo.png');
+}
+
+/*Main*/
+
+main{
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-bottom: 5em;
+    background-color: #ffffff;  
+}
+main a{
+    transition: 0.3s;
+}
+main a:hover {
+    color: #f28a3c;
+}
+main button{
+    transition: 0.3s;
+}
+#resultado{ 
+    padding: 1em; 
+    width: 85%;
+    margin: 0 auto; 
+    min-height: 600px;
+}
+#resultado h1{
+    margin-top: 1em;
+    margin-bottom: 2em;
+    color: #1d1d1d;
+    font-size: 38px;
+}
+.produto div[class="imagem_produto"], .produto img {
+    min-width: 350px;
+    max-width: 350px;
+    min-height: 300px;
+    max-height: 300px;
+}
+.produto a{
+    text-decoration: none;
+    color: #1d1d1d;
+}
+.produto{
+    height: 100%;
+}
+.detalhes_produto{
+    background-color: #fcfcfc;
+    padding-top: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1.5em;
+    max-height: 50px;
+}
+#produtos{
+    display: flex; 
+    flex-wrap: wrap;
+    column-gap: 1em;
+    row-gap: 2em;
+    justify-content: space-between;
+}
+#resultado h2 {
+    text-align: center;
+    position: relative;
+    top: 7em;
+    font-size: 38px;
+    color: #5C5E5E
+}
+
+

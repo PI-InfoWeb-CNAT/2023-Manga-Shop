@@ -1,0 +1,35 @@
+﻿@model List<ProductModel>
+
+<head>
+    <link rel="stylesheet" href="~/css/pesquisar_produto.css" />
+</head>
+
+<section id="resultado">
+
+    @if(Model != null && Model.Count != 0)
+    {
+         <h1>Resultados da pesquisa:</h1>
+         <div id="produtos">
+            @foreach (var produto in Model)
+            {
+                 <div class="produto">
+                     <a href="@Url.Action("Index", "Product", new { id = produto.Id })">
+                         <div class="imagem_produto">
+                             <img src="~/imagens/@produto.ImagePath" />
+                         </div>
+                         <div class="detalhes_produto">
+                             <h3>@produto.Title</h3>
+                             <p>@String.Format("R$ {0:N2}", produto.Value)</p>
+                         </div>
+                     </a>
+                 </div>
+            }
+         </div>  
+
+     }
+     else
+     {
+         <h2>Nenhum resultado para sua pesquisa</h2>
+     }
+
+</section>

@@ -30,7 +30,7 @@ namespace MangaShop
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddEntityFrameworkSqlServer().AddDbContext<BancoContext>(sql => sql.UseSqlServer(Configuration.GetConnectionString("DataBaseRafa")));
+            services.AddEntityFrameworkSqlServer().AddDbContext<BancoContext>(sql => sql.UseSqlServer(Configuration.GetConnectionString("BancoGomesDoAzure")));
 
             services.AddSignalR();
 
