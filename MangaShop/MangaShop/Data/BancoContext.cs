@@ -12,7 +12,6 @@ namespace MangaShop.Data
         
         public DbSet<UserModel> Users { get; set; }
         public DbSet<ProductModel> Products { get; set; }
-        public DbSet<CarrinhoCompraItem> CarrinhoCompraItens { get; set; }
 
 
     }

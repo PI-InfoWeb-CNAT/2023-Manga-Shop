@@ -1,0 +1,338 @@
+@import url('https://fonts.cdnfonts.com/css/made-infinity-personal-use');
+
+/* clears the ‘X’ from Internet Explorer */
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'MADE INFINITY PERSONAL USE', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-image: url(imagens/fundo.png);
+    color: #1d1d1d;
+    font-size: 16px;
+}
+
+/*Header*/
+
+header{
+    box-shadow: 0 0 15px #1a1a1a;   
+}
+nav div{
+    display: flex;
+}
+nav div ul{
+    display: inherit;
+    list-style: none;
+}
+#header_cima{
+    background-color: #ec7122;
+    height: 100px;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+    box-shadow: 0 0 15px #c76e2a;
+}
+#header_cima ul{
+    margin-top: 2.2em;
+}
+#header_cima ul li{
+    margin-left: 4em;
+}
+#header_baixo{
+    background-color: #f28a3c;
+    height: 2.8em;
+    z-index: 2;
+}
+#header_baixo ul{
+    margin-top: 10px;
+    justify-content: center;
+    margin-left: 35.7em;
+    position: relative;
+    left: -9.5em;
+}
+#header_baixo li{
+    justify-content: center;
+    margin-right: 8em;
+}
+#header_baixo a img[src="imagens/chat_icone.png"]{
+    width: 30px;
+    position: relative;
+}
+header ul li a:hover{
+    color: #1a1a1a;
+}
+header a{
+    color: #f5f5f5;
+    text-decoration: none;
+    transition: 0.3s;
+}
+#logo{
+    margin-right: 4em;
+    position: relative;
+}
+#logo img{
+    width: 120px;
+    margin-top: 5px;
+    transition: 0.3s;
+}
+#barra_pesquisa{
+    display: inherit;
+    flex: wrap;
+    background-color: #f5f5f5;
+    height: 2.8em;
+    margin-top: 1.5em;
+    margin-right: 2em;
+    box-shadow: 0 5px 15px #c26c2b;
+}
+#barra_pesquisa input{
+    background-color: #f5f5f5;
+    width: 35em;
+    height: 2.3em;
+    border: 0;
+    margin-top: 2px;
+    margin-left: 15px;
+    margin-right: 7px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+}
+#barra_pesquisa button{
+    background-color: #f5f5f5;
+    height: 3.3em;
+    border: 0;
+}
+#barra_pesquisa button:hover{
+    cursor: pointer;
+}
+#barra_pesquisa button img{
+    width: 30px;
+    margin-top: 2px;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+#lista_desejos{
+    margin-left: 10em;
+}
+
+/*Main*/
+
+main{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    box-shadow: 0 0 15px -5px #1a1a1a;
+    background-color: #fefefe;
+    padding: 2em 5em 2em 5em;
+}
+main a{
+    transition: 0.3s;
+}
+main button{
+    transition: 0.3s;
+}
+main h1{
+    font-size: 30px;
+  }
+.produtos{
+    display: flex;
+    width: 100%;
+    padding: 1em;
+    justify-content: space-between;
+}
+#checkbox_1{
+    position: relative;
+    margin-top: 4.3em;
+}
+#checkbox_1 input{
+    width: 1.3em;
+    height: 1.3em;
+}
+.imagens_favorito{
+    width: 250px;
+}
+.imagens_favorito img{
+    object-fit: cover;
+    width: 250px;
+}
+.nome_vendedor a{
+    color: #f28a3c;
+    transition: 0.3s;
+}
+.nome_vendedor a:hover{
+    color: #cf570c;
+}
+.informacoes{
+    margin-left: 2em;
+    margin-top: 3em;
+}
+.preco{
+    margin-right: 4em;
+    margin-left: 4em;
+    margin-top: 4em;
+}
+.botao_pagina{
+    text-decoration: none;
+    color: #1d1d1d;
+    padding: 0.8em 3em 0.8em 3em;
+    font-size: 22px;
+    text-align: center;
+    background-color: #f28a3c;
+    border-radius: 1px;
+    transition: 0.3s;
+    position: relative;
+    top: 3em;
+    width: 200px;
+}
+.botao_pagina:hover{
+    background-color: #ec7122;
+}
+#botao_comprar{
+    border: 0;
+    width: 400px;
+    height: 2.5em;
+    font-size: 22px;
+    padding-top: 0.8em;
+    padding-bottom: 2em;
+    cursor: pointer;
+    background-color: #f28a3c;
+    border-radius: 1px;
+    transition: 0.3s;
+    margin-top: 3em;
+    margin-left: 27em;
+}
+#botao_comprar:hover{
+    background-color: #ec7122;
+    color: #f5f5f5;
+}
+
+/*Footer*/
+
+footer{
+    background-color: #ec7122;
+    color: #f5f5f5;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+footer address{
+    padding: 1.5em;
+    width: 90%;
+    margin: 0 auto;
+}
+footer address div{
+    display: flex;
+    margin-bottom: 0.3em;
+}
+#contatos{
+    width: 45%;
+    justify-content: space-between;
+}
+#contatos_2{
+    width: 100%;
+    justify-content: space-between;
+}
+
+/*modal*/
+
+/* Float cancel and delete buttons and add an equal width */
+
+.pix, .dinheiro {
+    margin: 0 auto;
+    width: 600px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 15px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+/* Add a color to the cancel button */
+.dinheiro {
+  background-color: #f1f1f1;
+  color: black;
+}
+.dinheiro:hover{
+    background-color: #d3d2d2;
+}
+
+/* Add a color to the delete button */
+.pix {
+  background-color: #f28a3c;
+}
+.pix:hover{
+    background-color: #ec7122;
+}
+
+/* Add padding and center-align text to the container */
+.container {
+  padding: 16px;
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #3d3d3d4b;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 0 auto;
+  margin-top: 15em;
+  width: 70%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover, .close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+.clearfix{
+    display: flex;
+    margin-top: 2em;
+}
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

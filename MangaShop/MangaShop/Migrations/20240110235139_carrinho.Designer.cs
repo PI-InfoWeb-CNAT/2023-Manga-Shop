@@ -4,14 +4,16 @@ using MangaShop.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MangaShop.Migrations
 {
     [DbContext(typeof(BancoContext))]
-    partial class BancoContextModelSnapshot : ModelSnapshot
+    [Migration("20240110235139_carrinho")]
+    partial class carrinho
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -19,12 +21,30 @@ namespace MangaShop.Migrations
                 .HasAnnotation("ProductVersion", "5.0.17")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("MangaShop.Models.Carrinho", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("carrinhos");
+                });
+
             modelBuilder.Entity("MangaShop.Models.ProductModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int?>("CarrinhoId")
+                        .HasColumnType("int");
 
                     b.Property<int>("Conservacao")
                         .HasColumnType("int");
@@ -43,15 +63,12 @@ namespace MangaShop.Migrations
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("UserModelId")
-                        .HasColumnType("int");
-
                     b.Property<int>("Value")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserModelId");
+                    b.HasIndex("CarrinhoId");
 
                     b.ToTable("Products");
                 });
@@ -97,14 +114,14 @@ namespace MangaShop.Migrations
 
             modelBuilder.Entity("MangaShop.Models.ProductModel", b =>
                 {
-                    b.HasOne("MangaShop.Models.UserModel", null)
-                        .WithMany("Carrrinho")
-                        .HasForeignKey("UserModelId");
+                    b.HasOne("MangaShop.Models.Carrinho", null)
+                        .WithMany("Products")
+                        .HasForeignKey("CarrinhoId");
                 });
 
-            modelBuilder.Entity("MangaShop.Models.UserModel", b =>
+            modelBuilder.Entity("MangaShop.Models.Carrinho", b =>
                 {
-                    b.Navigation("Carrrinho");
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

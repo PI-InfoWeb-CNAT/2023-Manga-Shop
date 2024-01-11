@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
+using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -27,5 +29,6 @@ namespace MangaShop.Models
         {
             return Password == password;
         }
+        public ICollection<ProductModel> Carrrinho { get; set; }
     }
 }

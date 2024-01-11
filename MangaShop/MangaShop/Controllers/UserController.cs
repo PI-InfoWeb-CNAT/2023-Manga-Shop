@@ -84,6 +84,11 @@ namespace MangaShop.Controllers
             return View();
         }
 
+        public IActionResult Carrinho(int id)
+        {
+            return View();
+        }
+
         [HttpPost]
         public IActionResult UploadIcon(UserModel userModel, IFormFile icon)
         {
