@@ -6,37 +6,45 @@
 ### Histórico da Revisão
 |  Data  | Versão | Descrição | Autor |
 |:-------|:-------|:----------|:------|
-| 04/08/2023 | **0.00** | Fazer detalhamento do caso de uso sobre pesquisar um produto especifico | Vinícius Barbosa |
-| 11/09/2023 | **1.00** | Merge das versões | João Costa, Minora, Rafael, Vinícius |
-
+| 08/01/2024 | **1.00** | Criação da descrição do caso de uso | Rafael Gomes |
 
 ### 1. Resumo 
-    Detalhamento sobre pesquisar um produto no sistema da manga shop
+    Detalhamento a respeito do caso de uso "pesquisar produto" relacionado a pesquisar produtos. 
+    
 ### 2. Atores
-- Usuários do Sistema
+- Usuário do sistema
 
-### 3. Pré-condições
-São pré-condições para iniciar este caso de uso:
-- 	O usuário deve possuir um registro ativo no sistema.
-- 	O usuário deve estar logado no sistema.
-
-### 4.Pós-condições
+### 3.Pós-condições
 Após a execução deste casos de uso, espera que o sistema:
--  Sistema exibe os produtos relacionado a pesquisa do usuário
+-  Mostre a View responsável por exibir os produtos solicitados
 
-### 5. Fluxos de evento
+### 4. Fluxos de evento
 
-#### 5.1. Fluxo Principal
+#### 4.1 Fluxo Principal
 
 |  Ator  | Sistema |
 |:-------|:------- |
-| 1. Usuario clicar na barra de pesquisa da página | --- |
-| 2. Usuario digita o que deseja pesquisar | --- |
-| --- | 3.  Sistema redireciona usuário para página de pesquisa |
-| --- | 4. Sistema mostra produtos relacionados à pesquisa do usuário |
-| 5. Usuário Continua navegando | --- |
+| 1. O _usuário_ _clica_ na barra de pesquisa. | --- |
+| 2. O _usuário_ _digita_ o termo desejado. | --- |
+| 3. O _usuário_ _confirma_ a pesquisa. | --- |
+| --- | 5. O sistema _procura_ o termo no DB. |
+| --- | 6. O sistema _exibe_ a View com os produtos associados ao termo solicitado pelo usuário. |
+| 7. O _usuário_ _contempla_ a View com os produtos solicitados. | --- |
+
+### 5 Fluxo de exceção
+
+|  Ator  | Sistema |
+|:-------|:------- |
+| --- | 6. O sistema _não_ _encontra_ produtos relacionados ao termo correspondente. |
+| --- | 7. O sistema _exibe_ a View com uma mensagem de que não foi possível encontrar produtos relacionados. |
+| 8. O _usuário_ _contempla_ a View sem os produtos solicitados. | --- |
+
 
 ### 6. Dicionário de dados
-- string (caixa de texto para digitação da pesquisa)
+- Termo - String enviada pelo usuário através do formulário de pesquisa. 
+- DB - Database/banco de dados. 
+- View - Página front-end relacionada ao Controlador
 
 ### 7. Protótipos de UI
+
+- [Imagem protótipo de tela](https://www.figma.com/file/BXLoINNyrhLsv0nU7yeTiz/PrototipoPesquisaMangaShop?type=design&node-id=0%3A1&mode=design&t=tRwpkm3KDPPy3lCG-1)
