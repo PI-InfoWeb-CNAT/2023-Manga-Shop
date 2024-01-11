@@ -15,8 +15,8 @@
 - Usuário do sistema
 
 ### 3.Pós-condições
-Após a execução deste casos de uso, espera que o sistema:
--  Mostre a View responsável por exibir os produtos solicitados
+Após a execução deste caso de uso, espera-se que o sistema:
+-  Exiba a View responsável por mostrar os produtos solicitados.
 
 ### 4. Fluxos de evento
 
