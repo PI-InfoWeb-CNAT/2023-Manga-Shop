@@ -31,7 +31,7 @@ Após a execução deste caso de uso, espera-se que o sistema:
 | --- | 6. O sistema _exibe_ a View com os produtos associados ao termo solicitado pelo usuário. |
 | 7. O _usuário_ _contempla_ a View com os produtos solicitados. | --- |
 
-#### 4.2 Fluxo de Exceção
+#### 4.2 Fluxo Alternativo
 
 |  Ator  | Sistema |
 |:-------|:------- |
